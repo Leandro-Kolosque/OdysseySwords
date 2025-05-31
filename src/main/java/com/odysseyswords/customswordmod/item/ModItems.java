@@ -217,7 +217,17 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
+    public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
+
     public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> DIVINE_INGOT = ITEMS.register("divine_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
@@ -232,6 +242,11 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
+    public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
+
     public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
@@ -242,7 +257,17 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
+    public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
     public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 

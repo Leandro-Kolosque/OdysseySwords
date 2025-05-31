@@ -123,6 +123,11 @@
     "item.odysseyswords.soul_ingot": "Soul Ingot",
     "item.odysseyswords.tartarus_ingot": "Tartarus Ingot",
     "item.odysseyswords.void_ingot": "Void Ingot",
+    "item.odysseyswords.toxic_ingot": "Toxic Ingot",
+    "item.odysseyswords.silverine_ingot": "Silverine Ingot",
+    "item.odysseyswords.divine_ingot": "Divine Ingot",
+    "item.odysseyswords.storm_ingot": "Storm Ingot",
+    "item.odysseyswords.crystal_ingot": "Crystal Ingot",
 
     "item.odysseyswords.blood_ingot.tooltip": "A throbbing ingot infused with life force",
     "item.odysseyswords.cyber_ingot.tooltip": "Brimming with interdimensional technology",
@@ -131,5 +136,10 @@
     "item.odysseyswords.sculk_ingot.tooltip": "Whispers ancient secrets",
     "item.odysseyswords.soul_ingot.tooltip": "Contains trapped screams",
     "item.odysseyswords.tartarus_ingot.tooltip": "Smelted in abyssal depths",
-    "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light"
+    "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light",
+    "item.odysseyswords.silverine_ingot.tooltip": "Glows with the light of fallen stars",
+    "item.odysseyswords.divine_ingot.tooltip": "Thrums with ancient gods' energy",
+    "item.odysseyswords.toxic_ingot.tooltip": "Emits poisonous vapors that burn the flesh",
+    "item.odysseyswords.storm_ingot.tooltip": "Crackles with contained lightning",
+    "item.odysseyswords.crystal_ingot.tooltip": "Holds miniature universes within"
 }

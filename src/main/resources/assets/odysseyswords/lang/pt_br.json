@@ -123,6 +123,11 @@
   "item.odysseyswords.soul_ingot": "Lingote das Almas",
   "item.odysseyswords.tartarus_ingot": "Lingote do Tártaro",
   "item.odysseyswords.void_ingot": "Lingote do Vazio",
+  "item.odysseyswords.toxic_ingot": "Lingote Tóxico",
+  "item.odysseyswords.silverine_ingot": "Lingote de Silverine",
+  "item.odysseyswords.divine_ingot": "Lingote Divino",
+  "item.odysseyswords.storm_ingot": "Lingote da Tempestade",
+  "item.odysseyswords.crystal_ingot": "Lingote Cristalino",
 
   "item.odysseyswords.blood_ingot.tooltip": "Um lingote pulsante com energia vital",
   "item.odysseyswords.cyber_ingot.tooltip": "Infundido com tecnologia interdimensional",
@@ -131,6 +136,11 @@
   "item.odysseyswords.sculk_ingot.tooltip": "Sussurra segredos ancestrais",
   "item.odysseyswords.soul_ingot.tooltip": "Conserva gritos aprisionados",
   "item.odysseyswords.tartarus_ingot.tooltip": "Fundido nas profundezas abissais",
-  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor"
+  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor",
+  "item.odysseyswords.toxic_ingot.tooltip": "Exala vapores venenosos que queimam a carne",
+  "item.odysseyswords.silverine_ingot.tooltip": "Brilha com a luz das estrelas caídas",
+  "item.odysseyswords.divine_ingot.tooltip": "Pulsante com a energia dos deuses antigos",
+  "item.odysseyswords.storm_ingot.tooltip": "Cintila com energia elétrica contida",
+  "item.odysseyswords.crystal_ingot.tooltip": "Contém universos em miniatura em seu interior"
 
 }
