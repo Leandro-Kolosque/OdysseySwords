@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EOE",
+    "ONO",
+    "EOE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:gold_block"
+    },
+    "O": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:royal_ingot",
+    "count": 4
+  }
+}

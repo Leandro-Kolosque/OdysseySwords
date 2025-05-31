@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EOE",
+    "ONO",
+    "EOE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:deepslate_redstone_ore"
+    },
+    "O": {
+      "item": "minecraft:nether_wart"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:blood_ingot",
+    "count": 4
+  }
+}

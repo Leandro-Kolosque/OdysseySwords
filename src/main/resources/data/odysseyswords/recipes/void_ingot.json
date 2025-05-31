@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EOE",
+    "ONO",
+    "EOE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:end_stone"
+    },
+    "O": {
+      "item": "minecraft:ender_eye"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:void_ingot",
+    "count": 4
+  }
+}

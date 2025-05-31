@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EOE",
+    "ONO",
+    "EOE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:packed_ice"
+    },
+    "O": {
+      "item": "minecraft:snowball"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:frost_ingot",
+    "count": 4
+  }
+}

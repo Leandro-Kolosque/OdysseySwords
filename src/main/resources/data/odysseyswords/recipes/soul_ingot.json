@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EOE",
+    "ONO",
+    "EOE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:soul_sand"
+    },
+    "O": {
+      "item": "minecraft:ghast_tear"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:soul_ingot",
+    "count": 4
+  }
+}
