@@ -1,6 +1,8 @@
 package com.odysseyswords.customswordmod.item;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
+
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
@@ -208,4 +210,28 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot", 
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+
+    public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot", 
+    () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant())); 
 }
