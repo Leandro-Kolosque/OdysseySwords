@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
@@ -210,28 +211,44 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+    
+    public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
 
-    public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+    public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
 
-    public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+    public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
 
-    public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+    public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
 
-    public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+    public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
 
-    public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+    public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
 
-    public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
+    public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
 
-    public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot", 
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB)));
-
-    public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot", 
-    () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant())); 
+    public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
 }

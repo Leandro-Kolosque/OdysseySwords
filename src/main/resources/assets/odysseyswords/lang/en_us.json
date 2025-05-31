@@ -122,5 +122,14 @@
     "item.odysseyswords.sculk_ingot": "Sculk Ingot",
     "item.odysseyswords.soul_ingot": "Soul Ingot",
     "item.odysseyswords.tartarus_ingot": "Tartarus Ingot",
-    "item.odysseyswords.void_ingot": "Void Ingot"
+    "item.odysseyswords.void_ingot": "Void Ingot",
+
+    "item.odysseyswords.blood_ingot.tooltip": "A throbbing ingot infused with life force",
+    "item.odysseyswords.cyber_ingot.tooltip": "Brimming with interdimensional technology",
+    "item.odysseyswords.frost_ingot.tooltip": "Emits an icy mist",
+    "item.odysseyswords.royal_ingot.tooltip": "Forged from divine gold",
+    "item.odysseyswords.sculk_ingot.tooltip": "Whispers ancient secrets",
+    "item.odysseyswords.soul_ingot.tooltip": "Contains trapped screams",
+    "item.odysseyswords.tartarus_ingot.tooltip": "Smelted in abyssal depths",
+    "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light"
 }
