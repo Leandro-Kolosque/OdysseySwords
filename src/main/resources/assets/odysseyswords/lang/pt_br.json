@@ -113,5 +113,14 @@
   "item.odysseyswords.wickpiercer": "Perfurador de Pavio",
   "item.odysseyswords.wraiht_scythe": "Foice do Espectro",
   "item.odysseyswords.yoru": "Yoru",
-  "itemGroup.odysseyTab": "Odyssey Swords"
+  "itemGroup.odysseyTab": "Odyssey Swords",
+
+  "item.odysseyswords.blood_ingot": "Lingote de Sangue",
+  "item.odysseyswords.cyber_ingot": "Lingote Cibernético",
+  "item.odysseyswords.frost_ingot": "Lingote Gélido",
+  "item.odysseyswords.royal_ingot": "Lingote Real",
+  "item.odysseyswords.sculk_ingot": "Lingote do Sculk",
+  "item.odysseyswords.soul_ingot": "Lingote das Almas",
+  "item.odysseyswords.tartarus_ingot": "Lingote do Tártaro",
+  "item.odysseyswords.void_ingot": "Lingote do Vazio"
 }

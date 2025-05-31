@@ -113,5 +113,14 @@
     "item.odysseyswords.wickpiercer": "Wickpiercer",
     "item.odysseyswords.wraiht_scythe": "Wraith Scythe",
     "item.odysseyswords.yoru": "Yoru",
-    "itemGroup.odysseyTab": "Odyssey Swords"
+    "itemGroup.odysseyTab": "Odyssey Swords",
+
+    "item.odysseyswords.blood_ingot": "Blood Ingot",
+    "item.odysseyswords.cyber_ingot": "Cyber Ingot",
+    "item.odysseyswords.frost_ingot": "Frost Ingot",
+    "item.odysseyswords.royal_ingot": "Royal Ingot",
+    "item.odysseyswords.sculk_ingot": "Sculk Ingot",
+    "item.odysseyswords.soul_ingot": "Soul Ingot",
+    "item.odysseyswords.tartarus_ingot": "Tartarus Ingot",
+    "item.odysseyswords.void_ingot": "Void Ingot"
 }
