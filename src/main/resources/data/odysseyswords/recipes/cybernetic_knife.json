@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C",
+    "S "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:cyber_ingot" },
+    "S": { "item": "minecraft:iron_ingot" }
+  },
+  "result": { "item": "odysseyswords:cybernetic_knife", "count": 1 }
+}

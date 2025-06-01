@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "G"
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:cyber_ingot" },
+    "G": { "item": "minecraft:orange_stained_glass"}
+  },
+  "result": { "item": "odysseyswords:cyber_sword", "count": 1 }
+}
