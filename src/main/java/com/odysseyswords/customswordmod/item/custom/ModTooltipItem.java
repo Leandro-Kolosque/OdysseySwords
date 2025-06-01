@@ -19,6 +19,9 @@ public class ModTooltipItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
+        // Chamada super primeiro para permitir que outros mods (como Better Combat) adicionem seus tooltips
+        super.appendHoverText(stack, world, tooltip, flag);
+
         String itemId = stack.getItem().getDescriptionId();
         String weaponId = itemId.replace("item.odysseyswords.", "");
 
@@ -37,7 +40,7 @@ public class ModTooltipItem extends SwordItem {
             });
         }
 
-        super.appendHoverText(stack, world, tooltip, flag);
+        // Não chamar super.appendHoverText aqui novamente
     }
 
     private void addStyledTooltip(List<Component> tooltip, String tooltipKey, String weaponId) {
