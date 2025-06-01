@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "S",
-    "S",
+    "C",
+    "C",
     "L"
   ],
   "key": {
-    "S": { "item": "odysseyswords:storm_ingot" },
+    "C": { "item": "odysseyswords:crystal_ingot" },
     "L": { "item": "odysseyswords:lightningbolt_of_zeus" }
   },
-  "result": { "item": "odysseyswords:thunderbringer" }
+  "result": { "item": "odysseyswords:carian_sword" }
 }

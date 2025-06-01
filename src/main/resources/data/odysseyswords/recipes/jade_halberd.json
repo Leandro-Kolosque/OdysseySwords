@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  C",
+    " S ",
+    "S  "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "S": { "item": "odysseyswords:nether_rod" }
+  },
+  "result": { "item": "odysseyswords:jade_halberd" }
+}

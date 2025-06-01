@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CGC",
+    " L "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "L": { "item": "odysseyswords:lightningbolt_of_zeus" }
+  },
+  "result": { "item": "odysseyswords:mythic_blade" }
+}

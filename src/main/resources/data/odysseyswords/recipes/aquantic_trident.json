@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    " C ",
+    " H "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "H": { "item": "minecraft:heart_of_the_sea" }
+  },
+  "result": { "item": "odysseyswords:aquantic_trident" }
+}

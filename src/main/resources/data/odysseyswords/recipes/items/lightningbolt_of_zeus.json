@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "OCO",
+    "CLC",
     "CSC",
-    "OCO"
+    "CLC"
   ],
   "key": {
-    "O": {
-      "item": "minecraft:obsidian"
-    },
     "C": {
-      "item": "minecraft:crying_obsidian"
+      "item": "minecraft:copper_block"
+    },
+    "L": {
+      "item": "minecraft:lightning_rod"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "odysseyswords:obsidian_rod",
+    "item": "odysseyswords:lightningbolt_of_zeus",
     "count": 16
   }
 }

@@ -262,6 +262,16 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
+    public static final RegistryObject<Item> LIGHTNINGBOLT_OF_ZEUS = ITEMS.register("lightningbolt_of_zeus",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> NETHER_ROD = ITEMS.register("nether_rod",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
     public static final RegistryObject<Item> OBSIDIAN_ROD = ITEMS.register("obsidian_rod",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)

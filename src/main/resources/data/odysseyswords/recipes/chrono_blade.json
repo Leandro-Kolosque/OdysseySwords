@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CEC",
+    " S "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "E": { "item": "minecraft:clock" },
+    "S": { "item": "odysseyswords:nether_rod" }
+  },
+  "result": { "item": "odysseyswords:chrono_blade" }
+}

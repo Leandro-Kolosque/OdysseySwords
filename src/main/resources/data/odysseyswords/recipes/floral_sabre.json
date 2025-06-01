@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "CCC",
+    " L "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "L": { "item": "minecraft:rose_bush" }
+  },
+  "result": { "item": "odysseyswords:floral_sabre" }
+}

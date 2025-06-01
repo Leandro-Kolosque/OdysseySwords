@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "E",
+    "L"
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "E": { "item": "minecraft:enchanted_book" },
+    "L": { "item": "odysseyswords:lightningbolt_of_zeus" }
+  },
+  "result": { "item": "odysseyswords:mystical_spell_blade" }
+}

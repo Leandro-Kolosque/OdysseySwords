@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CGC",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "C": { "item": "odysseyswords:crystal_ingot" },
+    "G": { "item": "minecraft:gold_block" },
+    "S": { "item": "odysseyswords:nether_rod" }
+  },
+  "result": { "item": "odysseyswords:powerfuse_hammer" }
+}
