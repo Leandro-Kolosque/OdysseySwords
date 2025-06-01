@@ -2,7 +2,6 @@ package com.odysseyswords.customswordmod.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-// Import adicionado para corrigir o erro de compilação
 import com.odysseyswords.customswordmod.item.ModItems;
 
 public class ModCreativeModeTab {
