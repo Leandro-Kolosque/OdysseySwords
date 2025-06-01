@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "L",
+    "R"
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "L": { "item": "minecraft:lapis_lazuli" },
+    "R": { "item": "odysseyswords:silverine_rod" }
+  },
+  "result": { "item": "odysseyswords:blood_edge", "count": 1 }
+}

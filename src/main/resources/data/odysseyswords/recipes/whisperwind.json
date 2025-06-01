@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "S S",
+    " F "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "F": { "item": "minecraft:feather" }
+  },
+  "result": { "item": "odysseyswords:whisperwind", "count": 1 }
+}

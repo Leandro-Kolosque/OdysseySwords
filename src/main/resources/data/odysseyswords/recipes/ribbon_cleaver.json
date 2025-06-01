@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    " S ",
+    " R "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "R": { "item": "minecraft:red_wool" }
+  },
+  "result": { "item": "odysseyswords:ribbon_cleaver", "count": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "S",
+    "G"
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": { "item": "odysseyswords:estoc", "count": 1 }
+}

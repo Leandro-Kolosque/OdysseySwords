@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  S",
+    " R ",
+    "R  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "R": { "item": "odysseyswords:silverine_rod" }
+  },
+  "result": { "item": "odysseyswords:partisan", "count": 1 }
+}

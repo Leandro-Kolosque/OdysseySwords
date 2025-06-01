@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SGS",
+    " R "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "R": { "item": "odysseyswords:silverine_rod" }
+  },
+  "result": { "item": "odysseyswords:sabre", "count": 1 }
+}
