@@ -116,31 +116,81 @@
   "itemGroup.odysseyTab": "Odyssey Swords",
 
   "item.odysseyswords.blood_ingot": "Lingote de Sangue",
-  "item.odysseyswords.cyber_ingot": "Lingote Cibernético",
-  "item.odysseyswords.frost_ingot": "Lingote Gélido",
-  "item.odysseyswords.royal_ingot": "Lingote Real",
-  "item.odysseyswords.sculk_ingot": "Lingote do Sculk",
-  "item.odysseyswords.soul_ingot": "Lingote das Almas",
-  "item.odysseyswords.tartarus_ingot": "Lingote do Tártaro",
-  "item.odysseyswords.void_ingot": "Lingote do Vazio",
-  "item.odysseyswords.toxic_ingot": "Lingote Tóxico",
-  "item.odysseyswords.silverine_ingot": "Lingote de Silverine",
-  "item.odysseyswords.divine_ingot": "Lingote Divino",
-  "item.odysseyswords.storm_ingot": "Lingote da Tempestade",
-  "item.odysseyswords.crystal_ingot": "Lingote Cristalino",
-
   "item.odysseyswords.blood_ingot.tooltip": "Um lingote pulsante com energia vital",
+
+  "item.odysseyswords.blood_powder": "Pó de Sangue",
+  "item.odysseyswords.blood_powder.tooltip": "Essência vital moída em pó",
+
+  "item.odysseyswords.blood_rod": "Bastão de Sangue",
+  "item.odysseyswords.blood_rod.tooltip": "Canaliza poder pulsante",
+
+  "item.odysseyswords.blood_star": "Estrela de Sangue",
+  "item.odysseyswords.blood_star.tooltip": "Forjada com magia sanguínea cristalizada",
+
+  "item.odysseyswords.crystal_ingot": "Lingote Cristalino",
+  "item.odysseyswords.crystal_ingot.tooltip": "Contém universos em miniatura",
+
+  "item.odysseyswords.cyber_ingot": "Lingote Cibernético",
   "item.odysseyswords.cyber_ingot.tooltip": "Infundido com tecnologia interdimensional",
+
+  "item.odysseyswords.divine_ingot": "Lingote Divino",
+  "item.odysseyswords.divine_ingot.tooltip": "Vibra com energia dos deuses antigos",
+
+  "item.odysseyswords.frost_ingot": "Lingote Gélido",
   "item.odysseyswords.frost_ingot.tooltip": "Emite uma névoa congelante",
+
+  "item.odysseyswords.frost_rod": "Bastão Gélido",
+  "item.odysseyswords.frost_rod.tooltip": "Congela o ar ao redor",
+
+  "item.odysseyswords.frost_star": "Estrela Gélida",
+  "item.odysseyswords.frost_star.tooltip": "Emite o frio de uma nevasca",
+
+  "item.odysseyswords.lightningbolt_of_zeus": "Raio de Zeus",
+  "item.odysseyswords.lightningbolt_of_zeus.tooltip": "Contém a fúria dos céus",
+
+  "item.odysseyswords.nether_rod": "Bastão Infernal",
+  "item.odysseyswords.nether_rod.tooltip": "Arde com fogo do submundo",
+
+  "item.odysseyswords.obsidian_rod": "Bastão de Obsidiana",
+  "item.odysseyswords.obsidian_rod.tooltip": "Forjado do núcleo indestrutível da obsidiana",
+
+  "item.odysseyswords.royal_ingot": "Lingote Real",
   "item.odysseyswords.royal_ingot.tooltip": "Forjado com ouro dos deuses",
+
+  "item.odysseyswords.sculk_ingot": "Lingote Sussurrante",
   "item.odysseyswords.sculk_ingot.tooltip": "Sussurra segredos ancestrais",
+
+  "item.odysseyswords.sculk_star": "Estrela Sussurrante",
+  "item.odysseyswords.sculk_star.tooltip": "Vibra com ecos sombrios",
+
+  "item.odysseyswords.silverine_ingot": "Lingote de Silverina",
+  "item.odysseyswords.silverine_ingot.tooltip": "Brilha com a luz de estrelas caídas",
+
+  "item.odysseyswords.silverine_rod": "Bastão de Silverina",
+  "item.odysseyswords.silverine_rod.tooltip": "Condutor polido de poder sagrado",
+
+  "item.odysseyswords.soul_ingot": "Lingote da Alma",
   "item.odysseyswords.soul_ingot.tooltip": "Conserva gritos aprisionados",
+
+  "item.odysseyswords.storm_ingot": "Lingote Tempestuoso",
+  "item.odysseyswords.storm_ingot.tooltip": "Estala com relâmpagos contidos",
+
+  "item.odysseyswords.tartarus_feather": "Pena de Tártaro",
+  "item.odysseyswords.tartarus_feather.tooltip": "Caiu de um demônio alado do abismo",
+
+  "item.odysseyswords.tartarus_ingot": "Lingote Abissal",
   "item.odysseyswords.tartarus_ingot.tooltip": "Fundido nas profundezas abissais",
-  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor",
-  "item.odysseyswords.toxic_ingot.tooltip": "Exala vapores venenosos que queimam a carne",
-  "item.odysseyswords.silverine_ingot.tooltip": "Brilha com a luz das estrelas caídas",
-  "item.odysseyswords.divine_ingot.tooltip": "Pulsante com a energia dos deuses antigos",
-  "item.odysseyswords.storm_ingot.tooltip": "Cintila com energia elétrica contida",
-  "item.odysseyswords.crystal_ingot.tooltip": "Contém universos em miniatura em seu interior"
+
+  "item.odysseyswords.tartarus_star": "Estrela de Tártaro",
+  "item.odysseyswords.tartarus_star.tooltip": "Energia infernal cristalizada",
+
+  "item.odysseyswords.toxic_ingot": "Lingote Tóxico",
+  "item.odysseyswords.toxic_ingot.tooltip": "Emite vapores venenosos que corroem a carne",
+
+  "item.odysseyswords.toxic_rod": "Bastão Tóxico",
+  "item.odysseyswords.toxic_rod.tooltip": "Exala veneno ao menor toque",
+
+  "item.odysseyswords.void_ingot": "Lingote do Vazio",
+  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor"
 
 }

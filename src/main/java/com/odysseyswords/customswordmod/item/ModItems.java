@@ -23,52 +23,52 @@ public class ModItems {
 
     // Sword (balanced speed/damage)
     private static SwordItem createSword() {
-        return new SwordItem(Tiers.NETHERITE, 4, -2.4F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
     }
 
     // Spear (long reach, slower but more damage)
     private static SwordItem createLance() {
-        return new SwordItem(Tiers.NETHERITE, 5, -2.6F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 6, -2.6F, swordProperties());
     }
 
     // Axe (high damage, very slow)
     private static SwordItem createAxe() {
-        return new SwordItem(Tiers.NETHERITE, 7, -2.8F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 8, -2.8F, swordProperties());
     }
 
     // Chakram (fast but low damage)
     private static SwordItem createChakram() {
-        return new SwordItem(Tiers.NETHERITE, 3, -1.6F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 4, -1.6F, swordProperties());
     }
 
     // Hammer (very high damage, extremely slow)
     private static SwordItem createHammer() {
-        return new SwordItem(Tiers.NETHERITE, 8, -3.2F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 9, -3.2F, swordProperties());
     }
 
     // Knife (very fast, low damage)
     private static SwordItem createKnife() {
-        return new SwordItem(Tiers.NETHERITE, 2, -1.3F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 3, -1.3F, swordProperties());
     }
 
     // Claw (fast, moderate damage)
     private static SwordItem createClaw() {
-        return new SwordItem(Tiers.NETHERITE, 2, -1.4F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 3, -1.4F, swordProperties());
     }
 
     // Greatsword (high damage, slow)
     private static SwordItem createGreatsword() {
-        return new SwordItem(Tiers.NETHERITE, 6, -2.8F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 7, -2.8F, swordProperties());
     }
 
     // Scythe (moderate damage, moderate speed)
     private static SwordItem createScythe() {
-        return new SwordItem(Tiers.NETHERITE, 4, -2.4F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
     }
 
     // Warglaive (moderate damage, fast)
     private static SwordItem createWarglaive() {
-        return new SwordItem(Tiers.NETHERITE, 5, -2.5F, swordProperties());
+        return new SwordItem(Tiers.NETHERITE, 6, -2.5F, swordProperties());
 }
 
     // ===== Item Registrations ===== //

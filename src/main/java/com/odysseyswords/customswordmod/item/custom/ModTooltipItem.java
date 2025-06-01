@@ -1,7 +1,8 @@
 package com.odysseyswords.customswordmod.item.custom;
 
-import net.minecraft.network.chat.Component;
+import com.odysseyswords.customswordmod.util.TooltipStyleHelper;
 import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -19,8 +20,13 @@ public class ModTooltipItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
         String key = stack.getItem().getDescriptionId() + ".tooltip";
-        tooltip.add(Component.translatable(key).withStyle(ChatFormatting.GRAY));
+        String itemId = stack.getItem().getDescriptionId();
+
+        ChatFormatting color = TooltipStyleHelper.getColorFromId(itemId);
+        tooltip.add(Component.translatable(key).withStyle(color, ChatFormatting.ITALIC));
+
         super.appendHoverText(stack, world, tooltip, flag);
     }
 }
+
 
