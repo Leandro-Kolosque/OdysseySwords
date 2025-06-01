@@ -217,6 +217,21 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
+    public static final RegistryObject<Item> BLOOD_POWDER = ITEMS.register("blood_powder",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
+
+    public static final RegistryObject<Item> BLOOD_ROD = ITEMS.register("blood_rod",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
+        
+    public static final RegistryObject<Item> BLOOD_STAR = ITEMS.register("blood_star",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
+
     public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)

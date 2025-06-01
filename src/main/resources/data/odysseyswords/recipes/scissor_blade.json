@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B B",
+    " B ",
+    "S S"
+  ],
+  "key": {
+    "B": { "item": "odysseyswords:blood_ingot" },
+    "S": { "item": "minecraft:iron_ingot" }
+  },
+  "result": { "item": "odysseyswords:scissor_blade", "count": 1 }
+}

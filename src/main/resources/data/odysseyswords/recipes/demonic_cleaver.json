@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB",
+    "BS",
+    " S"
+  ],
+  "key": {
+    "B": { "item": "odysseyswords:blood_ingot" },
+    "S": { "item": "odysseyswords:blood_rod" }
+  },
+  "result": { "item": "odysseyswords:demonic_cleaver", "count": 1 }
+}

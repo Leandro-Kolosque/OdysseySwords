@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "P",
+    "R"
+  ],
+  "key": {
+    "B": { "item": "odysseyswords:blood_ingot" },
+    "P": { "item": "odysseyswords:blood_powder" },
+    "R": { "item": "odysseyswords:blood_rod" }
+  },
+  "result": { "item": "odysseyswords:demonic_blade", "count": 1 }
+}

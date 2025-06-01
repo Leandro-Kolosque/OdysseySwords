@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "S",
+    "R"
+  ],
+  "key": {
+    "B": { "item": "odysseyswords:blood_ingot" },
+    "S": { "item": "odysseyswords:blood_star" },
+    "R": { "item": "odysseyswords:blood_rod" }
+  },
+  "result": { "item": "odysseyswords:corrupted_mythic_blade", "count": 1 }
+}

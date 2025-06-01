@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " SR",
+    "S  "
+  ],
+  "key": {
+    "B": { "item": "odysseyswords:blood_ingot" },
+    "S": { "item": "odysseyswords:blood_rod" },
+    "R": { "item": "minecraft:soul_sand" }
+  },
+  "result": { "item": "odysseyswords:soul_collector", "count": 1 }
+}

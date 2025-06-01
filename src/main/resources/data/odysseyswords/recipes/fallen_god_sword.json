@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "R"
+  ],
+  "key": {
+    "B": { "item": "odysseyswords:blood_ingot" },
+    "R": { "item": "odysseyswords:blood_rod" }
+  },
+  "result": { "item": "odysseyswords:fallen_god_sword", "count": 1 }
+}
