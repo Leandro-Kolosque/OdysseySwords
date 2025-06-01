@@ -191,6 +191,20 @@
     "item.odysseyswords.toxic_rod.tooltip": "Oozes venom with every touch",
 
     "item.odysseyswords.void_ingot": "Void Ingot",
-    "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light"
+    "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light",
+
+    "item.odysseyswords.material_tooltip.blood": "Forged from crystallized blood magic, this weapon thirsts for combat",
+    "item.odysseyswords.material_tooltip.crystal": "Crafted from dimensional crystals, this weapon shimmers with unstable energy",
+    "item.odysseyswords.material_tooltip.cyber": "Enhanced with cybernetic technology, this weapon pulses with synthetic power",
+    "item.odysseyswords.material_tooltip.divine": "Blessed by the gods, this weapon radiates celestial might",
+    "item.odysseyswords.material_tooltip.royal": "Forged for royalty, this weapon exudes regal authority",
+    "item.odysseyswords.material_tooltip.frost": "Tempered in eternal ice, this weapon chills the air around it",
+    "item.odysseyswords.material_tooltip.sculk": "Infused with sculk energy, this weapon whispers ancient secrets",
+    "item.odysseyswords.material_tooltip.silverine": "Crafted from fallen star metal, this weapon glows with lunar power",
+    "item.odysseyswords.material_tooltip.soul": "Bound with trapped souls, this weapon wails with every strike",
+    "item.odysseyswords.material_tooltip.tartarus": "Forged in the depths of Tartarus, this weapon burns with abyssal fury",
+    "item.odysseyswords.material_tooltip.storm": "Electrified by tempests, this weapon crackles with lightning",
+    "item.odysseyswords.material_tooltip.toxic": "Coated in deadly venom, this weapon corrodes all it touches",
+    "item.odysseyswords.material_tooltip.void": "Crafted from void essence, this weapon devours light itself"
 
 }

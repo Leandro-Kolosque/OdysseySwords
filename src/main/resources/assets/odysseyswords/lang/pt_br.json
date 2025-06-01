@@ -191,6 +191,20 @@
   "item.odysseyswords.toxic_rod.tooltip": "Exala veneno ao menor toque",
 
   "item.odysseyswords.void_ingot": "Lingote do Vazio",
-  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor"
+  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor",
+
+  "item.odysseyswords.material_tooltip.blood": "Forjado com magia sanguínea cristalizada, esta arma tem sede de combate",
+  "item.odysseyswords.material_tooltip.crystal": "Criado com cristais dimensionais, esta arma brilha com energia instável",
+  "item.odysseyswords.material_tooltip.cyber": "Aprimorado com tecnologia cibernética, esta arma pulsa com poder sintético",
+  "item.odysseyswords.material_tooltip.divine": "Abençoada pelos deuses, esta arma irradia poder celestial",
+  "item.odysseyswords.material_tooltip.royal": "Forjada para a realeza, esta arma emana autoridade régia",
+  "item.odysseyswords.material_tooltip.frost": "Temperada no gelo eterno, esta arma congela o ar ao redor",
+  "item.odysseyswords.material_tooltip.sculk": "Infundida com energia sculk, esta arma sussurra segredos ancestrais",
+  "item.odysseyswords.material_tooltip.silverine": "Criada com metal de estrelas caídas, esta arma brilha com poder lunar",
+  "item.odysseyswords.material_tooltip.soul": "Ligada a almas aprisionadas, esta arma grita a cada golpe",
+  "item.odysseyswords.material_tooltip.tartarus": "Forjada nas profundezas do Tártaro, esta arma arde com fúria abissal",
+  "item.odysseyswords.material_tooltip.storm": "Eletrificada por tempestades, esta arma crepita com relâmpagos",
+  "item.odysseyswords.material_tooltip.toxic": "Revestida com veneno mortal, esta arma corrói tudo o que toca",
+  "item.odysseyswords.material_tooltip.void": "Criada da essência do vácuo, esta arma devora a própria luz"
 
 }
