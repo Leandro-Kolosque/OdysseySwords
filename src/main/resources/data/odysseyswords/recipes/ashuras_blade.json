@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "D D",
+    "D D",
+    " S "
+  ],
+  "key": {
+    "D": { "item": "odysseyswords:divine_ingot" },
+    "S": { "item": "minecraft:netherite_sword" }
+  },
+  "result": { "item": "odysseyswords:ashuras_blade" }
+}

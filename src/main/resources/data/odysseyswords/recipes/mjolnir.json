@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DLD",
+    " N "
+  ],
+  "key": {
+    "D": { "item": "odysseyswords:divine_ingot" },
+    "L": { "item": "minecraft:lightning_rod" },
+    "N": { "item": "minecraft:netherite_ingot" }
+  },
+  "result": { "item": "odysseyswords:mjolnir" }
+}

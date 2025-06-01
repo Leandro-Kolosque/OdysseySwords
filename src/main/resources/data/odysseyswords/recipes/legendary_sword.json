@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DRD",
+    " O "
+  ],
+  "key": {
+    "D": { "item": "odysseyswords:divine_ingot" },
+    "R": { "item": "minecraft:redstone_block" },         
+    "O": { "item": "odysseyswords:obsidian_rod" }          
+  },
+  "result": { "item": "odysseyswords:legendary_sword" }
+}

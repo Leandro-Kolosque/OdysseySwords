@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    " G ",
+    "D  "
+  ],
+  "key": {
+    "D": { "item": "odysseyswords:divine_ingot" },
+    "G": { "item": "minecraft:gold_block" }
+  },
+  "result": { "item": "odysseyswords:demigods_unholy_halberd" }
+}

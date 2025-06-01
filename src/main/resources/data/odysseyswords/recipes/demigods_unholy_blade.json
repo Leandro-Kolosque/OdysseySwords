@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "D",
+    "D",
+    "O"
+  ],
+  "key": {
+    "D": { "item": "odysseyswords:divine_ingot" },
+    "O": { "item": "odysseyswords:obsidian_rod" } 
+  },
+  "result": { "item": "odysseyswords:demigods_unholy_blade" }
+}
