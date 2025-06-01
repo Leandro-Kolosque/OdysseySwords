@@ -3,42 +3,46 @@ package com.odysseyswords.customswordmod.item.custom;
 import com.odysseyswords.customswordmod.util.TooltipStyleHelper;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Optional;
 import java.util.List;
+import java.util.Optional;
 
-public class ModTooltipItem extends Item {
+public class ModTooltipItem extends SwordItem {
 
-    public ModTooltipItem(Properties properties) {
-        super(properties);
+    public ModTooltipItem(Tier tier, int attackDamage, float attackSpeed, Properties properties) {
+        super(tier, attackDamage, attackSpeed, properties);
     }
 
-@Override
-public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-    String itemId = stack.getItem().getDescriptionId();
-    
-    // Primeiro tenta pegar a descrição específica do item
-    String specificTooltipKey = itemId + ".tooltip";
-    if (Component.translatable(specificTooltipKey).getString().equals(specificTooltipKey)) {
-        // Se não houver descrição específica, usa a genérica do material
-        Optional<String> materialTooltipKey = TooltipStyleHelper.getMaterialTooltipKey(itemId);
-        if (materialTooltipKey.isPresent()) {
-            ChatFormatting color = TooltipStyleHelper.getColorFromId(itemId);
-            tooltip.add(Component.translatable(materialTooltipKey.get()).withStyle(color, ChatFormatting.ITALIC));
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
+        String itemId = stack.getItem().getDescriptionId();
+        String weaponId = itemId.replace("item.odysseyswords.", "");
+
+        // 1. Verifica tooltip específico do item
+        String specificKey = itemId + ".tooltip";
+        Component specificTooltip = Component.translatable(specificKey);
+        if (!specificTooltip.getString().equals(specificKey)) {
+            addStyledTooltip(tooltip, specificKey, weaponId);
         }
-    } else {
-        // Se houver descrição específica, usa ela
-        ChatFormatting color = TooltipStyleHelper.getColorFromId(itemId);
-        tooltip.add(Component.translatable(specificTooltipKey).withStyle(color, ChatFormatting.ITALIC));
+        // 2. Se não tiver, usa tooltip genérico do material
+        else {
+            Optional<String> material = TooltipStyleHelper.getBaseMaterial(weaponId);
+            material.ifPresent(mat -> {
+                String materialKey = TooltipStyleHelper.getMaterialTooltipKey(mat);
+                addStyledTooltip(tooltip, materialKey, weaponId);
+            });
+        }
+
+        super.appendHoverText(stack, world, tooltip, flag);
     }
 
-    super.appendHoverText(stack, world, tooltip, flag);
+    private void addStyledTooltip(List<Component> tooltip, String tooltipKey, String weaponId) {
+        ChatFormatting color = TooltipStyleHelper.getColorForWeapon(weaponId);
+        MutableComponent text = Component.translatable(tooltipKey);
+        tooltip.add(text.withStyle(color).withStyle(ChatFormatting.ITALIC));
+    }
 }
-}
-
-

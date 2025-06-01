@@ -10,6 +10,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
 import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
 
 public class ModItems {
@@ -22,53 +24,53 @@ public class ModItems {
     }
 
     // Sword (balanced speed/damage)
-    private static SwordItem createSword() {
-        return new SwordItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
+    private static ModTooltipItem createSword() {
+        return new ModTooltipItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
     }
 
     // Spear (long reach, slower but more damage)
-    private static SwordItem createLance() {
-        return new SwordItem(Tiers.NETHERITE, 6, -2.6F, swordProperties());
+    private static ModTooltipItem createLance() {
+        return new ModTooltipItem(Tiers.NETHERITE, 6, -2.6F, swordProperties());
     }
 
     // Axe (high damage, very slow)
-    private static SwordItem createAxe() {
-        return new SwordItem(Tiers.NETHERITE, 8, -2.8F, swordProperties());
+    private static ModTooltipItem createAxe() {
+        return new ModTooltipItem(Tiers.NETHERITE, 8, -2.8F, swordProperties());
     }
 
     // Chakram (fast but low damage)
-    private static SwordItem createChakram() {
-        return new SwordItem(Tiers.NETHERITE, 4, -1.6F, swordProperties());
+    private static ModTooltipItem createChakram() {
+        return new ModTooltipItem(Tiers.NETHERITE, 4, -1.6F, swordProperties());
     }
 
     // Hammer (very high damage, extremely slow)
-    private static SwordItem createHammer() {
-        return new SwordItem(Tiers.NETHERITE, 9, -3.2F, swordProperties());
+    private static ModTooltipItem createHammer() {
+        return new ModTooltipItem(Tiers.NETHERITE, 9, -3.2F, swordProperties());
     }
 
     // Knife (very fast, low damage)
-    private static SwordItem createKnife() {
-        return new SwordItem(Tiers.NETHERITE, 3, -1.3F, swordProperties());
+    private static ModTooltipItem createKnife() {
+        return new ModTooltipItem(Tiers.NETHERITE, 3, -1.3F, swordProperties());
     }
 
     // Claw (fast, moderate damage)
-    private static SwordItem createClaw() {
-        return new SwordItem(Tiers.NETHERITE, 3, -1.4F, swordProperties());
+    private static ModTooltipItem createClaw() {
+        return new ModTooltipItem(Tiers.NETHERITE, 3, -1.4F, swordProperties());
     }
 
     // Greatsword (high damage, slow)
-    private static SwordItem createGreatsword() {
-        return new SwordItem(Tiers.NETHERITE, 7, -2.8F, swordProperties());
+    private static ModTooltipItem createGreatsword() {
+        return new ModTooltipItem(Tiers.NETHERITE, 7, -2.8F, swordProperties());
     }
 
     // Scythe (moderate damage, moderate speed)
-    private static SwordItem createScythe() {
-        return new SwordItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
+    private static ModTooltipItem createScythe() {
+        return new ModTooltipItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
     }
 
     // Warglaive (moderate damage, fast)
-    private static SwordItem createWarglaive() {
-        return new SwordItem(Tiers.NETHERITE, 6, -2.5F, swordProperties());
+    private static ModTooltipItem createWarglaive() {
+        return new ModTooltipItem(Tiers.NETHERITE, 6, -2.5F, swordProperties());
 }
 
     // ===== Item Registrations ===== //
@@ -213,137 +215,137 @@ public class ModItems {
     }
     
     public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> BLOOD_POWDER = ITEMS.register("blood_powder",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> BLOOD_ROD = ITEMS.register("blood_rod",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
         
     public static final RegistryObject<Item> BLOOD_STAR = ITEMS.register("blood_star",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> DIVINE_INGOT = ITEMS.register("divine_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> FROST_STAR = ITEMS.register("frost_star",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> FROST_ROD = ITEMS.register("frost_rod",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> LIGHTNINGBOLT_OF_ZEUS = ITEMS.register("lightningbolt_of_zeus",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> NETHER_ROD = ITEMS.register("nether_rod",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> OBSIDIAN_ROD = ITEMS.register("obsidian_rod",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> SILVERINE_ROD = ITEMS.register("silverine_rod",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> SCULK_STAR = ITEMS.register("sculk_star",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> SOUL_STAR = ITEMS.register("soul_star",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> TARTARUS_FEATHER = ITEMS.register("tartarus_feather",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> TARTARUS_STAR = ITEMS.register("tartarus_star",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> TOXIC_ROD = ITEMS.register("toxic_rod",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
-    () -> new ModTooltipItem(new Item.Properties()
+    () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
+        .fireResistant()));
 }
