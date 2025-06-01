@@ -262,6 +262,11 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
+    public static final RegistryObject<Item> OBSIDIAN_ROD = ITEMS.register("obsidian_rod",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
     public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
@@ -287,12 +292,27 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
+    public static final RegistryObject<Item> SOUL_STAR = ITEMS.register("soul_star",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
     public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
+    public static final RegistryObject<Item> TARTARUS_FEATHER = ITEMS.register("tartarus_feather",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
     public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> TARTARUS_STAR = ITEMS.register("tartarus_star",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 

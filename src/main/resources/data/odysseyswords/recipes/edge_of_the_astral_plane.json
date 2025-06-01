@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SNS",
+    " B "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:soul_ingot" },
+    "N": { "item": "odysseyswords:soul_star" },
+    "B": { "item": "minecraft:bone" }
+  },
+  "result": { "item": "odysseyswords:edge_of_the_astral_plane", "count": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    " S ",
+    "P P"
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:soul_ingot" },
+    "P": { "item": "minecraft:phantom_membrane" }
+  },
+  "result": { "item": "odysseyswords:soul_claws", "count": 1 }
+}

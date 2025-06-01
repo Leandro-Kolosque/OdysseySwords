@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    " BS",
+    "B  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:soul_ingot" },
+    "B": { "item": "minecraft:bone" }
+  },
+  "result": { "item": "odysseyswords:bloody_death", "count": 1 }
+}

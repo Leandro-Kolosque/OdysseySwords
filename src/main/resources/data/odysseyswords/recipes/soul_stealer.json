@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S",
+    "B "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:soul_ingot" },
+    "B": { "item": "minecraft:bone" }
+  },
+  "result": { "item": "odysseyswords:soul_stealer", "count": 1 }
+}

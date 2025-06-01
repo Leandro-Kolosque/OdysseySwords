@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TFT",
+    "TBT",
+    " T "
+  ],
+  "key": {
+    "T": { "item": "odysseyswords:tartarus_ingot" },
+    "F": { "item": "minecradft:feather" },
+    "B": { "item": "minecraft:blaze_powder" }
+  },
+  "result": { "item": "odysseyswords:tartarus_feather", "count": 1 }
+}

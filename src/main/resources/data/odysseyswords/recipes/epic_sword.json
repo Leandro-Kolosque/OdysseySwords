@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "M",
+    "E"
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:sculk_ingot" },
+    "M": { "item": "odysseyswords:sculk_star" },
+    "E": { "item": "minecraft:echo_shard" }
+  },
+  "result": { "item": "odysseyswords:epic_sword", "count": 1 }
+}

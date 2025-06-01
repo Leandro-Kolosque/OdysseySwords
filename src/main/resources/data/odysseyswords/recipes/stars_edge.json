@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  S",
+    " E ",
+    "S  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:sculk_ingot" },
+    "E": { "item": "odysseyswords:sculk_star" }
+  },
+  "result": { "item": "odysseyswords:stars_edge", "count": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " SS",
+    " S ",
+    "E  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:soul_ingot" },
+    "E": { "item": "minecraft:bone" }
+  },
+  "result": { "item": "odysseyswords:soul_edge", "count": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " SS",
+    " S ",
+    "E  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:sculk_ingot" },
+    "E": { "item": "minecraft:echo_shard" }
+  },
+  "result": { "item": "odysseyswords:yoru", "count": 1 }
+}

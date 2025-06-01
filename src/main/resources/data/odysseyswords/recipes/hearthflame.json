@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "T": { "item": "odysseyswords:tartarus_ingot" },
+    "S": { "item": "minecraft:blaze_rod" }
+  },
+  "result": { "item": "odysseyswords:hearthflame" }
+}

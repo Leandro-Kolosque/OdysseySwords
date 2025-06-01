@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    " ES",
+    "E  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:sculk_ingot" },
+    "E": { "item": "minecraft:echo_shard" }
+  },
+  "result": { "item": "odysseyswords:sculk_scythe", "count": 1 }
+}
