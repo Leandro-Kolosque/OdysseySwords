@@ -96,7 +96,6 @@ public class ModItems {
     public static final RegistryObject<Item> DEMONIC_BLADE = ITEMS.register("demonic_blade", () -> createSword());
     public static final RegistryObject<Item> DEMONIC_CLEAVER = ITEMS.register("demonic_cleaver", () -> createSword());
     public static final RegistryObject<Item> DEMONLORD_SWORD = ITEMS.register("demonlord_sword", () -> createSword());
-    public static final RegistryObject<Item> DIVINE_PUNISHER = ITEMS.register("divine_punisher", () -> createSword());
     public static final RegistryObject<Item> EDGE_OF_THE_ASTRALPLANE = ITEMS.register("edge_of_the_astralplane", () -> createSword());
     public static final RegistryObject<Item> EMBER_BLADE = ITEMS.register("ember_blade", () -> createSword());
     public static final RegistryObject<Item> EPIC_SWORD = ITEMS.register("epic_sword", () -> createSword());
@@ -144,6 +143,7 @@ public class ModItems {
     public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD = ITEMS.register("ancient_royal_greatsword", () -> createGreatsword());
     public static final RegistryObject<Item> BRIMSTONE_CLAYMORE = ITEMS.register("brimstone_claymore", () -> createGreatsword());
     public static final RegistryObject<Item> DEMIGODS_UNHOLY_BLADE = ITEMS.register("demigods_unholy_blade", () -> createGreatsword());
+    public static final RegistryObject<Item> DIVINE_PUNISHER = ITEMS.register("divine_punisher", () -> createGreatsword());
     public static final RegistryObject<Item> DRAGON_SLAYING_BLADE = ITEMS.register("dragon_slaying_blade", () -> createGreatsword());
     public static final RegistryObject<Item> ENIGMA = ITEMS.register("enigma", () -> createGreatsword());
     public static final RegistryObject<Item> SOUL_DEVOURER = ITEMS.register("soul_devourer", () -> createGreatsword());
@@ -248,6 +248,16 @@ public class ModItems {
         .fireResistant())); 
 
     public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> FROST_STAR = ITEMS.register("frost_star",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> FROST_ROD = ITEMS.register("frost_rod",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 

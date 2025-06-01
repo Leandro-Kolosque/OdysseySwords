@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F",
+    "S "
+  ],
+  "key": {
+    "F": { "item": "odysseyswords:frost_ingot" },
+    "S": { "item": "odysseyswords:frost_rod" }
+  },
+  "result": { "item": "odysseyswords:death_knight_dagger", "count": 1 }
+}
