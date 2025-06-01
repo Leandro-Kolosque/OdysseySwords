@@ -277,6 +277,11 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
+    public static final RegistryObject<Item> SILVERINE_ROD = ITEMS.register("silverine_rod",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant()));
+
     public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
@@ -318,6 +323,11 @@ public class ModItems {
         .fireResistant())); 
 
     public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
+    public static final RegistryObject<Item> TOXIC_ROD = ITEMS.register("toxic_rod",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 

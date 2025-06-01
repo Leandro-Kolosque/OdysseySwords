@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "odysseyswords:silverine_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:silverine_rod",
+    "count": 16
+  }
+}

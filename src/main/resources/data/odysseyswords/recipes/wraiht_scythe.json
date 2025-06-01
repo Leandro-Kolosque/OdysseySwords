@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    " RT",
+    "R  "
+  ],
+  "key": {
+    "T": { "item": "odysseyswords:toxic_ingot" },
+    "R": { "item": "odysseyswords:toxic_rod" }
+  },
+  "result": { "item": "odysseyswords:wraiht_scythe", "count": 1 }
+}

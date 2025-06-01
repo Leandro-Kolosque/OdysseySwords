@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "TMT",
+    " R "
+  ],
+  "key": {
+    "T": { "item": "odysseyswords:toxic_ingot" },
+    "M": { "item": "minecraft:magma_cream" },
+    "R": { "item": "odysseyswords:toxic_rod" }        
+  },
+  "result": { "item": "odysseyswords:acid_demon", "count": 1 }
+}

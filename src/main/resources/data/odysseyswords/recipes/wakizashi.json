@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S",
+    "W "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:silverine_ingot" },
+    "W": { "item": "minecraft:string" }
+  },
+  "result": { "item": "odysseyswords:wakizashi", "count": 1 }
+}

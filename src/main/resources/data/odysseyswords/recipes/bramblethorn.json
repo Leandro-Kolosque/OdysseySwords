@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "T",
+    "T",
+    "V"
+  ],
+  "key": {
+    "T": { "item": "odysseyswords:toxic_ingot" },
+    "V": { "item": "minecraft:rose_bush" }
+  },
+  "result": { "item": "odysseyswords:bramblethorn", "count": 1 }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TGT",
+    " R "
+  ],
+  "key": {
+    "T": { "item": "odysseyswords:toxic_ingot" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "R": { "item": "odysseyswords:toxic_rod" }
+  },
+  "result": { "item": "odysseyswords:enigma", "count": 1 }
+}
