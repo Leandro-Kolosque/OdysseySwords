@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "V",
+    "V",
+    "A"
+  ],
+  "key": {
+    "V": { "item": "odysseyswords:void_ingot" },
+    "A": { "item": "minecraft:amethyst_shard" }
+  },
+  "result": { "item": "odysseyswords:demonlord_sword" }
+}

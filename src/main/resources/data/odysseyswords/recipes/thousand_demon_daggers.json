@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " VV",
+    " V ",
+    "O  "
+  ],
+  "key": {
+    "V": { "item": "odysseyswords:void_ingot" },
+    "O": { "item": "odysseyswords:obsidian_rod" }
+  },
+  "result": { "item": "odysseyswords:thousand_demon_daggers" }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "VVV",
+    " A "
+  ],
+  "key": {
+    "V": { "item": "odysseyswords:void_ingot" },
+    "A": { "item": "minecraft:amethyst_shard" }
+  },
+  "result": { "item": "odysseyswords:abominable_greatsaber", "count": 1 }
+}
+
