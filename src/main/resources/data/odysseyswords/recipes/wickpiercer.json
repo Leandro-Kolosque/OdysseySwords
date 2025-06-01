@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CRC",
+    " R ",
+    " G "
+  ],
+  "key": {
+    "R": { "item": "odysseyswords:royal_ingot" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "C": { "item": "minecraft:candle" }
+  },
+  "result": { "item": "odysseyswords:wickpiercer", "count": 1 }
+}

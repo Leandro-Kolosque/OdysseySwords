@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R R",
+    "RBR",
+    " G "
+  ],
+  "key": {
+    "R": { "item": "odysseyswords:royal_ingot" },
+    "B": { "item": "minecraft:gold_block" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": { "item": "odysseyswords:unique_longsword_holy", "count": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    " GR",
+    "G  "
+  ],
+  "key": {
+    "R": { "item": "odysseyswords:royal_ingot" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": { "item": "odysseyswords:divine_reaper", "count": 1 }
+}

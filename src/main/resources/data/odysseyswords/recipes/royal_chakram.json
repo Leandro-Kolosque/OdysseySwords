@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "R R",
+    " R "
+  ],
+  "key": {
+    "R": { "item": "odysseyswords:royal_ingot" }
+  },
+  "result": { "item": "odysseyswords:royal_chakram", "count": 1 }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR",
+    "RB",
+    " G"
+  ],
+  "key": {
+    "R": { "item": "odysseyswords:royal_ingot" },
+    "B": { "item": "minecraft:gold_block" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": { "item": "odysseyswords:divine_axe_rhitta", "count": 1 }
+}

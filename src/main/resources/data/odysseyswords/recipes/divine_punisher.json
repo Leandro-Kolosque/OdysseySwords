@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R R",
+    "R R",
+    " G "
+  ],
+  "key": {
+    "R": { "item": "odysseyswords:royal_ingot" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": { "item": "odysseyswords:divine_punisher", "count": 1 }
+}

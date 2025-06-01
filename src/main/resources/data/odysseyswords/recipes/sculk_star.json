@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "B B",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "odysseyswords:sculk_ingot"
+    }
+  },
+  "result": {
+    "item": "odysseyswords:sculk_star",
+    "count": 1
+  }
+}

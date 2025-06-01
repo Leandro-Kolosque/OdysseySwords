@@ -277,6 +277,11 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
+    public static final RegistryObject<Item> SCULK_STAR = ITEMS.register("sculk_star",
+    () -> new ModTooltipItem(new Item.Properties()
+        .tab(ModCreativeModeTab.ODYSSEY_TAB)
+        .fireResistant())); 
+
     public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
     () -> new ModTooltipItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
