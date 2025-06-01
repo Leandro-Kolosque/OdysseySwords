@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " SS",
+    " SS",
+    " C "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:storm_ingot" },
+    "C": { "item": "minecraft:lightning_rod" }  
+  },
+  "result": { "item": "odysseyswords:stormbringer" }
+}

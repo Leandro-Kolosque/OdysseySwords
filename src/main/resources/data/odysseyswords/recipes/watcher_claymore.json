@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SES",
+    " O "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:storm_ingot" },
+    "E": { "item": "minecraft:ender_eye" },
+    "O": { "item": "odysseyswords:obsidian_rod" }
+  },
+  "result": { "item": "odysseyswords:watcher_claymore" }
+}

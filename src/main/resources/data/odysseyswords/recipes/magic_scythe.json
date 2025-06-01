@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    " GS",
+    "L  "
+  ],
+  "key": {
+    "S": { "item": "odysseyswords:storm_ingot" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "L": { "item": "minecraft:lightning_rod" }
+  },
+  "result": { "item": "odysseyswords:magic_scythe" }
+}
