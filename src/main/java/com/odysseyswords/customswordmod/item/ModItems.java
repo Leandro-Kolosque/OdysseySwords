@@ -25,7 +25,12 @@ public class ModItems {
 
     // Sword (balanced speed/damage)
     private static ModTooltipItem createSword() {
-        return new ModTooltipItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
+        return new ModTooltipItem(Tiers.NETHERITE, 5, -2.3F, swordProperties());
+    }
+
+    // Rapier (balnced damage, faster)
+        private static ModTooltipItem createRapier() {
+        return new ModTooltipItem(Tiers.NETHERITE, 5, -1.8F, swordProperties());
     }
 
     // Spear (long reach, slower but more damage)
@@ -35,7 +40,7 @@ public class ModItems {
 
     // Axe (high damage, very slow)
     private static ModTooltipItem createAxe() {
-        return new ModTooltipItem(Tiers.NETHERITE, 8, -2.8F, swordProperties());
+        return new ModTooltipItem(Tiers.NETHERITE, 8, -2.6F, swordProperties());
     }
 
     // Chakram (fast but low damage)
@@ -45,7 +50,7 @@ public class ModItems {
 
     // Hammer (very high damage, extremely slow)
     private static ModTooltipItem createHammer() {
-        return new ModTooltipItem(Tiers.NETHERITE, 9, -3.2F, swordProperties());
+        return new ModTooltipItem(Tiers.NETHERITE, 9, -3F, swordProperties());
     }
 
     // Knife (very fast, low damage)
@@ -105,7 +110,6 @@ public class ModItems {
     public static final RegistryObject<Item> EXCALIBUR = ITEMS.register("excalibur", () -> createSword());
     public static final RegistryObject<Item> FALLEN_GOD_SWORD = ITEMS.register("fallen_god_sword", () -> createSword());
     public static final RegistryObject<Item> FLORAL_LONGSWORD = ITEMS.register("floral_longsword", () -> createSword());
-    public static final RegistryObject<Item> FLORAL_SABRE = ITEMS.register("floral_sabre", () -> createSword());
     public static final RegistryObject<Item> FROST_BLADE = ITEMS.register("frost_blade", () -> createSword());
     public static final RegistryObject<Item> HOLY_MOONLIGHT_SWORD = ITEMS.register("holy_moonlight_sword", () -> createSword());
     public static final RegistryObject<Item> HORNETS_NEEDLE = ITEMS.register("hornets_needle", () -> createSword());
@@ -122,8 +126,6 @@ public class ModItems {
     public static final RegistryObject<Item> POWERFUSE_SWORD = ITEMS.register("powerfuse_sword", () -> createSword());
     public static final RegistryObject<Item> RIBBON_CLEAVER = ITEMS.register("ribbon_cleaver", () -> createSword());
     public static final RegistryObject<Item> RIVERS_OF_BLOOD = ITEMS.register("rivers_of_blood", () -> createSword());
-    public static final RegistryObject<Item> ROYAL_RAPIER = ITEMS.register("royal_rapier", () -> createSword());
-    public static final RegistryObject<Item> SABRE = ITEMS.register("sabre", () -> createSword());
     public static final RegistryObject<Item> SCISSOR_BLADE = ITEMS.register("scissor_blade", () -> createSword());
     public static final RegistryObject<Item> SCULK_CLEAVER = ITEMS.register("sculk_cleaver", () -> createSword());
     public static final RegistryObject<Item> SCULK_SWORD = ITEMS.register("sculk_sword", () -> createSword());
@@ -140,7 +142,12 @@ public class ModItems {
     public static final RegistryObject<Item> VAMPIRIC_NEEDLE = ITEMS.register("vampiric_needle", () -> createSword());
     public static final RegistryObject<Item> WATCHER_CLAYMORE = ITEMS.register("watcher_claymore", () -> createSword());
     public static final RegistryObject<Item> WHISPERWIND = ITEMS.register("whisperwind", () -> createSword());
-        
+
+    // Rapier
+    public static final RegistryObject<Item> FLORAL_SABRE = ITEMS.register("floral_sabre", () -> createRapier());
+    public static final RegistryObject<Item> SABRE = ITEMS.register("sabre", () -> createRapier());
+    public static final RegistryObject<Item> ROYAL_RAPIER = ITEMS.register("royal_rapier", () -> createRapier());
+
     // Greatsword
     public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD = ITEMS.register("ancient_royal_greatsword", () -> createGreatsword());
     public static final RegistryObject<Item> BRIMSTONE_CLAYMORE = ITEMS.register("brimstone_claymore", () -> createGreatsword());
