@@ -1,7 +1,7 @@
 {
   "attributes": {
     "range_bonus": 0,
-    "pose": "bettercombat:pose_two_handed_katana",
+    "pose": "odysseyswords:pose_warglaive_dual_animated",
     "two_handed": true,
     "category": "twin_blade",
     "attacks": [
