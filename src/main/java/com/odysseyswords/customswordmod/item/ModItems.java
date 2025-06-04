@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import com.odysseyswords.customswordmod.item.custom.ModBowItem;
 import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
 import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
 
@@ -21,6 +22,11 @@ public class ModItems {
     // Helper methods for different weapon types
     private static Item.Properties swordProperties() {
         return new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant();
+    }
+
+    // Helper methods for Bow type
+    private static ModBowItem createBow() {
+        return new ModBowItem(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant());
     }
 
     // Sword (balanced speed/damage)
@@ -79,6 +85,9 @@ public class ModItems {
 }
 
     // ===== Item Registrations ===== //
+
+    //Bow
+    public static final RegistryObject<Item> ORION = ITEMS.register("orion", () -> createBow());
 
     // Sword
     public static final RegistryObject<Item> ABOMINABLE_BLADE = ITEMS.register("abominable_blade", () -> createSword());
@@ -190,7 +199,7 @@ public class ModItems {
     // Hammer
     public static final RegistryObject<Item> MJOLNIR = ITEMS.register("mjolnir", () -> createHammer());
     public static final RegistryObject<Item> POWERFUSE_HAMMER = ITEMS.register("powerfuse_hammer", () -> createHammer());
-    public static final RegistryObject<Item> APHOPIS = ITEMS.register("aphopis", () -> createHammer());
+    public static final RegistryObject<Item> APOPHIS = ITEMS.register("apophis", () -> createHammer());
 
     // Knife
     public static final RegistryObject<Item> CYBERNETIC_KNIFE = ITEMS.register("cybernetic_knife", () -> createKnife());
