@@ -213,6 +213,7 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_CLAWS = ITEMS.register("soul_claws", () -> createClaw());
     public static final RegistryObject<Item> SOUL_HARVESTER = ITEMS.register("soul_harvester", () -> createClaw());
     public static final RegistryObject<Item> FURY_OF_A_THOUSAND_FISTS = ITEMS.register("fury_of_a_thousand_fists", () -> createClaw());
+    public static final RegistryObject<Item> FIST_OF_FURY = ITEMS.register("fist_of_fury", () -> createClaw());
 
     // Scythe
     public static final RegistryObject<Item> ABOMINABLE_SCYTHE = ITEMS.register("abominable_scythe", () -> createScythe());

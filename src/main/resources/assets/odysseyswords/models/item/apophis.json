@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench by Eftann, commissioned by ElocinDev",
 	"textures": {
-		"2": "odysseyswords:item/effect-sheet_aphopis",
+		"2": "odysseyswords:item/effect-sheet_apophis",
 		"6": "odysseyswords:item/apophis",
 		"7": "odysseyswords:item/apophis_animation_1",
 		"particle": "odysseyswords:item/apophis"

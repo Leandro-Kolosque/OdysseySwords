@@ -1,5 +1,5 @@
 {
-    "parent": "archon:item/fist_of_fury",
+    "parent": "odysseyswords:item/fist_of_fury",
     "textures": {
       "0": "odysseyswords:item/fury_of_a_thousand_fists",
       "particle": "odysseyswords:item/fury_of_a_thousand_fists"
