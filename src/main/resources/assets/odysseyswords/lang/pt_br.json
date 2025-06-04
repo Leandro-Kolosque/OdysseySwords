@@ -205,6 +205,42 @@
   "item.odysseyswords.material_tooltip.tartarus": "Forjada nas profundezas do Tártaro, esta arma arde com fúria abissal",
   "item.odysseyswords.material_tooltip.storm": "Eletrificada por tempestades, esta arma crepita com relâmpagos",
   "item.odysseyswords.material_tooltip.toxic": "Revestida com veneno mortal, esta arma corrói tudo o que toca",
-  "item.odysseyswords.material_tooltip.void": "Criada da essência do vácuo, esta arma devora a própria luz"
+  "item.odysseyswords.material_tooltip.void": "Criada da essência do vácuo, esta arma devora a própria luz",
+
+  "item.odysseyswords.fyralath": "Fyr'alath, a Agonia Carbonizada",
+  "item.odysseyswords.fyralath.tooltip.tartarus": "Arde com as chamas eternas do submundo",
+  
+  "item.odysseyswords.thunderwrath": "Thunderwrath, a Tempestade de Lava",
+  "item.odysseyswords.thunderwrath.tooltip.tartarus": "Crepita com a fúria de uma erupção vulcânica",
+  
+  "item.odysseyswords.supernova": "Supernova, Morte de uma Estrela",
+  "item.odysseyswords.supernova.tooltip.void": "Contém a energia colapsante de uma estrela moribunda",
+  
+  "item.odysseyswords.edar": "Edar, a Penumbra",
+  "item.odysseyswords.edar.tooltip.royal": "Existe entre a luz e a escuridão, cortando ambas",
+  
+  "item.odysseyswords.ash": "Ash, Remanescente do Sol",
+  "item.odysseyswords.ash.tooltip.royal": "Forjado das últimas brasas de um sol moribundo",
+  
+  "item.odysseyswords.ghaj": "Gh'aj, A Lâmina Viva",
+  "item.odysseyswords.ghaj.tooltip.sculk": "Pulsa com uma vida grotesca própria",
+  
+  "item.odysseyswords.azhar": "A'zhar, Foice dos Malditos",
+  "item.odysseyswords.azhar.tooltip.blood": "Ceifa almas para o exército do submundo",
+  
+  "item.odysseyswords.orion": "Orion, Caçador das Estrelas",
+  "item.odysseyswords.orion.tooltip.void": "Corta a conexão celestial entre deuses e mortais",
+  
+  "item.odysseyswords.apophis": "Apophis, a Mão Divina",
+  "item.odysseyswords.apophis.tooltip.divine": "Castiga com o julgamento de divindades caídas",
+  
+  "item.odysseyswords.apocalypse": "Frostmourne, Lâmina do Rei Caído",
+  "item.odysseyswords.apocalypse.tooltip.frost": "Sussurra com os arrependimentos de mil governantes caídos",
+  
+  "item.odysseyswords.fury_of_a_thousand_fists": "Fúria de Mil Punhos",
+  "item.odysseyswords.fury_of_a_thousand_fists.tooltip.cyber": "Canaliza a raiva combinada de guerreiros ancestrais",
+  
+  "item.odysseyswords.fist_of_fury": "Punho da Fúria",
+  "item.odysseyswords.fist_of_fury.tooltip.cyber": "Golpeia mais rápido que um piscar de olhos"
 
 }

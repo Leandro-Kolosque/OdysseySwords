@@ -205,6 +205,42 @@
     "item.odysseyswords.material_tooltip.tartarus": "Forged in the depths of Tartarus, this weapon burns with abyssal fury",
     "item.odysseyswords.material_tooltip.storm": "Electrified by tempests, this weapon crackles with lightning",
     "item.odysseyswords.material_tooltip.toxic": "Coated in deadly venom, this weapon corrodes all it touches",
-    "item.odysseyswords.material_tooltip.void": "Crafted from void essence, this weapon devours light itself"
+    "item.odysseyswords.material_tooltip.void": "Crafted from void essence, this weapon devours light itself",
+
+    "item.odysseyswords.fyralath": "Fyr'alath, the Scorched Agony",
+    "item.odysseyswords.fyralath.tooltip.tartarus": "Burns with the eternal flames of the underworld",
+    
+    "item.odysseyswords.thunderwrath": "Thunderwrath, the Lava Storm",
+    "item.odysseyswords.thunderwrath.tooltip.tartarus": "Crackles with the fury of a volcanic eruption",
+    
+    "item.odysseyswords.supernova": "Supernova, Death of a Star",
+    "item.odysseyswords.supernova.tooltip.void": "Contains the collapsing energy of a dying star",
+    
+    "item.odysseyswords.edar": "Edar, the Penumbra",
+    "item.odysseyswords.edar.tooltip.royal": "Exists between light and darkness, cutting through both",
+    
+    "item.odysseyswords.ash": "Ash, Remnant of the Sun",
+    "item.odysseyswords.ash.tooltip.royal": "Forged from the last embers of a dying sun",
+    
+    "item.odysseyswords.ghaj": "Gh'aj, The Living Blade",
+    "item.odysseyswords.ghaj.tooltip.sculk": "Pulses with a grotesque life of its own",
+    
+    "item.odysseyswords.azhar": "A'zhar, Scythe of the Damned",
+    "item.odysseyswords.azhar.tooltip.blood": "Harvests souls for the underworld's army",
+    
+    "item.odysseyswords.orion": "Orion, Hunter of the Stars",
+    "item.odysseyswords.orion.tooltip.void": "Severs the celestial connection between gods and mortals",
+    
+    "item.odysseyswords.apophis": "Apophis, the Divine Hand",
+    "item.odysseyswords.apophis.tooltip.divine": "Smites with the judgment of fallen deities",
+    
+    "item.odysseyswords.apocalypse": "Frostmourne, Blade of the Fallen King",
+    "item.odysseyswords.apocalypse.tooltip.frost": "Whispers with the regrets of a thousand fallen rulers",
+    
+    "item.odysseyswords.fury_of_a_thousand_fists": "Fury of a Thousand Fists",
+    "item.odysseyswords.fury_of_a_thousand_fists.tooltip.cyber": "Channels the combined rage of ancient warriors",
+    
+    "item.odysseyswords.fist_of_fury": "Fist of Fury",
+    "item.odysseyswords.fist_of_fury.tooltip.cyber": "Strikes faster than the blink of an eye"
 
 }
