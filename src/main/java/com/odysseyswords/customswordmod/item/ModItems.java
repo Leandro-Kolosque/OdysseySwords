@@ -207,6 +207,8 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_STEALER = ITEMS.register("soul_stealer", () -> createKnife());
     public static final RegistryObject<Item> WAKIZASHI = ITEMS.register("wakizashi", () -> createKnife());
     public static final RegistryObject<Item> GHAJ = ITEMS.register("ghaj", () -> createKnife());
+    public static final RegistryObject<Item> ASH = ITEMS.register("ash", () -> createKnife());
+    public static final RegistryObject<Item> EDAR = ITEMS.register("edar", () -> createKnife());
 
     // Claw
     public static final RegistryObject<Item> CYBER_MANTIS_BLADE = ITEMS.register("cyber_mantis_blade", () -> createClaw());
