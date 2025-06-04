@@ -1,7 +1,7 @@
 {
   "attributes": {
     "attack_range": 3,
-    "category": "axe",
+    "category": "double_axe",
     "pose": "bettercombat:pose_two_handed_scythe",
     "two_handed": true,
     "attacks": [
@@ -13,7 +13,6 @@
         "animation": "bettercombat:two_handed_slash_horizontal_right",
         "swing_sound": {
           "id": "odysseyswords:elemental_sword_fire_attack_02",
-          "volume": 0.3,
           "pitch": 0.8
         }
       },
@@ -25,7 +24,6 @@
         "animation": "bettercombat:two_handed_slash_horizontal_left",
         "swing_sound": {
           "id": "odysseyswords:elemental_sword_fire_attack_01",
-          "volume": 0.3,
           "pitch": 0.8
         }
       },
@@ -37,7 +35,6 @@
         "animation": "odysseyswords:twohandfloatslam",
         "swing_sound": {
           "id": "odysseyswords:elemental_sword_fire_attack_03",
-          "volume": 0.5,
           "pitch": 1
         }
       }

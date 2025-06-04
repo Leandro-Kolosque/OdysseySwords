@@ -105,6 +105,7 @@ public class TooltipStyleHelper {
             "floral_longsword", "floral_sabre", "mystical_spell_blade",
             "carian_sword", "jade_halberd");
     }
+    
 
     private static void addWeaponsToMaterial(String material, String... weaponIds) {
         for (String weaponId : weaponIds) {
@@ -120,9 +121,26 @@ public class TooltipStyleHelper {
 
     public static ChatFormatting getColorForWeapon(String weaponId) {
         String cleanId = weaponId.replace("item.odysseyswords.", "");
+
+        // Cores específicas para armas lendárias/únicas
+        switch (cleanId) {
+            case "fyralath": return ChatFormatting.RED;
+            case "thunderwrath": return ChatFormatting.GOLD;
+            case "supernova": return ChatFormatting.LIGHT_PURPLE;
+            case "edar": return ChatFormatting.DARK_GRAY;
+            case "ash": return ChatFormatting.YELLOW;
+            case "ghaj": return ChatFormatting.DARK_GREEN;
+            case "azhar": return ChatFormatting.DARK_PURPLE;
+            case "orion": return ChatFormatting.AQUA;
+            case "apophis": return ChatFormatting.DARK_RED;
+            case "apocalypse": return ChatFormatting.BLUE; // Frostmourne
+            case "fury_of_a_thousand_fists":
+            case "fist_of_fury": return ChatFormatting.DARK_AQUA;
+        }
+
+        // Caso não seja uma arma especial, usa o material como fallback
         String material = WEAPON_TO_MATERIAL_MAP.get(cleanId);
-        return material != null ? COLOR_MAP.getOrDefault(material, ChatFormatting.GRAY) 
-                              : ChatFormatting.GRAY;
+            return material != null ? COLOR_MAP.getOrDefault(material, ChatFormatting.GRAY) : ChatFormatting.GRAY;
     }
 
     public static String getMaterialTooltipKey(String material) {

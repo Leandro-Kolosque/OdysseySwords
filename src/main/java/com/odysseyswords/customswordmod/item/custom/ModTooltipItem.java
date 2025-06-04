@@ -48,4 +48,20 @@ public class ModTooltipItem extends SwordItem {
         MutableComponent text = Component.translatable(tooltipKey);
         tooltip.add(text.withStyle(color).withStyle(ChatFormatting.ITALIC));
     }
+
+    @Override
+        public boolean isDamageable(ItemStack stack) {
+            return false;
+        }
+
+    @Override
+        public boolean isDamaged(ItemStack stack) {
+            return false;
+        }
+
+    @Override
+    public boolean canBeDepleted() {
+        return false;
+    }
+
 }

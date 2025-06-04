@@ -1,38 +1,38 @@
 {
-    "elemental_sword_fire_attack_01": {
-        "sounds": [
-            "odysseyswords:elemental_sword_fire_attack_01"
-        ],
-        "subtitle": "subtitles.odysseyswords.elemental_sword_fire_attack"
-    },
-    "elemental_sword_fire_attack_02": {
-        "sounds": [
-            "odysseyswords:elemental_sword_fire_attack_02"
-        ],
-        "subtitle": "subtitles.odysseyswords.elemental_sword_fire_attack"
-    },
-    "elemental_sword_fire_attack_03": {
-        "sounds": [
-            "odysseyswords:elemental_sword_fire_attack_03"
-        ],
-        "subtitle": "subtitles.odysseyswords.elemental_sword_fire_attack"
-    },
-    "elemental_sword_holy_attack_01": {
-        "sounds": [
-            "odysseyswords:elemental_sword_holy_attack_01"
-        ],
-        "subtitle": "subtitles.odysseyswords.holy_sword_swing"
-    },
-    "elemental_sword_holy_attack_02": {
-        "sounds": [
-            "odysseyswords:elemental_sword_holy_attack_02"
-        ],
-        "subtitle": "subtitles.odysseyswords.holy_sword_swing"
-    },
-    "elemental_sword_sci-fi_attack_01": {
-        "sounds": [
-            "odysseyswords:elemental_sword_sci-fi_attack_01"
-        ],
-        "subtitle": "subtitles.odysseyswords.sci_fi_sword_swing"
-    }
+  "elemental_sword_fire_attack_01": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:elemental_sword_fire_attack_01"
+    ]
+  },
+  "elemental_sword_fire_attack_02": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:elemental_sword_fire_attack_02"
+    ]
+  },
+  "elemental_sword_fire_attack_03": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:elemental_sword_fire_attack_03"
+    ]
+  },
+  "elemental_sword_holy_attack_01": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:elemental_sword_holy_attack_01"
+    ]
+  },
+  "elemental_sword_holy_attack_02": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:elemental_sword_holy_attack_02"
+    ]
+  },
+  "elemental_sword_sci-fi_attack_01": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:elemental_sword_sci_fi_attack_01"
+    ]
+  }
 }
