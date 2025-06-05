@@ -10,7 +10,7 @@
           "upswing": 0.5,
           "animation": "bettercombat:one_handed_slash_horizontal_right",
           "swing_sound": {
-            "id": "odysseyswords:elemental_sword_sci-fi_attack_01",
+            "id": "odysseyswords:elemental_sword_sci_fi_attack_01",
             "volume": 0.3,
             "pitch": 1.6
           }
@@ -22,7 +22,7 @@
           "upswing": 0.5,
           "animation": "bettercombat:one_handed_slash_horizontal_left",
           "swing_sound": {
-            "id": "odysseyswords:elemental_sword_sci-fi_attack_01",
+            "id": "odysseyswords:elemental_sword_sci_fi_attack_01",
             "volume": 0.3,
             "pitch": 1.8
           }
@@ -46,7 +46,7 @@
           "upswing": 0.5,
           "animation": "bettercombat:one_handed_slash_horizontal_right",
           "swing_sound": {
-            "id": "odysseyswords:elemental_sword_sci-fi_attack_01",
+            "id": "odysseyswords:elemental_sword_sci_fi_attack_01",
             "volume": 0.3,
             "pitch": 1.4
           }
@@ -58,7 +58,7 @@
           "upswing": 0.5,
           "animation": "bettercombat:one_handed_slash_horizontal_left",
           "swing_sound": {
-            "id": "odysseyswords:elemental_sword_sci-fi_attack_01",
+            "id": "odysseyswords:elemental_sword_sci_fi_attack_01",
             "volume": 0.3,
             "pitch": 1.8
           }

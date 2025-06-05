@@ -13,6 +13,7 @@
         "animation": "bettercombat:two_handed_slash_horizontal_right",
         "swing_sound": {
           "id": "odysseyswords:elemental_sword_fire_attack_02",
+          "volume": 0.1,
           "pitch": 0.8
         }
       },
@@ -24,6 +25,7 @@
         "animation": "bettercombat:two_handed_slash_horizontal_left",
         "swing_sound": {
           "id": "odysseyswords:elemental_sword_fire_attack_01",
+          "volume": 0.1,
           "pitch": 0.8
         }
       },
@@ -35,6 +37,7 @@
         "animation": "odysseyswords:twohandfloatslam",
         "swing_sound": {
           "id": "odysseyswords:elemental_sword_fire_attack_03",
+          "volume": 0.2,
           "pitch": 1
         }
       }

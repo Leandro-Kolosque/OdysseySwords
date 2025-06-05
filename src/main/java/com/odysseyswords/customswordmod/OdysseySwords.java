@@ -2,6 +2,8 @@ package com.odysseyswords.customswordmod;
 
 import com.mojang.logging.LogUtils;
 import com.odysseyswords.customswordmod.item.ModItems;
+import com.odysseyswords.customswordmod.registry.ModSoundEvents;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -26,6 +28,9 @@ public class OdysseySwords {
 
         // Registra o próprio mod para eventos do servidor e outros eventos do jogo
         MinecraftForge.EVENT_BUS.register(this);
+
+        // Registra os SoundEvents
+        ModSoundEvents.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
