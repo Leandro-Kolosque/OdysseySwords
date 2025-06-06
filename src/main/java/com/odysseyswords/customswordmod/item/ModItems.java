@@ -11,7 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import com.odysseyswords.customswordmod.item.custom.ModBowItem;
 import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
 import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
 
@@ -22,11 +21,6 @@ public class ModItems {
     // Helper methods for different weapon types
     private static Item.Properties swordProperties() {
         return new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant().rarity(net.minecraft.world.item.Rarity.RARE);
-    }
-
-    // Helper methods for Bow type
-    private static ModBowItem createBow() {
-        return new ModBowItem(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant());
     }
 
     // Legendary Weapons
@@ -141,9 +135,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> AZHAR =
         ITEMS.register("azhar", () -> createLegendaryScythe());
-
-    public static final RegistryObject<Item> ORION =
-        ITEMS.register("orion", () -> createBow());
 
     public static final RegistryObject<Item> APOPHIS =
         ITEMS.register("apophis", () -> createLegendaryHammer());
