@@ -31,7 +31,7 @@ public class ModItems {
     }
 
     public static final RegistryObject<Item> ORION = ITEMS.register("orion", 
-        () -> new ModBowItem(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).durability(500)));
+        () -> new ModBowItem(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).durability(500).rarity(net.minecraft.world.item.Rarity.EPIC)));
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
