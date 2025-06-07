@@ -2,15 +2,14 @@ package com.odysseyswords.customswordmod.item;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import com.odysseyswords.customswordmod.item.custom.ModBowItem;
 import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
 import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
 
@@ -30,6 +29,9 @@ public class ModItems {
             .fireResistant()
             .rarity(net.minecraft.world.item.Rarity.EPIC);
     }
+
+    public static final RegistryObject<Item> ORION = ITEMS.register("orion", 
+        () -> new ModBowItem(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).durability(500)));
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
