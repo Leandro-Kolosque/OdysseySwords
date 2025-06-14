@@ -1,1 +1,50 @@
-{ "parent": "bettercombat:scythe" }
+{
+  "attributes": {
+    "attack_range": 4.0,
+    "two_handed": true,
+    "category": "scythe",
+    "attacks": [
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 1.2,
+        "angle": 220,
+        "upswing": 0.4,
+        "animation": "bettercombat:two_handed_slash_horizontal_right",
+        "swing_sound": {
+          "id": "bettercombat:scythe_slash",
+          "pitch": 0.9,
+          "volume": 1.3
+        }
+      },
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 1.8,
+        "angle": 90,
+        "upswing": 0.6,
+        "animation": "bettercombat:two_handed_slash_vertical_right",
+        "swing_sound": {
+          "id": "bettercombat:axe_swing_heavy",
+          "pitch": 0.8
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 2.0,
+        "angle": 360,
+        "upswing": 0.7,
+        "animation": "bettercombat:two_handed_spin",
+        "cooldown": 20,
+        "swing_sound": {
+          "id": "bettercombat:scythe_spin",
+          "pitch": 0.7,
+          "volume": 1.5
+        },
+        "particles": {
+          "id": "minecraft:snowflake",
+          "count": 10,
+          "spread": 0.2
+        }
+      }
+    ]
+  }
+}
