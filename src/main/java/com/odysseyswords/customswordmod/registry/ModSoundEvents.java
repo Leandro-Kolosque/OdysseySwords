@@ -13,6 +13,15 @@ public class ModSoundEvents {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, "odysseyswords");
 
     // 2. Register sounds
+    public static final RegistryObject<SoundEvent> DARK_SWORD_WHOOSH_02 =
+            registerSoundEvent("dark_sword_whoosh_02");
+
+    public static final RegistryObject<SoundEvent> DARK_SWORD_WHOOSH_03 =
+            registerSoundEvent("dark_sword_whoosh_03");
+
+    public static final RegistryObject<SoundEvent> DARK_SWORD_WHOOSH_04 =
+            registerSoundEvent("dark_sword_whoosh_04");
+
     public static final RegistryObject<SoundEvent> ELEMENTAL_SWORD_FIRE_ATTACK_01 =
             registerSoundEvent("elemental_sword_fire_attack_01");
 

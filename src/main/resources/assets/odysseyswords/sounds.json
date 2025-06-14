@@ -1,4 +1,22 @@
 {
+  "dark_sword_whoosh_02": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:dark_sword_whoosh_02"
+    ]
+  },
+  "dark_sword_whoosh_03": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:dark_sword_whoosh_03"
+    ]
+  },
+  "dark_sword_whoosh_04": {
+    "category": "player",
+    "sounds": [
+      "odysseyswords:dark_sword_whoosh_04"
+    ]
+  },
   "elemental_sword_fire_attack_01": {
     "category": "player",
     "sounds": [
