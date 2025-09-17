@@ -1,7 +1,9 @@
 package com.odysseyswords.customswordmod.item;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-
+import com.odysseyswords.customswordmod.item.custom.ModBowItem;
+import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
+import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,29 +11,24 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import com.odysseyswords.customswordmod.item.custom.ModBowItem;
-import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
-import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
-
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
             OdysseySwords.MODID);
 
     // Helper methods for different weapon types
     private static Item.Properties swordProperties() {
-        return new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).fireResistant().rarity(net.minecraft.world.item.Rarity.RARE);
+        return new Item.Properties().fireResistant().rarity(net.minecraft.world.item.Rarity.RARE);
     }
 
     // Legendary Weapons
     private static Item.Properties legendaryProperties() {
         return new Item.Properties()
-            .tab(ModCreativeModeTab.ODYSSEY_TAB)
-            .fireResistant()
-            .rarity(net.minecraft.world.item.Rarity.EPIC);
+                .fireResistant()
+                .rarity(net.minecraft.world.item.Rarity.EPIC);
     }
 
-    public static final RegistryObject<Item> ORION = ITEMS.register("orion", 
-        () -> new ModBowItem(new Item.Properties().tab(ModCreativeModeTab.ODYSSEY_TAB).durability(500).rarity(net.minecraft.world.item.Rarity.EPIC)));
+    public static final RegistryObject<Item> ORION = ITEMS.register("orion",
+            () -> new ModBowItem(new Item.Properties().durability(500).rarity(net.minecraft.world.item.Rarity.EPIC)));
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -272,66 +269,53 @@ public class ModItems {
     
     public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> DIVINE_INGOT = ITEMS.register("divine_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
     public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));  
 
     public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
     public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
     () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 }

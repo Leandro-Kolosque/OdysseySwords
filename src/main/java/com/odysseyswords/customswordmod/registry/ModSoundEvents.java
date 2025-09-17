@@ -42,7 +42,7 @@ public class ModSoundEvents {
 
     // Helper method to register a single sound
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
-        return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation("odysseyswords", name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("odysseyswords", name)));
     }
 
     // 3. Method to register ALL sounds with Forge

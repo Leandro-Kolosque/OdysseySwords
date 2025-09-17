@@ -2,6 +2,7 @@ package com.odysseyswords.customswordmod;
 
 import com.mojang.logging.LogUtils;
 import com.odysseyswords.customswordmod.item.ModItems;
+import com.odysseyswords.customswordmod.item.ModCreativeModeTab;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -22,6 +23,7 @@ public class OdysseySwords {
 
         // Registra os itens
         ModItems.register(modEventBus);
+        ModCreativeModeTab.register(modEventBus);
 
         // Registra o método commonSetup para o carregamento do mod
         modEventBus.addListener(this::commonSetup);
@@ -37,6 +39,4 @@ public class OdysseySwords {
         // Código de setup comum (executado após o registro)
         LOGGER.info("OdysseySwords: Setup inicial concluído.");
     }
-
 }
-
