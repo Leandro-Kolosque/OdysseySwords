@@ -39,7 +39,7 @@ public class TooltipStyleHelper {
         // Frost Ingot
         addWeaponsToMaterial("frost",
             "icewhisper", "frost_scythe_axe",
-            "holy_moonlight_sword", "frost_blade", "frost_scythe",
+            "frost_blade", "frost_scythe",
             "death_knight_dagger", "death_knight_sword");
 
         // Royal Ingot
@@ -52,7 +52,7 @@ public class TooltipStyleHelper {
         // Sculk Ingot
         addWeaponsToMaterial("sculk",
             "sculk_cleaver", "sculk_sword", "stars_edge",
-            "sentinels_will", "epic_sword", "yoru",
+            "epic_sword", "yoru",
             "sculk_scythe", "excalibur", "forest_guardian_glaive",
             "soul_edge");
 
@@ -84,18 +84,16 @@ public class TooltipStyleHelper {
         addWeaponsToMaterial("silverine",
             "steel_sword", "longsword", "wakizashi",
             "sabre", "silverine_blade", "estoc",
-            "masamune", "ribbon_cleaver",
-            "katana", "blood_edge", "whisperwind");
+            "masamune", "ribbon_cleaver", "whisperwind");
 
         // Divine Ingot
         addWeaponsToMaterial("divine",
-            "mjolnir", "ashuras_blade");
+            "ashuras_blade");
 
         // Storm Ingot
         addWeaponsToMaterial("storm",
             "magic_scythe", "watching_warglaive", "thunderbrand",
-            "storms_edge", "blade_of_anubis", "stormbringer",
-            "thunderbringer", "watcher_claymore", "tengen_blade");
+            "storms_edge", "blade_of_anubis", "watcher_claymore");
 
         // Crystal Ingot
         addWeaponsToMaterial("crystal",

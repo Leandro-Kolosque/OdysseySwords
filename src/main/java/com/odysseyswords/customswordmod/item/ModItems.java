@@ -157,7 +157,6 @@ public class ModItems {
     public static final RegistryObject<Item> AQUANTIC_SACRED_BLADE = ITEMS.register("aquantic_sacred_blade", () -> createSword());
     public static final RegistryObject<Item> ASHURAS_BLADE = ITEMS.register("ashuras_blade", () -> createSword());
     public static final RegistryObject<Item> BLADE_OF_ANUBIS = ITEMS.register("blade_of_anubis", () -> createSword());
-    public static final RegistryObject<Item> BLOOD_EDGE = ITEMS.register("blood_edge", () -> createSword());
     public static final RegistryObject<Item> BRAMBLETHORN = ITEMS.register("bramblethorn", () -> createSword());
     public static final RegistryObject<Item> CORRUPTED_MYTHIC_BLADE = ITEMS.register("corrupted_mythic_blade", () -> createSword());
     public static final RegistryObject<Item> CREATION_SPLITTER = ITEMS.register("creation_splitter", () -> createSword());
@@ -179,8 +178,6 @@ public class ModItems {
     public static final RegistryObject<Item> FALLEN_GOD_SWORD = ITEMS.register("fallen_god_sword", () -> createSword());
     public static final RegistryObject<Item> FLORAL_LONGSWORD = ITEMS.register("floral_longsword", () -> createSword());
     public static final RegistryObject<Item> FROST_BLADE = ITEMS.register("frost_blade", () -> createSword());
-    public static final RegistryObject<Item> HOLY_MOONLIGHT_SWORD = ITEMS.register("holy_moonlight_sword", () -> createSword()); 
-    public static final RegistryObject<Item> KATANA = ITEMS.register("katana", () -> createSword());
     public static final RegistryObject<Item> LONGSWORD = ITEMS.register("longsword", () -> createSword());
     public static final RegistryObject<Item> MASAMUNE = ITEMS.register("masamune", () -> createSword());
     public static final RegistryObject<Item> MOLTEN_BLADE = ITEMS.register("molten_blade", () -> createSword());
@@ -197,10 +194,7 @@ public class ModItems {
     public static final RegistryObject<Item> SILVERINE_BLADE = ITEMS.register("silverine_blade", () -> createSword());
     public static final RegistryObject<Item> SOUL_EDGE = ITEMS.register("soul_edge", () -> createSword());
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> createSword());
-    public static final RegistryObject<Item> STORMBRINGER = ITEMS.register("stormbringer", () -> createSword());
-    public static final RegistryObject<Item> TENGEN_BLADE = ITEMS.register("tengen_blade", () -> createSword());
     public static final RegistryObject<Item> THOUSAND_DEMON_DAGGERS = ITEMS.register("thousand_demon_daggers", () -> createSword());
-    public static final RegistryObject<Item> THUNDERBRINGER = ITEMS.register("thunderbringer", () -> createSword());
     public static final RegistryObject<Item> TOXIC_BLADE = ITEMS.register("toxic_blade", () -> createSword());
     public static final RegistryObject<Item> UNIQUE_LONGSWORD_HOLY = ITEMS.register("unique_longsword_holy", () -> createSword());
     public static final RegistryObject<Item> WATCHER_CLAYMORE = ITEMS.register("watcher_claymore", () -> createSword());
@@ -213,7 +207,6 @@ public class ModItems {
 
     // Greatsword
     public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD = ITEMS.register("ancient_royal_greatsword", () -> createGreatsword());
-    public static final RegistryObject<Item> BRIMSTONE_CLAYMORE = ITEMS.register("brimstone_claymore", () -> createGreatsword());
     public static final RegistryObject<Item> DIVINE_PUNISHER = ITEMS.register("divine_punisher", () -> createGreatsword());
     public static final RegistryObject<Item> DRAGON_SLAYING_BLADE = ITEMS.register("dragon_slaying_blade", () -> createGreatsword());
     public static final RegistryObject<Item> ENIGMA = ITEMS.register("enigma", () -> createGreatsword());
@@ -227,7 +220,6 @@ public class ModItems {
     public static final RegistryObject<Item> FALLEN_GOD_SPEAR = ITEMS.register("fallen_god_spear", () -> createLance());
     public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE = ITEMS.register("forest_guardian_glaive", () -> createLance());
     public static final RegistryObject<Item> JADE_HALBERD = ITEMS.register("jade_halberd", () -> createLance());
-    public static final RegistryObject<Item> SENTINELS_WILL = ITEMS.register("sentinels_will", () -> createLance());
     public static final RegistryObject<Item> SUNBREAK = ITEMS.register("sunbreak", () -> createLance());
     public static final RegistryObject<Item> WICKPIERCER = ITEMS.register("wickpiercer", () -> createLance());
 
@@ -244,7 +236,6 @@ public class ModItems {
     public static final RegistryObject<Item> ROYAL_CHAKRAM = ITEMS.register("royal_chakram", () -> createChakram());
 
     // Hammer
-    public static final RegistryObject<Item> MJOLNIR = ITEMS.register("mjolnir", () -> createHammer());
     public static final RegistryObject<Item> POWERFUSE_HAMMER = ITEMS.register("powerfuse_hammer", () -> createHammer());
 
     // Knife
