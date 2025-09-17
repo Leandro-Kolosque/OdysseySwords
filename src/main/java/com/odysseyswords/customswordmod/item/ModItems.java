@@ -160,7 +160,6 @@ public class ModItems {
     public static final RegistryObject<Item> BLOOD_EDGE = ITEMS.register("blood_edge", () -> createSword());
     public static final RegistryObject<Item> BRAMBLETHORN = ITEMS.register("bramblethorn", () -> createSword());
     public static final RegistryObject<Item> CARIAN_SWORD = ITEMS.register("carian_sword", () -> createSword());
-    public static final RegistryObject<Item> CHRONO_BLADE = ITEMS.register("chrono_blade", () -> createSword());
     public static final RegistryObject<Item> CORRUPTED_MYTHIC_BLADE = ITEMS.register("corrupted_mythic_blade", () -> createSword());
     public static final RegistryObject<Item> CREATION_SPLITTER = ITEMS.register("creation_splitter", () -> createSword());
     public static final RegistryObject<Item> CYBER_KATANA = ITEMS.register("cyber_katana", () -> createSword());
@@ -181,10 +180,8 @@ public class ModItems {
     public static final RegistryObject<Item> FALLEN_GOD_SWORD = ITEMS.register("fallen_god_sword", () -> createSword());
     public static final RegistryObject<Item> FLORAL_LONGSWORD = ITEMS.register("floral_longsword", () -> createSword());
     public static final RegistryObject<Item> FROST_BLADE = ITEMS.register("frost_blade", () -> createSword());
-    public static final RegistryObject<Item> HOLY_MOONLIGHT_SWORD = ITEMS.register("holy_moonlight_sword", () -> createSword());
-    public static final RegistryObject<Item> HORNETS_NEEDLE = ITEMS.register("hornets_needle", () -> createSword());
+    public static final RegistryObject<Item> HOLY_MOONLIGHT_SWORD = ITEMS.register("holy_moonlight_sword", () -> createSword()); 
     public static final RegistryObject<Item> KATANA = ITEMS.register("katana", () -> createSword());
-    public static final RegistryObject<Item> LEGENDARY_SWORD = ITEMS.register("legendary_sword", () -> createSword());
     public static final RegistryObject<Item> LONGSWORD = ITEMS.register("longsword", () -> createSword());
     public static final RegistryObject<Item> MASAMUNE = ITEMS.register("masamune", () -> createSword());
     public static final RegistryObject<Item> MOLTEN_BLADE = ITEMS.register("molten_blade", () -> createSword());
@@ -196,7 +193,6 @@ public class ModItems {
     public static final RegistryObject<Item> POWERFUSE_SWORD = ITEMS.register("powerfuse_sword", () -> createSword());
     public static final RegistryObject<Item> RIBBON_CLEAVER = ITEMS.register("ribbon_cleaver", () -> createSword());
     public static final RegistryObject<Item> RIVERS_OF_BLOOD = ITEMS.register("rivers_of_blood", () -> createSword());
-    public static final RegistryObject<Item> SCISSOR_BLADE = ITEMS.register("scissor_blade", () -> createSword());
     public static final RegistryObject<Item> SCULK_CLEAVER = ITEMS.register("sculk_cleaver", () -> createSword());
     public static final RegistryObject<Item> SCULK_SWORD = ITEMS.register("sculk_sword", () -> createSword());
     public static final RegistryObject<Item> SILVERINE_BLADE = ITEMS.register("silverine_blade", () -> createSword());
@@ -204,12 +200,10 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> createSword());
     public static final RegistryObject<Item> STORMBRINGER = ITEMS.register("stormbringer", () -> createSword());
     public static final RegistryObject<Item> TENGEN_BLADE = ITEMS.register("tengen_blade", () -> createSword());
-    public static final RegistryObject<Item> TERRA_BLADE = ITEMS.register("terra_blade", () -> createSword());
     public static final RegistryObject<Item> THOUSAND_DEMON_DAGGERS = ITEMS.register("thousand_demon_daggers", () -> createSword());
     public static final RegistryObject<Item> THUNDERBRINGER = ITEMS.register("thunderbringer", () -> createSword());
     public static final RegistryObject<Item> TOXIC_BLADE = ITEMS.register("toxic_blade", () -> createSword());
     public static final RegistryObject<Item> UNIQUE_LONGSWORD_HOLY = ITEMS.register("unique_longsword_holy", () -> createSword());
-    public static final RegistryObject<Item> VAMPIRIC_NEEDLE = ITEMS.register("vampiric_needle", () -> createSword());
     public static final RegistryObject<Item> WATCHER_CLAYMORE = ITEMS.register("watcher_claymore", () -> createSword());
     public static final RegistryObject<Item> WHISPERWIND = ITEMS.register("whisperwind", () -> createSword());
 
@@ -236,7 +230,6 @@ public class ModItems {
     public static final RegistryObject<Item> FALLEN_GOD_SPEAR = ITEMS.register("fallen_god_spear", () -> createLance());
     public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE = ITEMS.register("forest_guardian_glaive", () -> createLance());
     public static final RegistryObject<Item> JADE_HALBERD = ITEMS.register("jade_halberd", () -> createLance());
-    public static final RegistryObject<Item> PARTISAN = ITEMS.register("partisan", () -> createLance());
     public static final RegistryObject<Item> SENTINELS_WILL = ITEMS.register("sentinels_will", () -> createLance());
     public static final RegistryObject<Item> SUNBREAK = ITEMS.register("sunbreak", () -> createLance());
     public static final RegistryObject<Item> WICKPIERCER = ITEMS.register("wickpiercer", () -> createLance());
@@ -270,15 +263,12 @@ public class ModItems {
 
     // Scythe
     public static final RegistryObject<Item> ABOMINABLE_SCYTHE = ITEMS.register("abominable_scythe", () -> createScythe());
-    public static final RegistryObject<Item> BLOODY_DEATH = ITEMS.register("bloody_death", () -> createScythe());
-    public static final RegistryObject<Item> CRESCENT_ROSE = ITEMS.register("crescent_rose", () -> createScythe());
     public static final RegistryObject<Item> DIVINE_REAPER = ITEMS.register("divine_reaper", () -> createScythe());
     public static final RegistryObject<Item> FROST_SCYTHE = ITEMS.register("frost_scythe", () -> createScythe());
     public static final RegistryObject<Item> FROST_SCYTHE_AXE = ITEMS.register("frost_scythe_axe", () -> createScythe());
     public static final RegistryObject<Item> MAGIC_SCYTHE = ITEMS.register("magic_scythe", () -> createScythe());
     public static final RegistryObject<Item> SCULK_SCYTHE = ITEMS.register("sculk_scythe", () -> createScythe());
     public static final RegistryObject<Item> SOUL_COLLECTOR = ITEMS.register("soul_collector", () -> createScythe());
-    public static final RegistryObject<Item> SOUL_RENDER = ITEMS.register("soul_render", () -> createScythe());
     public static final RegistryObject<Item> WRAIHT_SCYTHE = ITEMS.register("wraiht_scythe", () -> createScythe());
 
     // Warglaive
@@ -293,21 +283,6 @@ public class ModItems {
     }
     
     public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant()));
-
-    public static final RegistryObject<Item> BLOOD_POWDER = ITEMS.register("blood_powder",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant()));
-
-    public static final RegistryObject<Item> BLOOD_ROD = ITEMS.register("blood_rod",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant()));
-        
-    public static final RegistryObject<Item> BLOOD_STAR = ITEMS.register("blood_star",
     () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
@@ -332,31 +307,6 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
-    public static final RegistryObject<Item> FROST_STAR = ITEMS.register("frost_star",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> FROST_ROD = ITEMS.register("frost_rod",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> LIGHTNINGBOLT_OF_ZEUS = ITEMS.register("lightningbolt_of_zeus",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> NETHER_ROD = ITEMS.register("nether_rod",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> OBSIDIAN_ROD = ITEMS.register("obsidian_rod",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
     public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
     () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
@@ -367,17 +317,7 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant()));
 
-    public static final RegistryObject<Item> SILVERINE_ROD = ITEMS.register("silverine_rod",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant()));
-
     public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> SCULK_STAR = ITEMS.register("sculk_star",
     () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
@@ -387,17 +327,7 @@ public class ModItems {
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
 
-    public static final RegistryObject<Item> SOUL_STAR = ITEMS.register("soul_star",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
     public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> TARTARUS_FEATHER = ITEMS.register("tartarus_feather",
     () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 
@@ -405,19 +335,9 @@ public class ModItems {
     public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
     () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> TARTARUS_STAR = ITEMS.register("tartarus_star",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
+        .fireResistant()));  
 
     public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .tab(ModCreativeModeTab.ODYSSEY_TAB)
-        .fireResistant())); 
-
-    public static final RegistryObject<Item> TOXIC_ROD = ITEMS.register("toxic_rod",
     () -> new ModMaterialItem(new Item.Properties()
         .tab(ModCreativeModeTab.ODYSSEY_TAB)
         .fireResistant())); 

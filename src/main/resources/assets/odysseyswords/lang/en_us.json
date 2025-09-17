@@ -11,14 +11,10 @@
     "item.odysseyswords.ashuras_blade": "Ashura's Blade",
     "item.odysseyswords.blade_of_anubis": "Blade of Anubis",
     "item.odysseyswords.blood_edge": "Blood Edge",
-    "item.odysseyswords.bloody_death": "Bloody Death",
     "item.odysseyswords.bramblethorn": "Bramblethorn",
-    "item.odysseyswords.brimstone_claymore": "Brimstone Claymore",
-    "item.odysseyswords.carian_sword": "Carian Sword",
-    "item.odysseyswords.chrono_blade": "Chrono Blade",
+    "item.odysseyswords.brimstone_claymore": "Brimstone Claymore",    
     "item.odysseyswords.corrupted_mythic_blade": "Corrupted Mythic Blade",
     "item.odysseyswords.creation_splitter": "Creation Splitter",
-    "item.odysseyswords.crescent_rose": "Crescent Rose",
     "item.odysseyswords.cyber_katana": "Cyber Katana",
     "item.odysseyswords.cyber_mantis_blade": "Cyber Mantis Blade",
     "item.odysseyswords.cyber_sword": "Cyber Sword",
@@ -56,11 +52,9 @@
     "item.odysseyswords.frost_scythe_axe": "Frost Scythe Axe",
     "item.odysseyswords.hearthflame": "Hearthflame",
     "item.odysseyswords.holy_moonlight_sword": "Holy Moonlight Sword",
-    "item.odysseyswords.hornets_needle": "Hornet's Needle",
     "item.odysseyswords.icewhisper": "Icewhisper",
     "item.odysseyswords.jade_halberd": "Jade Halberd",
     "item.odysseyswords.katana": "Katana",
-    "item.odysseyswords.legendary_sword": "Legendary Sword",
     "item.odysseyswords.longsword": "Longsword",
     "item.odysseyswords.magic_scythe": "Magic Scythe",
     "item.odysseyswords.masamune": "Masamune",
@@ -70,7 +64,6 @@
     "item.odysseyswords.muramasa": "Muramasa",
     "item.odysseyswords.mystical_spell_blade": "Mystical Spell Blade",
     "item.odysseyswords.mythic_blade": "Mythic Blade",
-    "item.odysseyswords.partisan": "Partisan",
     "item.odysseyswords.pheonix_grace": "Phoenix Grace",
     "item.odysseyswords.powerfuse_hammer": "Powerfuse Hammer",
     "item.odysseyswords.powerfuse_sword": "Powerfuse Sword",
@@ -79,7 +72,6 @@
     "item.odysseyswords.royal_chakram": "Royal Chakram",
     "item.odysseyswords.royal_rapier": "Royal Rapier",
     "item.odysseyswords.sabre": "Sabre",
-    "item.odysseyswords.scissor_blade": "Scissor Blade",
     "item.odysseyswords.sculk_cleaver": "Sculk Cleaver",
     "item.odysseyswords.sculk_scythe": "Sculk Scythe",
     "item.odysseyswords.sculk_sword": "Sculk Sword",
@@ -90,7 +82,6 @@
     "item.odysseyswords.soul_devourer": "Soul Devourer",
     "item.odysseyswords.soul_edge": "Soul Edge",
     "item.odysseyswords.soul_harvester": "Soul Harvester",
-    "item.odysseyswords.soul_render": "Soul Render",
     "item.odysseyswords.soul_stealer": "Soul Stealer",
     "item.odysseyswords.stars_edge": "Star's Edge",
     "item.odysseyswords.steel_sword": "Steel Sword",
@@ -98,13 +89,11 @@
     "item.odysseyswords.storms_edge": "Storm's Edge",
     "item.odysseyswords.sunbreak": "Sunbreak",
     "item.odysseyswords.tengen_blade": "Tengen Blade",
-    "item.odysseyswords.terra_blade": "Terra Blade",
     "item.odysseyswords.thousand_demon_daggers": "Thousand Demon Daggers",
     "item.odysseyswords.thunderbrand": "Thunderbrand",
     "item.odysseyswords.thunderbringer": "Thunderbringer",
     "item.odysseyswords.toxic_blade": "Toxic Blade",
     "item.odysseyswords.unique_longsword_holy": "Unique Holy Longsword",
-    "item.odysseyswords.vampiric_needle": "Vampiric Needle",
     "item.odysseyswords.wakizashi": "Wakizashi",
     "item.odysseyswords.watcher_claymore": "Watcher Claymore",
     "item.odysseyswords.watching_warglaive": "Watching Warglaive",
@@ -118,15 +107,6 @@
     "item.odysseyswords.blood_ingot": "Blood Ingot",
     "item.odysseyswords.blood_ingot.tooltip": "A throbbing ingot infused with life force",
 
-    "item.odysseyswords.blood_powder": "Blood Powder",
-    "item.odysseyswords.blood_powder.tooltip": "Ground essence of vital energy",
-
-    "item.odysseyswords.blood_rod": "Blood Rod",
-    "item.odysseyswords.blood_rod.tooltip": "Channels pulsating power",
-
-    "item.odysseyswords.blood_star": "Blood Star",
-    "item.odysseyswords.blood_star.tooltip": "Forged from crystallized blood magic",
-
     "item.odysseyswords.crystal_ingot": "Crystal Ingot",
     "item.odysseyswords.crystal_ingot.tooltip": "Holds miniature universes within",
 
@@ -139,35 +119,14 @@
     "item.odysseyswords.frost_ingot": "Frost Ingot",
     "item.odysseyswords.frost_ingot.tooltip": "Emits an icy mist",
 
-    "item.odysseyswords.frost_rod": "Frost Rod",
-    "item.odysseyswords.frost_rod.tooltip": "Freezes air around it",
-
-    "item.odysseyswords.frost_star": "Frost Star",
-    "item.odysseyswords.frost_star.tooltip": "Radiates a blizzard's chill",
-
-    "item.odysseyswords.lightningbolt_of_zeus": "Lightningbolt of Zeus",
-    "item.odysseyswords.lightningbolt_of_zeus.tooltip": "Holds the wrath of the skies",
-
-    "item.odysseyswords.nether_rod": "Nether Rod",
-    "item.odysseyswords.nether_rod.tooltip": "Burns with infernal fire",
-
-    "item.odysseyswords.obsidian_rod": "Obsidian Rod",
-    "item.odysseyswords.obsidian_rod.tooltip": "Forged from obsidian's indestructible core",
-
     "item.odysseyswords.royal_ingot": "Royal Ingot",
     "item.odysseyswords.royal_ingot.tooltip": "Forged from divine gold",
 
     "item.odysseyswords.sculk_ingot": "Sculk Ingot",
     "item.odysseyswords.sculk_ingot.tooltip": "Whispers ancient secrets",
 
-    "item.odysseyswords.sculk_star": "Sculk Star",
-    "item.odysseyswords.sculk_star.tooltip": "Vibrates with eerie echoes",
-
     "item.odysseyswords.silverine_ingot": "Silverine Ingot",
     "item.odysseyswords.silverine_ingot.tooltip": "Glows with the light of fallen stars",
-
-    "item.odysseyswords.silverine_rod": "Silverine Rod",
-    "item.odysseyswords.silverine_rod.tooltip": "Polished conduit for sacred power",
 
     "item.odysseyswords.soul_ingot": "Soul Ingot",
     "item.odysseyswords.soul_ingot.tooltip": "Contains trapped screams",
@@ -175,20 +134,11 @@
     "item.odysseyswords.storm_ingot": "Storm Ingot",
     "item.odysseyswords.storm_ingot.tooltip": "Crackles with contained lightning",
 
-    "item.odysseyswords.tartarus_feather": "Tartarus Feather",
-    "item.odysseyswords.tartarus_feather.tooltip": "Fell from a winged demon of the abyss",
-
     "item.odysseyswords.tartarus_ingot": "Tartarus Ingot",
     "item.odysseyswords.tartarus_ingot.tooltip": "Smelted in abyssal depths",
 
-    "item.odysseyswords.tartarus_star": "Tartarus Star",
-    "item.odysseyswords.tartarus_star.tooltip": "Dark energy crystallized from hell itself",
-
     "item.odysseyswords.toxic_ingot": "Toxic Ingot",
     "item.odysseyswords.toxic_ingot.tooltip": "Emits poisonous vapors that burn the flesh",
-
-    "item.odysseyswords.toxic_rod": "Toxic Rod",
-    "item.odysseyswords.toxic_rod.tooltip": "Oozes venom with every touch",
 
     "item.odysseyswords.void_ingot": "Void Ingot",
     "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light",

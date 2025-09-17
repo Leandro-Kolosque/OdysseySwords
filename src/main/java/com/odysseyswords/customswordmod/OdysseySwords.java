@@ -38,11 +38,5 @@ public class OdysseySwords {
         LOGGER.info("OdysseySwords: Setup inicial concluído.");
     }
 
-    // Você pode adicionar outros manipuladores de eventos aqui, se necessário
-    // Exemplo:
-    // @SubscribeEvent
-    // public void onServerStarting(ServerStartingEvent event) {
-    //     LOGGER.info("OdysseySwords: Servidor iniciando.");
-    // }
 }
 

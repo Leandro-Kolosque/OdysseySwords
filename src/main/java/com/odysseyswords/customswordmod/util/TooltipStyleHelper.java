@@ -27,9 +27,9 @@ public class TooltipStyleHelper {
         // Blood Ingot
         addWeaponsToMaterial("blood",
             "fallen_god_spear", "creation_splitter", "demonic_blade",
-            "demonic_cleaver", "corrupted_mythic_blade", "scissor_blade",
-            "vampiric_needle", "soul_devourer", "fallen_god_sword",
-            "crescent_rose", "soul_collector", "rivers_of_blood");
+            "demonic_cleaver", "corrupted_mythic_blade",
+            "soul_devourer", "fallen_god_sword",
+            "soul_collector", "rivers_of_blood");
 
         // Cyber Ingot
         addWeaponsToMaterial("cyber",
@@ -38,7 +38,7 @@ public class TooltipStyleHelper {
 
         // Frost Ingot
         addWeaponsToMaterial("frost",
-            "icewhisper", "frost_scythe_axe", "hornets_needle",
+            "icewhisper", "frost_scythe_axe",
             "holy_moonlight_sword", "frost_blade", "frost_scythe",
             "death_knight_dagger", "death_knight_sword");
 
@@ -58,7 +58,7 @@ public class TooltipStyleHelper {
 
         // Soul Ingot
         addWeaponsToMaterial("soul",
-            "bloody_death", "soul_claws", "soul_render",
+            "soul_claws",
             "dark_blade", "dark_cleaver", "soul_stealer",
             "edge_of_the_astralplane");
 
@@ -77,19 +77,19 @@ public class TooltipStyleHelper {
         // Toxic Ingot
         addWeaponsToMaterial("toxic",
             "bramblethorn", "enigma", "wraiht_scythe",
-            "terra_blade", "acid_demon", "toxic_blade",
+            "acid_demon", "toxic_blade",
             "soul_harvester");
 
         // Silverine Ingot
         addWeaponsToMaterial("silverine",
             "steel_sword", "longsword", "wakizashi",
             "sabre", "silverine_blade", "estoc",
-            "masamune", "partisan", "ribbon_cleaver",
+            "masamune", "ribbon_cleaver",
             "katana", "blood_edge", "whisperwind");
 
         // Divine Ingot
         addWeaponsToMaterial("divine",
-            "mjolnir", "ashuras_blade", "legendary_sword",
+            "mjolnir", "ashuras_blade",
             "demigods_unholy_blade", "demigods_unholy_halberd");
 
         // Storm Ingot
@@ -100,10 +100,10 @@ public class TooltipStyleHelper {
 
         // Crystal Ingot
         addWeaponsToMaterial("crystal",
-            "chrono_blade", "mythic_blade", "powerfuse_sword",
+            "mythic_blade", "powerfuse_sword",
             "powerfuse_hammer", "aquantic_trident", "aquantic_sacred_blade",
             "floral_longsword", "floral_sabre", "mystical_spell_blade",
-            "carian_sword", "jade_halberd");
+            "jade_halberd");
     }
     
 

@@ -11,14 +11,10 @@
   "item.odysseyswords.ashuras_blade": "Lâmina de Ashura",
   "item.odysseyswords.blade_of_anubis": "Lâmina de Anúbis",
   "item.odysseyswords.blood_edge": "Gume Sangrento",
-  "item.odysseyswords.bloody_death": "Morte Sangrenta",
   "item.odysseyswords.bramblethorn": "Espinho de Amora",
   "item.odysseyswords.brimstone_claymore": "Claymore de Enxofre",
-  "item.odysseyswords.carian_sword": "Espada Cariana",
-  "item.odysseyswords.chrono_blade": "Lâmina do Tempo",
   "item.odysseyswords.corrupted_mythic_blade": "Lâmina Mítica Corrompida",
   "item.odysseyswords.creation_splitter": "Divisor da Criação",
-  "item.odysseyswords.crescent_rose": "Rosa Crescente",
   "item.odysseyswords.cyber_katana": "Katana Cibernética",
   "item.odysseyswords.cyber_mantis_blade": "Lâmina de Louva-a-Deus Cibernética",
   "item.odysseyswords.cyber_sword": "Espada Cibernética",
@@ -56,11 +52,9 @@
   "item.odysseyswords.frost_scythe_axe": "Machado-Foice de Gelo",
   "item.odysseyswords.hearthflame": "Chama do Lar",
   "item.odysseyswords.holy_moonlight_sword": "Espada Sagrada do Luar",
-  "item.odysseyswords.hornets_needle": "Agulha da Vespa",
   "item.odysseyswords.icewhisper": "Sussurro de Gelo",
   "item.odysseyswords.jade_halberd": "Alabarda de Jade",
   "item.odysseyswords.katana": "Katana",
-  "item.odysseyswords.legendary_sword": "Espada Lendária",
   "item.odysseyswords.longsword": "Espada Longa",
   "item.odysseyswords.magic_scythe": "Foice Mágica",
   "item.odysseyswords.masamune": "Masamune",
@@ -70,7 +64,6 @@
   "item.odysseyswords.muramasa": "Muramasa",
   "item.odysseyswords.mystical_spell_blade": "Lâmina de Feitiço Místico",
   "item.odysseyswords.mythic_blade": "Lâmina Mítica",
-  "item.odysseyswords.partisan": "Partisana",
   "item.odysseyswords.pheonix_grace": "Graça da Fênix",
   "item.odysseyswords.powerfuse_hammer": "Martelo de Fusão de Poder",
   "item.odysseyswords.powerfuse_sword": "Espada de Fusão de Poder",
@@ -79,7 +72,6 @@
   "item.odysseyswords.royal_chakram": "Chakram Real",
   "item.odysseyswords.royal_rapier": "Rapieira Real",
   "item.odysseyswords.sabre": "Sabre",
-  "item.odysseyswords.scissor_blade": "Lâmina de Tesoura",
   "item.odysseyswords.sculk_cleaver": "Cutelo do Sculk",
   "item.odysseyswords.sculk_scythe": "Foice do Sculk",
   "item.odysseyswords.sculk_sword": "Espada do Sculk",
@@ -90,7 +82,6 @@
   "item.odysseyswords.soul_devourer": "Devorador de Almas",
   "item.odysseyswords.soul_edge": "Gume da Alma",
   "item.odysseyswords.soul_harvester": "Ceifador de Almas",
-  "item.odysseyswords.soul_render": "Dilacerador de Almas",
   "item.odysseyswords.soul_stealer": "Ladrão de Almas",
   "item.odysseyswords.stars_edge": "Gume das Estrelas",
   "item.odysseyswords.steel_sword": "Espada de Aço",
@@ -98,13 +89,11 @@
   "item.odysseyswords.storms_edge": "Gume da Tempestade",
   "item.odysseyswords.sunbreak": "Alvorada",
   "item.odysseyswords.tengen_blade": "Lâmina Tengen",
-  "item.odysseyswords.terra_blade": "Lâmina da Terra",
   "item.odysseyswords.thousand_demon_daggers": "Mil Adagas Demoníacas",
   "item.odysseyswords.thunderbrand": "Marca do Trovão",
   "item.odysseyswords.thunderbringer": "Portador do Trovão",
   "item.odysseyswords.toxic_blade": "Lâmina Tóxica",
   "item.odysseyswords.unique_longsword_holy": "Espada Longa Sagrada Única",
-  "item.odysseyswords.vampiric_needle": "Agulha Vampírica",
   "item.odysseyswords.wakizashi": "Wakizashi",
   "item.odysseyswords.watcher_claymore": "Claymore do Observador",
   "item.odysseyswords.watching_warglaive": "Warglaive do Observador",
@@ -118,15 +107,6 @@
   "item.odysseyswords.blood_ingot": "Lingote de Sangue",
   "item.odysseyswords.blood_ingot.tooltip": "Um lingote pulsante com energia vital",
 
-  "item.odysseyswords.blood_powder": "Pó de Sangue",
-  "item.odysseyswords.blood_powder.tooltip": "Essência vital moída em pó",
-
-  "item.odysseyswords.blood_rod": "Bastão de Sangue",
-  "item.odysseyswords.blood_rod.tooltip": "Canaliza poder pulsante",
-
-  "item.odysseyswords.blood_star": "Estrela de Sangue",
-  "item.odysseyswords.blood_star.tooltip": "Forjada com magia sanguínea cristalizada",
-
   "item.odysseyswords.crystal_ingot": "Lingote Cristalino",
   "item.odysseyswords.crystal_ingot.tooltip": "Contém universos em miniatura",
 
@@ -139,35 +119,14 @@
   "item.odysseyswords.frost_ingot": "Lingote Gélido",
   "item.odysseyswords.frost_ingot.tooltip": "Emite uma névoa congelante",
 
-  "item.odysseyswords.frost_rod": "Bastão Gélido",
-  "item.odysseyswords.frost_rod.tooltip": "Congela o ar ao redor",
-
-  "item.odysseyswords.frost_star": "Estrela Gélida",
-  "item.odysseyswords.frost_star.tooltip": "Emite o frio de uma nevasca",
-
-  "item.odysseyswords.lightningbolt_of_zeus": "Raio de Zeus",
-  "item.odysseyswords.lightningbolt_of_zeus.tooltip": "Contém a fúria dos céus",
-
-  "item.odysseyswords.nether_rod": "Bastão Infernal",
-  "item.odysseyswords.nether_rod.tooltip": "Arde com fogo do submundo",
-
-  "item.odysseyswords.obsidian_rod": "Bastão de Obsidiana",
-  "item.odysseyswords.obsidian_rod.tooltip": "Forjado do núcleo indestrutível da obsidiana",
-
   "item.odysseyswords.royal_ingot": "Lingote Real",
   "item.odysseyswords.royal_ingot.tooltip": "Forjado com ouro dos deuses",
 
   "item.odysseyswords.sculk_ingot": "Lingote Sussurrante",
   "item.odysseyswords.sculk_ingot.tooltip": "Sussurra segredos ancestrais",
 
-  "item.odysseyswords.sculk_star": "Estrela Sussurrante",
-  "item.odysseyswords.sculk_star.tooltip": "Vibra com ecos sombrios",
-
   "item.odysseyswords.silverine_ingot": "Lingote de Silverina",
   "item.odysseyswords.silverine_ingot.tooltip": "Brilha com a luz de estrelas caídas",
-
-  "item.odysseyswords.silverine_rod": "Bastão de Silverina",
-  "item.odysseyswords.silverine_rod.tooltip": "Condutor polido de poder sagrado",
 
   "item.odysseyswords.soul_ingot": "Lingote da Alma",
   "item.odysseyswords.soul_ingot.tooltip": "Conserva gritos aprisionados",
@@ -175,20 +134,11 @@
   "item.odysseyswords.storm_ingot": "Lingote Tempestuoso",
   "item.odysseyswords.storm_ingot.tooltip": "Estala com relâmpagos contidos",
 
-  "item.odysseyswords.tartarus_feather": "Pena de Tártaro",
-  "item.odysseyswords.tartarus_feather.tooltip": "Caiu de um demônio alado do abismo",
-
   "item.odysseyswords.tartarus_ingot": "Lingote Abissal",
   "item.odysseyswords.tartarus_ingot.tooltip": "Fundido nas profundezas abissais",
 
-  "item.odysseyswords.tartarus_star": "Estrela de Tártaro",
-  "item.odysseyswords.tartarus_star.tooltip": "Energia infernal cristalizada",
-
   "item.odysseyswords.toxic_ingot": "Lingote Tóxico",
   "item.odysseyswords.toxic_ingot.tooltip": "Emite vapores venenosos que corroem a carne",
-
-  "item.odysseyswords.toxic_rod": "Bastão Tóxico",
-  "item.odysseyswords.toxic_rod.tooltip": "Exala veneno ao menor toque",
 
   "item.odysseyswords.void_ingot": "Lingote do Vazio",
   "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor",
