@@ -89,8 +89,7 @@ public class TooltipStyleHelper {
 
         // Divine Ingot
         addWeaponsToMaterial("divine",
-            "mjolnir", "ashuras_blade",
-            "demigods_unholy_blade", "demigods_unholy_halberd");
+            "mjolnir", "ashuras_blade");
 
         // Storm Ingot
         addWeaponsToMaterial("storm",

@@ -159,7 +159,6 @@ public class ModItems {
     public static final RegistryObject<Item> BLADE_OF_ANUBIS = ITEMS.register("blade_of_anubis", () -> createSword());
     public static final RegistryObject<Item> BLOOD_EDGE = ITEMS.register("blood_edge", () -> createSword());
     public static final RegistryObject<Item> BRAMBLETHORN = ITEMS.register("bramblethorn", () -> createSword());
-    public static final RegistryObject<Item> CARIAN_SWORD = ITEMS.register("carian_sword", () -> createSword());
     public static final RegistryObject<Item> CORRUPTED_MYTHIC_BLADE = ITEMS.register("corrupted_mythic_blade", () -> createSword());
     public static final RegistryObject<Item> CREATION_SPLITTER = ITEMS.register("creation_splitter", () -> createSword());
     public static final RegistryObject<Item> CYBER_KATANA = ITEMS.register("cyber_katana", () -> createSword());
@@ -215,7 +214,6 @@ public class ModItems {
     // Greatsword
     public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD = ITEMS.register("ancient_royal_greatsword", () -> createGreatsword());
     public static final RegistryObject<Item> BRIMSTONE_CLAYMORE = ITEMS.register("brimstone_claymore", () -> createGreatsword());
-    public static final RegistryObject<Item> DEMIGODS_UNHOLY_BLADE = ITEMS.register("demigods_unholy_blade", () -> createGreatsword());
     public static final RegistryObject<Item> DIVINE_PUNISHER = ITEMS.register("divine_punisher", () -> createGreatsword());
     public static final RegistryObject<Item> DRAGON_SLAYING_BLADE = ITEMS.register("dragon_slaying_blade", () -> createGreatsword());
     public static final RegistryObject<Item> ENIGMA = ITEMS.register("enigma", () -> createGreatsword());
@@ -225,7 +223,6 @@ public class ModItems {
 
     // Spear
     public static final RegistryObject<Item> AQUANTIC_TRIDENT = ITEMS.register("aquantic_trident", () -> createLance());
-    public static final RegistryObject<Item> DEMIGODS_UNHOLY_HALBERD = ITEMS.register("demigods_unholy_halberd", () -> createLance());
     public static final RegistryObject<Item> DIVINE_JUSTICE = ITEMS.register("divine_justice", () -> createLance());
     public static final RegistryObject<Item> FALLEN_GOD_SPEAR = ITEMS.register("fallen_god_spear", () -> createLance());
     public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE = ITEMS.register("forest_guardian_glaive", () -> createLance());
