@@ -14,13 +14,13 @@
 ## 🖼️ Galeria Épica
 
 <p align="center">
-  <img src="images/machado01.png" alt="Fyr'alath, the Scorched Agony" width="300" height="400"/>
-  <img src="images/espada01.png" alt="Dragon Slaying Blade" width="300" height="400"/>
+  <img src="images/machado01.png" alt="Fyr'alath, the Scorched Agony" height="400" width="300"/>
+  <img src="images/espada01.png" alt="Dragon Slaying Blade" height="400" width="300"/>
 </p>
 
 <p align="center">
-  <img src="images/espada02.png" alt="Phoenix Grace" width="300" height="400"/>
-  <img src="images/foice01.png" alt="Divine Reaper" width="300" height="400"/>
+  <img src="images/espada02.png" alt="Phoenix Grace" height="400" width="300"/>
+  <img src="images/foice01.png" alt="Divine Reaper" height="400" width="300"/>
 </p>
 
 ## ⚔️ Recursos Principais
@@ -68,4 +68,12 @@ Quer ajudar a melhorar o **Odyssey Swords**? Sinta-se à vontade para contribuir
 4. Push para sua branch (`git push origin minha-feature`).
 5. Abra um Pull Request aqui no GitHub.
 
-Toda ajuda é bem-vinda - Além disso fica meu agradecimento ao Eftann, criador dos modelos, por me deixar utiliza-los na criação do mod 
+## 🙏 Créditos
+- Desenvolvimento: Leandro Kolosque
+- Modelos e Texturas: Agradecimentos especiais ao **Eftann** pelo incrível trabalho visual e por me deixar utilizar os modelos para criar o mod.
+
+> Toda ajuda é bem-vinda — este projeto é feito pela comunidade e para a comunidade!
+
+## 📜 Licença
+Este projeto é distribuído sob a licença **MIT**.  
+Você pode usar, modificar e redistribuir o código, desde que mantenha os créditos originais.
