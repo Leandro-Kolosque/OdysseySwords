@@ -77,14 +77,12 @@ public class TooltipStyleHelper {
         // Toxic Ingot
         addWeaponsToMaterial("toxic",
             "bramblethorn", "enigma", "wraiht_scythe",
-            "acid_demon", "toxic_blade",
-            "soul_harvester");
+            "acid_demon", "toxic_blade");
 
         // Silverine Ingot
         addWeaponsToMaterial("silverine",
-            "steel_sword", "longsword", "wakizashi",
-            "sabre", "silverine_blade", "estoc",
-            "masamune", "ribbon_cleaver", "whisperwind");
+            "steel_sword", "wakizashi",
+            "sabre", "silverine_blade", "estoc", "whisperwind");
 
         // Divine Ingot
         addWeaponsToMaterial("divine",
@@ -92,7 +90,7 @@ public class TooltipStyleHelper {
 
         // Storm Ingot
         addWeaponsToMaterial("storm",
-            "magic_scythe", "watching_warglaive", "thunderbrand",
+            "magic_scythe", "watching_warglaive",
             "storms_edge", "blade_of_anubis", "watcher_claymore");
 
         // Crystal Ingot
