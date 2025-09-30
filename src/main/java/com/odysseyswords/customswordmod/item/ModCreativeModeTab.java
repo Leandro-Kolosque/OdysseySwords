@@ -1,6 +1,7 @@
 package com.odysseyswords.customswordmod.item;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
+import com.odysseyswords.customswordmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,9 +15,10 @@ public class ModCreativeModeTab {
 
     public static final RegistryObject<CreativeModeTab> ODYSSEY_TAB = CREATIVE_MODE_TABS.register("odyssey_tab", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.STEEL_SWORD.get()))
-            .title(Component.translatable("itemGroup." + OdysseySwords.MODID + ".odyssey_tab"))
+            .title(Component.translatable("Odyssey Swords"))
             .displayItems((itemDisplayParameters, output) -> {
                 ModItems.ITEMS.getEntries().stream().map(RegistryObject::get).forEach(output::accept);
+                output.accept(ModBlocks.MYTHIC_FORGE.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

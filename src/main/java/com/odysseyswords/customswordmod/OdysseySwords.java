@@ -2,6 +2,7 @@ package com.odysseyswords.customswordmod;
 
 import com.mojang.logging.LogUtils;
 import com.odysseyswords.customswordmod.item.ModItems;
+import com.odysseyswords.customswordmod.block.ModBlocks;
 import com.odysseyswords.customswordmod.item.ModCreativeModeTab;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
 
@@ -33,6 +34,9 @@ public class OdysseySwords {
 
         // Registra os SoundEvents
         ModSoundEvents.register(modEventBus);
+
+        // Registra os Blocos
+        ModBlocks.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
