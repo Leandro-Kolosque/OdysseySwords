@@ -33,14 +33,14 @@ public class TooltipStyleHelper {
 
         // Cyber Ingot
         addWeaponsToMaterial("cyber",
-            "cybernetic_knife", "cyber_mantis_blade", "cyber_katana",
-            "cyber_sword", "cybernetic_katana", "cybernetic_sawblade");
+            "cyber_mantis_blade", "cyber_katana",
+            "cybernetic_katana");
 
         // Frost Ingot
         addWeaponsToMaterial("frost",
             "icewhisper", "frost_scythe_axe",
             "frost_blade", "frost_scythe",
-            "death_knight_dagger", "death_knight_sword");
+            "death_knight_sword");
 
         // Royal Ingot
         addWeaponsToMaterial("royal",
@@ -59,12 +59,12 @@ public class TooltipStyleHelper {
         // Soul Ingot
         addWeaponsToMaterial("soul",
             "soul_claws",
-            "dark_blade", "dark_cleaver", "soul_stealer",
+            "dark_blade", "dark_cleaver",
             "edge_of_the_astralplane");
 
         // Tartarus Ingot
         addWeaponsToMaterial("tartarus",
-            "dragon_slaying_blade", "brimstone_claymore", "ember_blade",
+            "dragon_slaying_blade", "brimstone_claymore",
             "pheonix_grace", "hearthflame", "molten_sword",
             "molten_blade", "sunbreak");
 
@@ -76,12 +76,12 @@ public class TooltipStyleHelper {
 
         // Toxic Ingot
         addWeaponsToMaterial("toxic",
-            "bramblethorn", "enigma", "wraiht_scythe",
+            "bramblethorn", "wraiht_scythe",
             "acid_demon", "toxic_blade");
 
         // Silverine Ingot
         addWeaponsToMaterial("silverine",
-            "steel_sword", "wakizashi",
+            "steel_sword",
             "sabre", "silverine_blade", "estoc", "whisperwind");
 
         // Divine Ingot
@@ -95,7 +95,7 @@ public class TooltipStyleHelper {
 
         // Crystal Ingot
         addWeaponsToMaterial("crystal",
-            "mythic_blade", "powerfuse_sword",
+            "mythic_blade",
             "powerfuse_hammer", "aquantic_trident", "aquantic_sacred_blade",
             "floral_longsword", "floral_sabre", "mystical_spell_blade",
             "jade_halberd");
