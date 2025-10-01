@@ -5,6 +5,8 @@ import com.odysseyswords.customswordmod.item.ModItems;
 import com.odysseyswords.customswordmod.block.ModBlocks;
 import com.odysseyswords.customswordmod.item.ModCreativeModeTab;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
+import com.odysseyswords.customswordmod.block.entity.ModBlockEntities;
+import com.odysseyswords.customswordmod.screen.ModMenuTypes;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,7 +38,9 @@ public class OdysseySwords {
         ModSoundEvents.register(modEventBus);
 
         // Registra os Blocos
+        ModBlockEntities.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

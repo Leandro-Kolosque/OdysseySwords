@@ -20,7 +20,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, OdysseySwords.MODID);
 
     public static final RegistryObject<Block> MYTHIC_FORGE = registerBlock("mythic_forge",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new MythicForgeBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .strength(5f)
                     .requiresCorrectToolForDrops()
