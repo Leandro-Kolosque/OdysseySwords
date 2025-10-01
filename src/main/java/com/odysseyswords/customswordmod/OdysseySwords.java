@@ -8,6 +8,7 @@ import com.odysseyswords.customswordmod.registry.ModSoundEvents;
 import com.odysseyswords.customswordmod.block.entity.ModBlockEntities;
 import com.odysseyswords.customswordmod.screen.ModMenuTypes;
 
+import com.odysseyswords.customswordmod.recipe.ModRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -41,6 +42,9 @@ public class OdysseySwords {
         ModBlockEntities.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+
+        // Registra as Receitas do MOD
+        ModRecipes.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

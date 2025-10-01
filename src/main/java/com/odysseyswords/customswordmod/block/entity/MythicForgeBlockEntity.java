@@ -1,18 +1,20 @@
 package com.odysseyswords.customswordmod.block.entity;
 
+import com.odysseyswords.customswordmod.recipe.MythicForgeRecipe;
+import com.odysseyswords.customswordmod.screen.MythicForgeMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
-import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
@@ -23,7 +25,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import com.odysseyswords.customswordmod.screen.MythicForgeMenu;
+import java.util.Optional;
 
 public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
@@ -35,9 +37,9 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
-                case 0 -> true; // Qualquer item pode ir no slot de lingote por enquanto
-                case 1 -> true; // Qualquer item pode ir no slot de recurso por enquanto
-                case 2 -> false; // Slot de saída, nada pode ser inserido manualmente
+                case 0 -> true;
+                case 1 -> true;
+                case 2 -> false;
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -47,16 +49,16 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 78; // Tempo de forja (ex: 78 ticks = 3.9 segundos)
+    private int maxProgress = 78;
 
-    public MythicForgeBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.MYTHIC_FORGE_BE.get(), pPos, pBlockState);
+    public MythicForgeBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.MYTHIC_FORGE_BE.get(), pos, state);
         this.data = new ContainerData() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> MythicForgeBlockEntity.this.progress;
-                    case 1 -> MythicForgeBlockEntity.this.maxProgress;
+                    case 0 -> progress;
+                    case 1 -> maxProgress;
                     default -> 0;
                 };
             }
@@ -64,14 +66,14 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
             @Override
             public void set(int index, int value) {
                 switch (index) {
-                    case 0 -> MythicForgeBlockEntity.this.progress = value;
-                    case 1 -> MythicForgeBlockEntity.this.maxProgress = value;
+                    case 0 -> progress = value;
+                    case 1 -> maxProgress = value;
                 }
             }
 
             @Override
             public int getCount() {
-                return 2; // Número de variáveis de dados (progress, maxProgress)
+                return 2;
             }
         };
     }
@@ -131,5 +133,74 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
     @Override
     public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
         return new MythicForgeMenu(containerId, playerInventory, this, this.data);
+    }
+
+    public static void tick(Level level, BlockPos pos, BlockState state, MythicForgeBlockEntity entity) {
+        if (level.isClientSide()) return;
+
+        if (hasRecipe(entity)) {
+            entity.progress++;
+            setChanged(level, pos, state);
+
+            if (entity.progress >= entity.maxProgress) {
+                craftItem(entity);
+            }
+        } else {
+            entity.resetProgress();
+            setChanged(level, pos, state);
+        }
+    }
+
+    private void resetProgress() {
+        this.progress = 0;
+    }
+
+    private static boolean hasRecipe(MythicForgeBlockEntity entity) {
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+        }
+
+        Optional<MythicForgeRecipe> match = level.getRecipeManager()
+                .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
+
+        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory) &&
+                canInsertItemIntoOutputSlot(inventory, match.get().getResultItem(level.registryAccess()));
+    }
+
+    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
+        return inventory.getItem(2).isEmpty() || inventory.getItem(2).getItem() == stack.getItem();
+    }
+
+    private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
+        return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
+    }
+
+    private static void craftItem(MythicForgeBlockEntity entity) {
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+        }
+
+        Optional<MythicForgeRecipe> match = level.getRecipeManager()
+                .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
+
+        if (match.isPresent()) {
+            entity.itemHandler.extractItem(0, 1, false);
+            entity.itemHandler.extractItem(1, 1, false);
+
+            ItemStack result = match.get().getResultItem(level.registryAccess()).copy();
+            ItemStack currentOutput = entity.itemHandler.getStackInSlot(2);
+
+            if (currentOutput.isEmpty()) {
+                entity.itemHandler.setStackInSlot(2, result);
+            } else {
+                currentOutput.grow(result.getCount());
+            }
+
+            entity.resetProgress();
+        }
     }
 }
