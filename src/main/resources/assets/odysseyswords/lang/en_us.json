@@ -166,6 +166,9 @@
     "item.odysseyswords.fury_of_a_thousand_fists.tooltip": "Channels the combined rage of ancient warriors",
     
     "item.odysseyswords.fist_of_fury": "Fist of Fury",
-    "item.odysseyswords.fist_of_fury.tooltip": "Strikes faster than the blink of an eye"
+    "item.odysseyswords.fist_of_fury.tooltip": "Strikes faster than the blink of an eye",
+
+    "container.odysseyswords.mythic_forge": "Mythic Forge",
+    "block.odysseyswords.mythic_forge": "Mythic Forge"
 
 }

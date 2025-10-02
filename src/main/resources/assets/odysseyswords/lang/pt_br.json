@@ -166,6 +166,9 @@
   "item.odysseyswords.fury_of_a_thousand_fists.tooltip": "Canaliza a raiva combinada de guerreiros ancestrais",
   
   "item.odysseyswords.fist_of_fury": "Punho da Fúria",
-  "item.odysseyswords.fist_of_fury.tooltip": "Golpeia mais rápido que um piscar de olhos"
+  "item.odysseyswords.fist_of_fury.tooltip": "Golpeia mais rápido que um piscar de olhos",
+
+  "container.odysseyswords.mythic_forge": "Forja Mítica",
+  "block.odysseyswords.mythic_forge": "Forja Mítica"
 
 }

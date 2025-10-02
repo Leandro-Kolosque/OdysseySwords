@@ -33,13 +33,13 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         this.level = inv.player.level();
         this.data = data;
 
-        addPlayerInventory(inv); // ← ESTE MÉTODO ADICIONA O INVENTÁRIO VANILLA
-        addPlayerHotbar(inv); // ← ESTE MÉTODO ADICIONA A HOTBAR VANILLA
+        addPlayerInventory(inv);
+        addPlayerHotbar(inv);
 
-        // SLOTS DA FORJA (acima do inventário vanilla)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 27, 47));
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 76, 47));  
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 134, 47));
+        // SLOTS NO PADRÃO BIGORNA:
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 27, 47)); // Slot esquerda (primeiro item)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 76, 47)); // Slot direita (segundo item)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 134, 47)); // Slot resultado (baixo)
 
         addDataSlots(data);
     }

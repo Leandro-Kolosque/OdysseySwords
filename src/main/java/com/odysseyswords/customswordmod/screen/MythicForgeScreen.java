@@ -9,7 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> {
-    // TEXTURA VANILLA DA SMITHING TABLE - JÁ EXISTE NO MINECRAFT
+    // USANDO A TEXTURA DA BIGORNA VANILLA
     private static final ResourceLocation TEXTURE =
             new ResourceLocation("textures/gui/container/anvil.png");
 
@@ -20,8 +20,9 @@ public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> 
     @Override
     protected void init() {
         super.init();
-        this.titleLabelX = 44;
-        this.titleLabelY = 14;
+        // Título centralizado como na bigorna
+        this.titleLabelX = 60;
+        this.titleLabelY = 18;
     }
 
     @Override
@@ -33,13 +34,14 @@ public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> 
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
 
-        // Desenha a GUI completa da Smithing Table
+        // Desenha a GUI da bigorna
         guiGraphics.blit(TEXTURE, x, y, 0, 0, this.imageWidth, this.imageHeight);
 
-        // Barra de progresso personalizada
+        // BARRA DE PROGRESSO PERSONALIZADA
         if (menu.getProgress() > 0) {
-            int progressWidth = (int)(22 * ((float)menu.getProgress() / menu.getMaxProgress()));
-            guiGraphics.blit(TEXTURE, x + 102, y + 48, 176, 0, progressWidth, 16);
+            int progressWidth = (int)(24 * ((float)menu.getProgress() / menu.getMaxProgress()));
+            // Posição entre os slots de entrada e saída
+            guiGraphics.fill(x + 103, y + 48, x + 103 + progressWidth, y + 48 + 5, 0xFFFF4500);
         }
     }
 
