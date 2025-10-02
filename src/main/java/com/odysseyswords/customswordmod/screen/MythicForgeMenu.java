@@ -26,19 +26,20 @@ public class MythicForgeMenu extends AbstractContainerMenu {
                 new SimpleContainerData(2)); // 2 para progress e maxProgress
     }
 
-    public MythicForgeMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(ModMenuTypes.MYTHIC_FORGE_MENU.get(), pContainerId);
-        checkContainerSize(inv, 3); // 3 é o número de slots da nossa forja
+    public MythicForgeMenu(int containerId, Inventory inv, BlockEntity entity, ContainerData data) {
+        super(ModMenuTypes.MYTHIC_FORGE_MENU.get(), containerId);
+        checkContainerSize(inv, 3);
         this.blockEntity = (MythicForgeBlockEntity) entity;
         this.level = inv.player.level();
         this.data = data;
 
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
+        addPlayerInventory(inv); // ← ESTE MÉTODO ADICIONA O INVENTÁRIO VANILLA
+        addPlayerHotbar(inv); // ← ESTE MÉTODO ADICIONA A HOTBAR VANILLA
 
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 56, 26)); // Slot de Lingote
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 56, 44)); // Slot de Recurso
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 116, 35)); // Slot de Saída
+        // SLOTS DA FORJA (acima do inventário vanilla)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 27, 47));
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 76, 47));  
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 134, 47));
 
         addDataSlots(data);
     }
