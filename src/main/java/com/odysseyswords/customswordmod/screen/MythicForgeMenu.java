@@ -28,7 +28,7 @@ public class MythicForgeMenu extends AbstractContainerMenu {
 
     public MythicForgeMenu(int containerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.MYTHIC_FORGE_MENU.get(), containerId);
-        checkContainerSize(inv, 4); // 4 SLOTS AGORA
+        checkContainerSize(inv, 4);
         this.blockEntity = (MythicForgeBlockEntity) entity;
         this.level = inv.player.level();
         this.data = data;
@@ -36,11 +36,11 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        // SLOTS EXATOS DA SMITHING TABLE:
+        // COORDENADAS EXATAS DA SMITHING TABLE VANILLA 1.20.1:
         this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 8, 48));   // Template -> Input 1
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 44, 48));  // Base -> Input 2 (Lingote)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 80, 48));  // Addition -> Input 3 (Recurso)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 134, 48)); // Result -> Output
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 26, 48));  // Base -> Input 2 (Lingote)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 44, 48));  // Addition -> Input 3 (Recurso)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 98, 48)); // Result -> Output
 
         addDataSlots(data);
     }
