@@ -9,7 +9,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> {
-    // USANDO A TEXTURA DA BIGORNA VANILLA
     private static final ResourceLocation TEXTURE =
             new ResourceLocation("textures/gui/container/anvil.png");
 
@@ -20,9 +19,8 @@ public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> 
     @Override
     protected void init() {
         super.init();
-        // Título centralizado como na bigorna
-        this.titleLabelX = 60;
-        this.titleLabelY = 18;
+        this.titleLabelX = (this.imageWidth - this.font.width(this.title)) / 2;
+        this.titleLabelY = 6;
     }
 
     @Override
@@ -34,15 +32,21 @@ public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> 
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
 
-        // Desenha a GUI da bigorna
         guiGraphics.blit(TEXTURE, x, y, 0, 0, this.imageWidth, this.imageHeight);
 
-        // BARRA DE PROGRESSO PERSONALIZADA
+        // Barra de progresso
         if (menu.getProgress() > 0) {
             int progressWidth = (int)(24 * ((float)menu.getProgress() / menu.getMaxProgress()));
-            // Posição entre os slots de entrada e saída
             guiGraphics.fill(x + 103, y + 48, x + 103 + progressWidth, y + 48 + 5, 0xFFFF4500);
         }
+    }
+
+    @Override
+    protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+        // Renderiza o título com cor branca e sem sombra para evitar a barra vermelha
+        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0xFFFFFF, false);
+        // Renderiza o label do inventário do jogador
+        guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0xFFFFFF, false);
     }
 
     @Override
