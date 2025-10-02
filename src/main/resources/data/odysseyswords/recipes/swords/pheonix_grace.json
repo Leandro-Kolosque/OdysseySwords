@@ -6,6 +6,9 @@
   "resourceInput": {
     "item": "minecraft:feather"
   },
+  "additionalInput": {
+    "item": "minecraft:coal"
+  },
   "output": {
     "item": "odysseyswords:pheonix_grace",
     "count": 1

@@ -1,7 +1,6 @@
 package com.odysseyswords.customswordmod.block.entity;
 
 import com.odysseyswords.customswordmod.recipe.MythicForgeRecipe;
-import com.odysseyswords.customswordmod.screen.MythicForgeMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -24,11 +23,12 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import com.odysseyswords.customswordmod.screen.MythicForgeMenu;
 
 import java.util.Optional;
 
 public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(4) { // 4 SLOTS AGORA
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -37,16 +37,14 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
-                case 0 -> true;
-                case 1 -> true;
-                case 2 -> false;
+                case 0, 1, 2 -> true; // 3 slots de entrada
+                case 3 -> false;      // Slot de saída
                 default -> super.isItemValid(slot, stack);
             };
         }
     };
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
-
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 78;
@@ -135,6 +133,7 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         return new MythicForgeMenu(containerId, playerInventory, this, this.data);
     }
 
+    // MÉTODOS DE CRAFTING ATUALIZADOS PARA 3 INGREDIENTES
     public static void tick(Level level, BlockPos pos, BlockState state, MythicForgeBlockEntity entity) {
         if (level.isClientSide()) return;
 
@@ -170,11 +169,11 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
-        return inventory.getItem(2).isEmpty() || inventory.getItem(2).getItem() == stack.getItem();
+        return inventory.getItem(3).isEmpty() || inventory.getItem(3).getItem() == stack.getItem();
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
+        return inventory.getItem(3).getMaxStackSize() > inventory.getItem(3).getCount();
     }
 
     private static void craftItem(MythicForgeBlockEntity entity) {
@@ -188,14 +187,16 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
                 .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
 
         if (match.isPresent()) {
+            // CONSUME 1 ITEM DE CADA SLOT DE ENTRADA (0, 1, 2)
             entity.itemHandler.extractItem(0, 1, false);
             entity.itemHandler.extractItem(1, 1, false);
+            entity.itemHandler.extractItem(2, 1, false);
 
             ItemStack result = match.get().getResultItem(level.registryAccess()).copy();
-            ItemStack currentOutput = entity.itemHandler.getStackInSlot(2);
+            ItemStack currentOutput = entity.itemHandler.getStackInSlot(3);
 
             if (currentOutput.isEmpty()) {
-                entity.itemHandler.setStackInSlot(2, result);
+                entity.itemHandler.setStackInSlot(3, result);
             } else {
                 currentOutput.grow(result.getCount());
             }

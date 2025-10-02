@@ -23,12 +23,12 @@ public class MythicForgeMenu extends AbstractContainerMenu {
 
     public MythicForgeMenu(int containerId, Inventory inv, FriendlyByteBuf extraData) {
         this(containerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()),
-                new SimpleContainerData(2)); // 2 para progress e maxProgress
+                new SimpleContainerData(2));
     }
 
     public MythicForgeMenu(int containerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.MYTHIC_FORGE_MENU.get(), containerId);
-        checkContainerSize(inv, 3);
+        checkContainerSize(inv, 4); // 4 SLOTS AGORA
         this.blockEntity = (MythicForgeBlockEntity) entity;
         this.level = inv.player.level();
         this.data = data;
@@ -36,15 +36,16 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        // SLOTS NO PADRÃO BIGORNA:
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 27, 47)); // Slot esquerda (primeiro item)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 76, 47)); // Slot direita (segundo item)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 134, 47)); // Slot resultado (baixo)
+        // SLOTS EXATOS DA SMITHING TABLE:
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 8, 48));   // Template -> Input 1
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 44, 48));  // Base -> Input 2 (Lingote)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 80, 48));  // Addition -> Input 3 (Recurso)
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 134, 48)); // Result -> Output
 
         addDataSlots(data);
     }
 
-    // Lógica para o Shift+Click (transferência rápida de itens)
+    // Lógica para o Shift+Click ATUALIZADA para 4 slots
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
@@ -52,12 +53,16 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         if (slot != null && slot.hasItem()) {
             ItemStack stack = slot.getItem();
             itemstack = stack.copy();
-            if (index < 3) {
-                if (!this.moveItemStackTo(stack, 3, 39, true)) {
+            
+            // Slots 0-3 são da forja, 4-39 são do inventário
+            if (index < 4) {
+                // Move da forja para o inventário
+                if (!this.moveItemStackTo(stack, 4, 40, true)) {
                     return ItemStack.EMPTY;
                 }
             } else {
-                if (!this.moveItemStackTo(stack, 0, 2, false)) {
+                // Move do inventário para a forja (apenas slots de entrada 0-2)
+                if (!this.moveItemStackTo(stack, 0, 3, false)) {
                     return ItemStack.EMPTY;
                 }
             }
@@ -74,7 +79,6 @@ public class MythicForgeMenu extends AbstractContainerMenu {
 
             slot.onTake(player, stack);
         }
-
         return itemstack;
     }
 
