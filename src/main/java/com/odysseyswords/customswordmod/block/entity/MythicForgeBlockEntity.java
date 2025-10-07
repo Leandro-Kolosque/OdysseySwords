@@ -1,6 +1,7 @@
 package com.odysseyswords.customswordmod.block.entity;
 
 import com.odysseyswords.customswordmod.recipe.MythicForgeRecipe;
+import com.odysseyswords.customswordmod.screen.MythicForgeMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -11,7 +12,6 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -23,57 +23,34 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import com.odysseyswords.customswordmod.screen.MythicForgeMenu;
 
 import java.util.Optional;
 
 public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4) { // 4 SLOTS AGORA
+    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
+            // Atualiza o resultado quando os slots de input mudam
+            if (slot < 3 && level != null && !level.isClientSide()) {
+                updateResult();
+            }
         }
 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
                 case 0, 1, 2 -> true; // 3 slots de entrada
-                case 3 -> false;      // Slot de saída
+                case 3 -> false;      // Slot de saída (apenas leitura)
                 default -> super.isItemValid(slot, stack);
             };
         }
     };
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
-    protected final ContainerData data;
-    private int progress = 0;
-    private int maxProgress = 78;
 
     public MythicForgeBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.MYTHIC_FORGE_BE.get(), pos, state);
-        this.data = new ContainerData() {
-            @Override
-            public int get(int index) {
-                return switch (index) {
-                    case 0 -> progress;
-                    case 1 -> maxProgress;
-                    default -> 0;
-                };
-            }
-
-            @Override
-            public void set(int index, int value) {
-                switch (index) {
-                    case 0 -> progress = value;
-                    case 1 -> maxProgress = value;
-                }
-            }
-
-            @Override
-            public int getCount() {
-                return 2;
-            }
-        };
     }
 
     public ItemStackHandler getItemHandler() {
@@ -103,7 +80,6 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
     @Override
     protected void saveAdditional(CompoundTag tag) {
         tag.put("inventory", itemHandler.serializeNBT());
-        tag.putInt("mythic_forge.progress", progress);
         super.saveAdditional(tag);
     }
 
@@ -111,7 +87,6 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
     public void load(CompoundTag tag) {
         super.load(tag);
         itemHandler.deserializeNBT(tag.getCompound("inventory"));
-        progress = tag.getInt("mythic_forge.progress");
     }
 
     public void drops() {
@@ -122,6 +97,58 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
+    // MÉTODO PARA ATUALIZAR O RESULTADO BASEADO NOS INGREDIENTES
+    private void updateResult() {
+        if (level == null || level.isClientSide()) return;
+
+        Optional<MythicForgeRecipe> match = findMatchingRecipe();
+        
+        if (match.isPresent()) {
+            ItemStack result = match.get().getResultItem(level.registryAccess()).copy();
+            itemHandler.setStackInSlot(3, result);
+        } else {
+            itemHandler.setStackInSlot(3, ItemStack.EMPTY);
+        }
+        setChanged();
+    }
+
+    // MÉTODO PARA ENCONTRAR A RECEITA CORRESPONDENTE
+    private Optional<MythicForgeRecipe> findMatchingRecipe() {
+        if (level == null) return Optional.empty();
+
+        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
+        for (int i = 0; i < itemHandler.getSlots(); i++) {
+            inventory.setItem(i, itemHandler.getStackInSlot(i));
+        }
+
+        return level.getRecipeManager()
+                .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
+    }
+
+    // MÉTODO PARA CONSUMIR OS INGREDIENTES QUANDO O JOGADOR PEGA O RESULTADO
+    public void consumeIngredients() {
+        if (level == null || level.isClientSide()) return;
+
+        // Verifica se há uma receita válida antes de consumir
+        Optional<MythicForgeRecipe> match = findMatchingRecipe();
+        if (match.isPresent()) {
+            // Consome 1 item de cada slot de entrada
+            itemHandler.extractItem(0, 1, false);
+            itemHandler.extractItem(1, 1, false);
+            itemHandler.extractItem(2, 1, false);
+            
+            // Atualiza o resultado após consumir os ingredientes
+            updateResult();
+            setChanged();
+        }
+    }
+
+    // MÉTODO PARA VERIFICAR SE HÁ UMA RECEITA VÁLIDA
+    public boolean hasValidRecipe() {
+        return findMatchingRecipe().isPresent();
+    }
+
+    // MenuProvider implementation
     @Override
     public Component getDisplayName() {
         return Component.translatable("container.odysseyswords.mythic_forge");
@@ -130,78 +157,8 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
-        return new MythicForgeMenu(containerId, playerInventory, this, this.data);
+        return new MythicForgeMenu(containerId, playerInventory, this);
     }
 
-    // MÉTODOS DE CRAFTING ATUALIZADOS PARA 3 INGREDIENTES
-    public static void tick(Level level, BlockPos pos, BlockState state, MythicForgeBlockEntity entity) {
-        if (level.isClientSide()) return;
-
-        if (hasRecipe(entity)) {
-            entity.progress++;
-            setChanged(level, pos, state);
-
-            if (entity.progress >= entity.maxProgress) {
-                craftItem(entity);
-            }
-        } else {
-            entity.resetProgress();
-            setChanged(level, pos, state);
-        }
-    }
-
-    private void resetProgress() {
-        this.progress = 0;
-    }
-
-    private static boolean hasRecipe(MythicForgeBlockEntity entity) {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-        }
-
-        Optional<MythicForgeRecipe> match = level.getRecipeManager()
-                .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
-
-        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory) &&
-                canInsertItemIntoOutputSlot(inventory, match.get().getResultItem(level.registryAccess()));
-    }
-
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
-        return inventory.getItem(3).isEmpty() || inventory.getItem(3).getItem() == stack.getItem();
-    }
-
-    private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(3).getMaxStackSize() > inventory.getItem(3).getCount();
-    }
-
-    private static void craftItem(MythicForgeBlockEntity entity) {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-        }
-
-        Optional<MythicForgeRecipe> match = level.getRecipeManager()
-                .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
-
-        if (match.isPresent()) {
-            // CONSUME 1 ITEM DE CADA SLOT DE ENTRADA (0, 1, 2)
-            entity.itemHandler.extractItem(0, 1, false);
-            entity.itemHandler.extractItem(1, 1, false);
-            entity.itemHandler.extractItem(2, 1, false);
-
-            ItemStack result = match.get().getResultItem(level.registryAccess()).copy();
-            ItemStack currentOutput = entity.itemHandler.getStackInSlot(3);
-
-            if (currentOutput.isEmpty()) {
-                entity.itemHandler.setStackInSlot(3, result);
-            } else {
-                currentOutput.grow(result.getCount());
-            }
-
-            entity.resetProgress();
-        }
-    }
+    // REMOVEMOS O MÉTODO tick() POIS NÃO PRECISAMOS MAIS DE CRAFTING AUTOMÁTICO
 }

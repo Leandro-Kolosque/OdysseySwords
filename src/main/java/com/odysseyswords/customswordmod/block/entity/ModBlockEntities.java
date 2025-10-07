@@ -17,9 +17,6 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(MythicForgeBlockEntity::new,
                             ModBlocks.MYTHIC_FORGE.get()).build(null));
 
-    public static void registerTickers() {
-    }
-
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

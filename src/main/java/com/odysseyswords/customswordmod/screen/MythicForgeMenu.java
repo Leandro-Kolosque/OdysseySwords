@@ -1,13 +1,11 @@
 package com.odysseyswords.customswordmod.screen;
 
-import net.minecraft.world.inventory.SimpleContainerData;
 import com.odysseyswords.customswordmod.block.ModBlocks;
 import com.odysseyswords.customswordmod.block.entity.MythicForgeBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
@@ -19,33 +17,59 @@ import org.jetbrains.annotations.NotNull;
 public class MythicForgeMenu extends AbstractContainerMenu {
     public final MythicForgeBlockEntity blockEntity;
     private final Level level;
-    private final ContainerData data;
 
     public MythicForgeMenu(int containerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(containerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()),
-                new SimpleContainerData(2));
+        this(containerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()));
     }
 
-    public MythicForgeMenu(int containerId, Inventory inv, BlockEntity entity, ContainerData data) {
+    public MythicForgeMenu(int containerId, Inventory inv, BlockEntity entity) {
         super(ModMenuTypes.MYTHIC_FORGE_MENU.get(), containerId);
         checkContainerSize(inv, 4);
         this.blockEntity = (MythicForgeBlockEntity) entity;
         this.level = inv.player.level();
-        this.data = data;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        // COORDENADAS EXATAS DA SMITHING TABLE VANILLA 1.20.1:
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 8, 48));   // Template -> Input 1
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 26, 48));  // Base -> Input 2 (Lingote)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 44, 48));  // Addition -> Input 3 (Recurso)
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 98, 48)); // Result -> Output
+        // SLOTS PERSONALIZADOS PARA A FORJA MÍTICA
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 91, 30) {   // Input 1
+            @Override
+            public boolean mayPlace(@NotNull ItemStack stack) {
+                return true;
+            }
+        });
+        
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 121, 19) {   // Input 2
+            @Override
+            public boolean mayPlace(@NotNull ItemStack stack) {
+                return true;
+            }
+        });
+        
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 150, 30) {  // Input 3
+            @Override
+            public boolean mayPlace(@NotNull ItemStack stack) {
+                return true;
+            }
+        });
+        
+        // SLOT DE OUTPUT - NÃO PERMITE COLOCAR ITENS, SÓ TIRAR
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 121, 68) {   // Output
+            @Override
+            public boolean mayPlace(@NotNull ItemStack stack) {
+                return false; // Não permite colocar itens no slot de output
+            }
 
-        addDataSlots(data);
+            @Override
+            public void onTake(Player player, ItemStack stack) {
+                // Quando o jogador pega o item do output, consome os ingredientes
+                blockEntity.consumeIngredients();
+                super.onTake(player, stack);
+            }
+        });
     }
 
-    // Lógica para o Shift+Click ATUALIZADA para 4 slots
+    // Lógica para o Shift+Click
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
@@ -54,14 +78,19 @@ public class MythicForgeMenu extends AbstractContainerMenu {
             ItemStack stack = slot.getItem();
             itemstack = stack.copy();
             
-            // Slots 0-3 são da forja, 4-39 são do inventário
-            if (index < 4) {
-                // Move da forja para o inventário
+            if (index == 3) {
+                // Se for o slot de output
+                if (!this.moveItemStackTo(stack, 4, 40, true)) {
+                    return ItemStack.EMPTY;
+                }
+                slot.onQuickCraft(stack, itemstack);
+            } else if (index < 3) {
+                // Se for um slot de input, move para o inventário
                 if (!this.moveItemStackTo(stack, 4, 40, true)) {
                     return ItemStack.EMPTY;
                 }
             } else {
-                // Move do inventário para a forja (apenas slots de entrada 0-2)
+                // Se for do inventário, tenta mover para os slots de input
                 if (!this.moveItemStackTo(stack, 0, 3, false)) {
                     return ItemStack.EMPTY;
                 }
@@ -91,22 +120,14 @@ public class MythicForgeMenu extends AbstractContainerMenu {
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
+                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 100 + i * 18));
             }
         }
     }
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 158));
         }
-    }
-
-    public int getProgress() {
-        return this.data.get(0);
-    }
-
-    public int getMaxProgress() {
-        return this.data.get(1);
     }
 }
