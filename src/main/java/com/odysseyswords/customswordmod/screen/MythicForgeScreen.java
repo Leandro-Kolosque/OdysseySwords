@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(OdysseySwords.MODID, "textures/gui/teste.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(OdysseySwords.MODID, "textures/gui/mythic_forge_gui.png");
 
     public MythicForgeScreen(MythicForgeMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);

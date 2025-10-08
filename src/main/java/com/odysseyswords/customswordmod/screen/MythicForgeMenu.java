@@ -32,21 +32,21 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         // SLOTS PERSONALIZADOS PARA A FORJA MÍTICA
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 91, 30) {   // Input 1
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 81, 42) {   // Input 1
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return true;
             }
         });
         
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 121, 19) {   // Input 2
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 114, 24) {   // Input 2
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return true;
             }
         });
         
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 150, 30) {  // Input 3
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 147, 42) {  // Input 3
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return true;
@@ -54,7 +54,7 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         });
         
         // SLOT DE OUTPUT - NÃO PERMITE COLOCAR ITENS, SÓ TIRAR
-        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 121, 68) {   // Output
+        this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 114, 63) {   // Output
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return false; // Não permite colocar itens no slot de output
