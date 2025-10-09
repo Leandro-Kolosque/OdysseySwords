@@ -1,6 +1,9 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/template_anvil",
   "textures": {
-    "all": "odysseyswords:block/mythic_forge"
+    "particle": "odysseyswords:block/mythic_forge",
+    "body": "odysseyswords:block/mythic_forge",
+    "top": "odysseyswords:block/mythic_forge_top",
+    "side": "minecraft:block/anvil_side"
   }
 }
