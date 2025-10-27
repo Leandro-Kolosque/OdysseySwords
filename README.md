@@ -14,10 +14,10 @@
 ## 🖼️ Galeria Épica
 
 <p align="center">
-  <img src="images/machado-epicShowcase.png" alt="Fyr'alath, the Scorched Agony" height="500"/>
-  <img src="images/espada-epicShowcase.png" alt="Dragon Slaying Blade" height="500"/>
-  <img src="images/espada02-epicShowcase.png" alt="Phoenix Grace" height="500" />
-  <img src="images/foice-epicShowcase.png" alt="Divine Reaper" height="500" />
+  <img src="images/machadoEpicShowcase.png" alt="Fyr'alath, the Scorched Agony" height="500"/>
+  <img src="images/espadaEpicShowcase.png" alt="Dragon Slaying Blade" height="500"/>
+  <img src="images/espada02EpicShowcase.png" alt="Phoenix Grace" height="500" />
+  <img src="images/foiceEpicShowcase.png" alt="Divine Reaper" height="500" />
 </p>
 
 ## ⚔️ Recursos Principais
