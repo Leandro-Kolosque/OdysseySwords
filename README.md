@@ -60,10 +60,12 @@ Quer ajudar a melhorar o **Odyssey Swords**? Sinta-se à vontade para contribuir
 
 ### Guia rápido
 1. Faça um fork do repositório.
-2. Crie uma branch para sua modificação (`git checkout -b minha-feature`).
-3. Commit suas alterações (`git commit -m "Descrição da feature"`).
-4. Push para sua branch (`git push origin minha-feature`).
-5. Abra um Pull Request aqui no GitHub.
+2. Clone o projeto localmente e abra no Visual Studio Code ou IntelliJ IDEA.
+3. Crie uma branch para sua modificação: (`git checkout -b minha-feature`)
+4. Compile e teste o mod localmente com: (`./gradlew runClient`) Isso iniciará o Minecraft com o mod carregado em ambiente de desenvolvimento. Se quiser testar em servidor local: (`./gradlew runServer `)
+5. Após validar, gere o arquivo .jar para distribuição: (`./gradlew build`). O .jar final ficará em build/libs/.
+6. Commit suas alterações e envie sua branch: (`git commit -m "Descrição da feature"`) (`git push origin minha-feature`)
+7. Abra um Pull Request aqui no GitHub.
 
 ## 🙏 Créditos
 - Desenvolvimento: Leandro Kolosque
