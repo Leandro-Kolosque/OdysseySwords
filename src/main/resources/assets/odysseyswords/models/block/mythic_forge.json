@@ -1,9 +1,3 @@
 {
-  "parent": "minecraft:block/template_anvil",
-  "textures": {
-    "particle": "odysseyswords:block/mythic_forge",
-    "body": "odysseyswords:block/mythic_forge",
-    "top": "odysseyswords:block/mythic_forge_top",
-    "side": "minecraft:block/anvil_side"
-  }
+  "parent": "minecraft:block/anvil"
 }
