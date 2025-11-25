@@ -38,7 +38,7 @@ public class OdysseySwords {
         // Registra os SoundEvents
         ModSoundEvents.register(modEventBus);
 
-        // Registra os Blocos
+        // Registra os Blocos do Mod
         ModBlockEntities.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModMenuTypes.register(modEventBus);
