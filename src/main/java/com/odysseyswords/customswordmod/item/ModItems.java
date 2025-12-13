@@ -1,9 +1,13 @@
 package com.odysseyswords.customswordmod.item;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
+import com.odysseyswords.customswordmod.item.custom.ModArmorMaterials;
 import com.odysseyswords.customswordmod.item.custom.ModBowItem;
 import com.odysseyswords.customswordmod.item.custom.ModMaterialItem;
 import com.odysseyswords.customswordmod.item.custom.ModTooltipItem;
+import com.odysseyswords.customswordmod.item.custom.SpartanEliteArmorItem;
+
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +23,10 @@ public class ModItems {
     private static Item.Properties swordProperties() {
         return new Item.Properties().fireResistant().rarity(net.minecraft.world.item.Rarity.RARE);
     }
+
+    public static final RegistryObject<Item> SPARTAN_ELITE_HELMET = ITEMS.register("spartan_elite_helmet",
+            () -> new SpartanEliteArmorItem(ModArmorMaterials.SPARTAN_ELITE, ArmorItem.Type.HELMET,
+                    new Item.Properties().stacksTo(1)));
 
     // Legendary Weapons
     private static Item.Properties legendaryProperties() {
