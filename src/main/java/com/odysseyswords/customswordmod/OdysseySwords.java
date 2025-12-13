@@ -16,6 +16,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import software.bernie.geckolib.GeckoLib;
+
 // O MODID deve corresponder ao modid no mods.toml
 @Mod(OdysseySwords.MODID)
 public class OdysseySwords {
@@ -25,6 +27,8 @@ public class OdysseySwords {
     public OdysseySwords() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        GeckoLib.initialize();
+        
         // Registra os itens
         ModItems.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
