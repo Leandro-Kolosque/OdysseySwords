@@ -26,14 +26,14 @@ public class TooltipStyleHelper {
         // Mapeamento completo de armas para materiais
         // Blood Ingot
         addWeaponsToMaterial("blood",
-            "fallen_god_spear", "creation_splitter", "demonic_blade",
+            "fallen_god_spear", "demonic_blade",
             "demonic_cleaver", "corrupted_mythic_blade",
             "soul_devourer", "fallen_god_sword",
             "soul_collector", "rivers_of_blood");
 
         // Cyber Ingot
         addWeaponsToMaterial("cyber",
-            "cyber_mantis_blade", "cyber_katana",
+            "cyber_katana",
             "cybernetic_katana");
 
         // Frost Ingot
@@ -52,13 +52,10 @@ public class TooltipStyleHelper {
         // Sculk Ingot
         addWeaponsToMaterial("sculk",
             "sculk_cleaver", "sculk_sword", "stars_edge",
-            "epic_sword", "yoru",
-            "sculk_scythe", "excalibur", "forest_guardian_glaive",
-            "soul_edge");
+            "epic_sword", "sculk_scythe", "excalibur", "forest_guardian_glaive");
 
         // Soul Ingot
         addWeaponsToMaterial("soul",
-            "soul_claws",
             "dark_blade", "dark_cleaver",
             "edge_of_the_astralplane");
 
@@ -75,14 +72,12 @@ public class TooltipStyleHelper {
             "amethyst_shuriken", "abominable_scythe", "thousand_demon_daggers");
 
         // Toxic Ingot
-        addWeaponsToMaterial("toxic",
-            "bramblethorn", "wraiht_scythe",
-            "acid_demon", "toxic_blade");
+        addWeaponsToMaterial("toxic", "wraiht_scythe", "toxic_blade");
 
         // Silverine Ingot
         addWeaponsToMaterial("silverine",
             "steel_sword",
-            "sabre", "silverine_blade", "estoc", "whisperwind");
+            "sabre", "estoc", "whisperwind");
 
         // Divine Ingot
         addWeaponsToMaterial("divine",
