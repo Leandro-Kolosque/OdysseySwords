@@ -1,20 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "odysseyswords:block/mythic_forge",
-      "y": 0
-    },
-    "facing=south": {
-      "model": "odysseyswords:block/mythic_forge",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "odysseyswords:block/mythic_forge",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "odysseyswords:block/mythic_forge",
-      "y": 90
-    }
+    "facing=north": { "model": "odysseyswords:block/mythic_forge" },
+    "facing=south": { "model": "odysseyswords:block/mythic_forge", "y": 180 },
+    "facing=west":  { "model": "odysseyswords:block/mythic_forge", "y": 270 },
+    "facing=east":  { "model": "odysseyswords:block/mythic_forge", "y": 90 }
   }
 }

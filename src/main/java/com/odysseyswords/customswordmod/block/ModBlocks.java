@@ -25,6 +25,7 @@ public class ModBlocks {
                     .strength(5f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)
+                    .noOcclusion()
                     .lightLevel(state -> 15)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
