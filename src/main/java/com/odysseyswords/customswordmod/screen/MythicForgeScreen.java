@@ -43,9 +43,6 @@ public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> 
 
     @Override
     protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-        // Renderiza o título da forja
-        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0x404040, false);
-
             // Renderiza o label do inventário
         guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY,
                 0x404040, false);
