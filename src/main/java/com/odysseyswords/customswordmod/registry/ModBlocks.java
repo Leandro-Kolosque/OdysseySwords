@@ -1,8 +1,7 @@
 package com.odysseyswords.customswordmod.registry;
 
-import com.odysseyswords.customswordmod.OdysseySwords;
+import com.odysseyswords.customswordmod.core.OdysseyConstants;
 import com.odysseyswords.customswordmod.content.blocks.mythic_forge.MythicForgeBlock;
-
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -17,26 +16,40 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, OdysseySwords.MODID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, OdysseyConstants.MOD_ID);
 
-    public static final RegistryObject<Block> MYTHIC_FORGE = registerBlock("mythic_forge",
-            () -> new MythicForgeBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.METAL)
-                    .strength(5f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.METAL)
-                    .noOcclusion()
-                    .lightLevel(state -> 15)));
+    public static final RegistryObject<Block> MYTHIC_FORGE = register(
+            "mythic_forge",
+            () -> new MythicForgeBlock(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.METAL)
+                            .strength(5.0F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
+                            .noOcclusion()
+                            .lightLevel(state -> 15)
+            )
+    );
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
+    private static <T extends Block> RegistryObject<T> register(
+            String name,
+            Supplier<T> blockSupplier
+    ) {
+        RegistryObject<T> block = BLOCKS.register(name, blockSupplier);
+        registerBlockItem(name, block);
+        return block;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    private static <T extends Block> void registerBlockItem(
+            String name,
+            RegistryObject<T> block
+    ) {
+        ModItems.ITEMS.register(
+                name,
+                () -> new BlockItem(block.get(), new Item.Properties())
+        );
     }
 
     public static void register(IEventBus eventBus) {

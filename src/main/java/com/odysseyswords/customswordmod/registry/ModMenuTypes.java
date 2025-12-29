@@ -1,8 +1,7 @@
 package com.odysseyswords.customswordmod.registry;
 
-import com.odysseyswords.customswordmod.OdysseySwords;
+import com.odysseyswords.customswordmod.core.OdysseyConstants;
 import com.odysseyswords.customswordmod.gui.menus.MythicForgeMenu;
-
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -13,17 +12,21 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModMenuTypes {
-    public static final DeferredRegister<MenuType<?>> MENUS =
-            DeferredRegister.create(ForgeRegistries.MENU_TYPES, OdysseySwords.MODID);
 
-    public static final RegistryObject<MenuType<MythicForgeMenu>> MYTHIC_FORGE_MENU =
-            registerMenuType(MythicForgeMenu::new, "mythic_forge_menu");
+    public static final DeferredRegister<MenuType<?>> MENU_TYPES =
+            DeferredRegister.create(ForgeRegistries.MENU_TYPES, OdysseyConstants.MOD_ID);
 
-    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {
-        return MENUS.register(name, () -> IForgeMenuType.create(factory));
+    public static final RegistryObject<MenuType<MythicForgeMenu>> MYTHIC_FORGE=
+            register("mythic_forge", MythicForgeMenu::new);
+
+    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> register(
+            String name,
+            IContainerFactory<T> factory
+    ) {
+        return MENU_TYPES.register(name, () -> IForgeMenuType.create(factory));
     }
 
     public static void register(IEventBus eventBus) {
-        MENUS.register(eventBus);
+        MENU_TYPES.register(eventBus);
     }
 }

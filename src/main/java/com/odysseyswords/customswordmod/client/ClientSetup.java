@@ -1,5 +1,6 @@
 package com.odysseyswords.customswordmod.client;
 
+import com.odysseyswords.customswordmod.OdysseySwords;
 import com.odysseyswords.customswordmod.gui.screens.MythicForgeScreen;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 
@@ -9,12 +10,24 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod.EventBusSubscriber(modid = com.odysseyswords.customswordmod.OdysseySwords.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-public class ClientSetup {
+@Mod.EventBusSubscriber(
+        modid = OdysseySwords.MODID,
+        bus = Mod.EventBusSubscriber.Bus.MOD,
+        value = Dist.CLIENT
+)
+public final class ClientSetup {
+
+    private ClientSetup() {
+        // Evita instanciação
+    }
+
     @SubscribeEvent
-    public static void onClientSetup(FMLClientSetupEvent event) {
+    public static void onClientSetup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            MenuScreens.register(ModMenuTypes.MYTHIC_FORGE_MENU.get(), MythicForgeScreen::new);
+            MenuScreens.register(
+                    ModMenuTypes.MYTHIC_FORGE.get(),
+                    MythicForgeScreen::new
+            );
         });
     }
 }

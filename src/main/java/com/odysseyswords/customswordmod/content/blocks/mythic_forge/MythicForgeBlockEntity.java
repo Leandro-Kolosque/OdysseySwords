@@ -29,11 +29,11 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider {
+
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
-            // Atualiza o resultado quando os slots de input mudam
             if (slot < 3 && level != null && !level.isClientSide()) {
                 updateResult();
             }
@@ -42,8 +42,8 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
-                case 0, 1, 2 -> true; // 3 slots de entrada
-                case 3 -> false;      // Slot de saída (apenas leitura)
+                case 0, 1, 2 -> true;
+                case 3 -> false;
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -52,7 +52,7 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
     public MythicForgeBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.MYTHIC_FORGE_BE.get(), pos, state);
+        super(ModBlockEntities.MYTHIC_FORGE.get(), pos, state);
     }
 
     public ItemStackHandler getItemHandler() {
@@ -96,15 +96,14 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         for (int i = 0; i < itemHandler.getSlots(); i++) {
             inventory.setItem(i, itemHandler.getStackInSlot(i));
         }
-        Containers.dropContents(this.level, this.worldPosition, inventory);
+        Containers.dropContents(level, worldPosition, inventory);
     }
 
-    // MÉTODO PARA ATUALIZAR O RESULTADO BASEADO NOS INGREDIENTES
     private void updateResult() {
         if (level == null || level.isClientSide()) return;
 
         Optional<MythicForgeRecipe> match = findMatchingRecipe();
-        
+
         if (match.isPresent()) {
             ItemStack result = match.get().getResultItem(level.registryAccess()).copy();
             itemHandler.setStackInSlot(3, result);
@@ -114,7 +113,6 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         setChanged();
     }
 
-    // MÉTODO PARA ENCONTRAR A RECEITA CORRESPONDENTE
     private Optional<MythicForgeRecipe> findMatchingRecipe() {
         if (level == null) return Optional.empty();
 
@@ -127,30 +125,18 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
                 .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
     }
 
-    // MÉTODO PARA CONSUMIR OS INGREDIENTES QUANDO O JOGADOR PEGA O RESULTADO
     public void consumeIngredients() {
         if (level == null || level.isClientSide()) return;
 
-        // Verifica se há uma receita válida antes de consumir
-        Optional<MythicForgeRecipe> match = findMatchingRecipe();
-        if (match.isPresent()) {
-            // Consome 1 item de cada slot de entrada
+        if (findMatchingRecipe().isPresent()) {
             itemHandler.extractItem(0, 1, false);
             itemHandler.extractItem(1, 1, false);
             itemHandler.extractItem(2, 1, false);
-            
-            // Atualiza o resultado após consumir os ingredientes
             updateResult();
             setChanged();
         }
     }
 
-    // MÉTODO PARA VERIFICAR SE HÁ UMA RECEITA VÁLIDA
-    public boolean hasValidRecipe() {
-        return findMatchingRecipe().isPresent();
-    }
-
-    // MenuProvider implementation
     @Override
     public Component getDisplayName() {
         return Component.translatable("container.odysseyswords.mythic_forge");
@@ -158,9 +144,7 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
 
     @Nullable
     @Override
-    public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
-        return new MythicForgeMenu(containerId, playerInventory, this);
+    public AbstractContainerMenu createMenu(int containerId, Inventory inventory, Player player) {
+        return new MythicForgeMenu(containerId, inventory, this);
     }
-
-    // REMOVEMOS O MÉTODO tick() POIS NÃO PRECISAMOS MAIS DE CRAFTING AUTOMÁTICO
 }
