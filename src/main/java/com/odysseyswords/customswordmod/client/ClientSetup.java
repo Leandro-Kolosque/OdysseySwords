@@ -1,7 +1,8 @@
 package com.odysseyswords.customswordmod.client;
 
-import com.odysseyswords.customswordmod.screen.MythicForgeScreen;
-import com.odysseyswords.customswordmod.screen.ModMenuTypes;
+import com.odysseyswords.customswordmod.gui.screens.MythicForgeScreen;
+import com.odysseyswords.customswordmod.registry.ModMenuTypes;
+
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

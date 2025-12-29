@@ -1,14 +1,14 @@
 package com.odysseyswords.customswordmod;
 
 import com.mojang.logging.LogUtils;
-import com.odysseyswords.customswordmod.item.ModItems;
-import com.odysseyswords.customswordmod.block.ModBlocks;
-import com.odysseyswords.customswordmod.item.ModCreativeModeTab;
+import com.odysseyswords.customswordmod.content.recipes.ModRecipes;
+import com.odysseyswords.customswordmod.registry.ModBlockEntities;
+import com.odysseyswords.customswordmod.registry.ModBlocks;
+import com.odysseyswords.customswordmod.registry.ModCreativeModeTab;
+import com.odysseyswords.customswordmod.registry.ModItems;
+import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
-import com.odysseyswords.customswordmod.block.entity.ModBlockEntities;
-import com.odysseyswords.customswordmod.screen.ModMenuTypes;
 
-import com.odysseyswords.customswordmod.recipe.ModRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
