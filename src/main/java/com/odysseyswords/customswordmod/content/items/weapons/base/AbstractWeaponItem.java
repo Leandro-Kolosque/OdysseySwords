@@ -1,29 +1,18 @@
 package com.odysseyswords.customswordmod.content.items.weapons.base;
 
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TieredItem;
 
-public abstract class AbstractWeaponItem extends Item {
+public abstract class AbstractWeaponItem extends TieredItem {
 
-    protected final WeaponClass weaponClass;
-    protected final WeaponTier weaponTier;
-
-    protected AbstractWeaponItem(Properties properties, WeaponClass weaponClass, WeaponTier weaponTier) {
-        super(properties);
-        this.weaponClass = weaponClass;
-        this.weaponTier = weaponTier;
+    protected AbstractWeaponItem(Tier tier, Properties properties) {
+        super(tier, properties);
     }
 
-    public WeaponClass getWeaponClass() {
-        return weaponClass;
-    }
-
-    public WeaponTier getWeaponTier() {
-        return weaponTier;
-    }
-
-    protected void onHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        // sobrescreva nas armas concretas
+    @Override
+    public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        return super.hurtEnemy(stack, target, attacker);
     }
 }

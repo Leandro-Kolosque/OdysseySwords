@@ -5,6 +5,8 @@ import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMa
 import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
+import com.odysseyswords.customswordmod.content.items.weapons.swords.SteelSword;
 import com.odysseyswords.customswordmod.util.helpers.ModTooltipItem;
 
 import net.minecraft.world.item.ArmorItem;
@@ -37,6 +39,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> ORION =
         ITEMS.register("orion", OrionBow::new);
+
+    public static final RegistryObject<Item> STEEL_SWORD =
+        ITEMS.register("steel_sword", SteelSword::new);
+
+    public static final RegistryObject<Item> FROST_SCYTHE =
+        ITEMS.register("frost_scythe", FrostScythe::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -171,7 +179,6 @@ public class ModItems {
     public static final RegistryObject<Item> RIVERS_OF_BLOOD = ITEMS.register("rivers_of_blood", () -> createSword());
     public static final RegistryObject<Item> SCULK_CLEAVER = ITEMS.register("sculk_cleaver", () -> createSword());
     public static final RegistryObject<Item> SCULK_SWORD = ITEMS.register("sculk_sword", () -> createSword());
-    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> createSword());
     public static final RegistryObject<Item> THOUSAND_DEMON_DAGGERS = ITEMS.register("thousand_demon_daggers", () -> createSword());
     public static final RegistryObject<Item> UNIQUE_LONGSWORD_HOLY = ITEMS.register("unique_longsword_holy", () -> createSword());
     public static final RegistryObject<Item> WATCHER_CLAYMORE = ITEMS.register("watcher_claymore", () -> createSword());
@@ -215,7 +222,6 @@ public class ModItems {
     // Scythe
     public static final RegistryObject<Item> ABOMINABLE_SCYTHE = ITEMS.register("abominable_scythe", () -> createScythe());
     public static final RegistryObject<Item> DIVINE_REAPER = ITEMS.register("divine_reaper", () -> createScythe());
-    public static final RegistryObject<Item> FROST_SCYTHE = ITEMS.register("frost_scythe", () -> createScythe());
     public static final RegistryObject<Item> FROST_SCYTHE_AXE = ITEMS.register("frost_scythe_axe", () -> createScythe());
     public static final RegistryObject<Item> MAGIC_SCYTHE = ITEMS.register("magic_scythe", () -> createScythe());
     public static final RegistryObject<Item> SCULK_SCYTHE = ITEMS.register("sculk_scythe", () -> createScythe());
