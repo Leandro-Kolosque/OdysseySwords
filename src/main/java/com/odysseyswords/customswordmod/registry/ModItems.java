@@ -6,8 +6,11 @@ import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.Spartan
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
+import com.odysseyswords.customswordmod.content.items.weapons.greatswords.AncientRoyalGreatsword;
+import com.odysseyswords.customswordmod.content.items.weapons.hammers.PowerfuseHammer;
 import com.odysseyswords.customswordmod.content.items.weapons.rapiers.RoyalRapier;
 import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.DivineJustice;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.SteelSword;
 import com.odysseyswords.customswordmod.util.helpers.ModTooltipItem;
 
@@ -53,6 +56,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROYAL_RAPIER =
     ITEMS.register("royal_rapier", RoyalRapier::new);
+
+    public static final RegistryObject<Item> DIVINE_JUSTICE =
+    ITEMS.register("divine_justice", DivineJustice::new);
+
+    public static final RegistryObject<Item> POWERFUSE_HAMMER =
+    ITEMS.register("powerfuse_hammer", PowerfuseHammer::new);
+
+    public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD =
+    ITEMS.register("ancient_royal_greatsword", AncientRoyalGreatsword::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -197,7 +209,6 @@ public class ModItems {
     public static final RegistryObject<Item> SABRE = ITEMS.register("sabre", () -> createRapier());
 
     // Greatsword
-    public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD = ITEMS.register("ancient_royal_greatsword", () -> createGreatsword());
     public static final RegistryObject<Item> DIVINE_PUNISHER = ITEMS.register("divine_punisher", () -> createGreatsword());
     public static final RegistryObject<Item> DRAGON_SLAYING_BLADE = ITEMS.register("dragon_slaying_blade", () -> createGreatsword());
     public static final RegistryObject<Item> SOUL_DEVOURER = ITEMS.register("soul_devourer", () -> createGreatsword());
@@ -205,7 +216,6 @@ public class ModItems {
 
     // Spear
     public static final RegistryObject<Item> AQUANTIC_TRIDENT = ITEMS.register("aquantic_trident", () -> createLance());
-    public static final RegistryObject<Item> DIVINE_JUSTICE = ITEMS.register("divine_justice", () -> createLance());
     public static final RegistryObject<Item> FALLEN_GOD_SPEAR = ITEMS.register("fallen_god_spear", () -> createLance());
     public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE = ITEMS.register("forest_guardian_glaive", () -> createLance());
     public static final RegistryObject<Item> JADE_HALBERD = ITEMS.register("jade_halberd", () -> createLance());
@@ -223,7 +233,6 @@ public class ModItems {
     public static final RegistryObject<Item> ROYAL_CHAKRAM = ITEMS.register("royal_chakram", () -> createChakram());
 
     // Hammer
-    public static final RegistryObject<Item> POWERFUSE_HAMMER = ITEMS.register("powerfuse_hammer", () -> createHammer());
 
     // Scythe
     public static final RegistryObject<Item> ABOMINABLE_SCYTHE = ITEMS.register("abominable_scythe", () -> createScythe());
