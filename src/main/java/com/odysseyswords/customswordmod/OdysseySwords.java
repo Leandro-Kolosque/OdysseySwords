@@ -8,6 +8,8 @@ import com.odysseyswords.customswordmod.registry.ModCreativeModeTab;
 import com.odysseyswords.customswordmod.registry.ModItems;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
+import com.odysseyswords.customswordmod.registry.ModEntities;
+
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,6 +33,7 @@ public class OdysseySwords {
         
         // Registra os itens
         ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
 
         // Registra o método commonSetup para o carregamento do mod

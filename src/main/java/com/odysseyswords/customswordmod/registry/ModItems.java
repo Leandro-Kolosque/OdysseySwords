@@ -6,12 +6,14 @@ import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.Spartan
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
+import com.odysseyswords.customswordmod.content.items.weapons.chakrams.RoyalChakram;
 import com.odysseyswords.customswordmod.content.items.weapons.greatswords.AncientRoyalGreatsword;
 import com.odysseyswords.customswordmod.content.items.weapons.hammers.PowerfuseHammer;
 import com.odysseyswords.customswordmod.content.items.weapons.rapiers.RoyalRapier;
 import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
 import com.odysseyswords.customswordmod.content.items.weapons.spears.DivineJustice;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.SteelSword;
+import com.odysseyswords.customswordmod.content.items.weapons.warglaives.WatchingWarglaive;
 import com.odysseyswords.customswordmod.util.helpers.ModTooltipItem;
 
 import net.minecraft.world.item.ArmorItem;
@@ -65,6 +67,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD =
     ITEMS.register("ancient_royal_greatsword", AncientRoyalGreatsword::new);
+
+    public static final RegistryObject<Item> WATCHING_WARGLAIVE =
+    ITEMS.register("watching_warglaive", WatchingWarglaive::new);
+
+    public static final RegistryObject<Item> ROYAL_CHAKRAM =
+        ITEMS.register("royal_chakram", RoyalChakram::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -230,7 +238,6 @@ public class ModItems {
 
     // Chakram
     public static final RegistryObject<Item> AMETHYST_SHURIKEN = ITEMS.register("amethyst_shuriken", () -> createChakram());
-    public static final RegistryObject<Item> ROYAL_CHAKRAM = ITEMS.register("royal_chakram", () -> createChakram());
 
     // Hammer
 
@@ -243,7 +250,6 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_COLLECTOR = ITEMS.register("soul_collector", () -> createScythe());
 
     // Warglaive
-    public static final RegistryObject<Item> WATCHING_WARGLAIVE = ITEMS.register("watching_warglaive", () -> createWarglaive());
     public static final RegistryObject<Item> STARS_EDGE = ITEMS.register("stars_edge", () -> createWarglaive());
     public static final RegistryObject<Item> STORMS_EDGE = ITEMS.register("storms_edge", () -> createWarglaive());
 
