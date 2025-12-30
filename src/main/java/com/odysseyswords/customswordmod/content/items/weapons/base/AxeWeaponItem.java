@@ -1,18 +1,13 @@
 package com.odysseyswords.customswordmod.content.items.weapons.base;
 
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.Tier;
 
 public abstract class AxeWeaponItem extends AxeItem {
 
-    protected final WeaponTier weaponTier;
+    protected static final float BASE_ATTACK_SPEED = -2.9F;
 
-    protected AxeWeaponItem(Properties properties, WeaponTier weaponTier) {
-        super(
-            weaponTier.tier(),
-            weaponTier.damageBonus(),
-            weaponTier.attackSpeed(),
-            properties
-        );
-        this.weaponTier = weaponTier;
+    protected AxeWeaponItem(Tier tier, float baseDamage, Properties properties) {
+        super(tier, baseDamage, BASE_ATTACK_SPEED, properties);
     }
 }

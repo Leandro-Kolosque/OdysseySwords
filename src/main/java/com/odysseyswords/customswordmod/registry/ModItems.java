@@ -4,6 +4,7 @@ import com.odysseyswords.customswordmod.OdysseySwords;
 import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
 import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
+import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
 import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.SteelSword;
@@ -45,6 +46,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> FROST_SCYTHE =
         ITEMS.register("frost_scythe", FrostScythe::new);
+
+    public static final RegistryObject<Item> ICEWHISPER =
+    ITEMS.register("icewhisper", IceWhisper::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -210,7 +214,6 @@ public class ModItems {
     public static final RegistryObject<Item> DEMONLORD_GREATAXE = ITEMS.register("demonlord_greataxe", () -> createAxe());
     public static final RegistryObject<Item> DIVINE_AXE_RHITTA = ITEMS.register("divine_axe_rhitta", () -> createAxe());
     public static final RegistryObject<Item> HEARTHFLAME = ITEMS.register("hearthflame", () -> createAxe());
-    public static final RegistryObject<Item> ICEWHISPER = ITEMS.register("icewhisper", () -> createAxe());
 
     // Chakram
     public static final RegistryObject<Item> AMETHYST_SHURIKEN = ITEMS.register("amethyst_shuriken", () -> createChakram());
