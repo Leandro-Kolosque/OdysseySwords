@@ -6,6 +6,7 @@ import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.Spartan
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
+import com.odysseyswords.customswordmod.content.items.weapons.rapiers.RoyalRapier;
 import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.SteelSword;
 import com.odysseyswords.customswordmod.util.helpers.ModTooltipItem;
@@ -49,6 +50,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ICEWHISPER =
     ITEMS.register("icewhisper", IceWhisper::new);
+
+    public static final RegistryObject<Item> ROYAL_RAPIER =
+    ITEMS.register("royal_rapier", RoyalRapier::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -191,7 +195,6 @@ public class ModItems {
     // Rapier
     public static final RegistryObject<Item> FLORAL_SABRE = ITEMS.register("floral_sabre", () -> createRapier());
     public static final RegistryObject<Item> SABRE = ITEMS.register("sabre", () -> createRapier());
-    public static final RegistryObject<Item> ROYAL_RAPIER = ITEMS.register("royal_rapier", () -> createRapier());
 
     // Greatsword
     public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD = ITEMS.register("ancient_royal_greatsword", () -> createGreatsword());
