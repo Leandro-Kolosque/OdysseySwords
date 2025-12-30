@@ -1,46 +1,46 @@
 package com.odysseyswords.customswordmod.content.items.weapons.bows;
 
+import com.odysseyswords.customswordmod.content.items.weapons.base.AbstractBowWeaponItem;
+import com.odysseyswords.customswordmod.util.helpers.TooltipStyleHelper;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-import com.odysseyswords.customswordmod.util.helpers.TooltipStyleHelper;
-
 import java.util.List;
 import java.util.Optional;
 
-public class ModBowItem extends BowItem {
-    
-    public ModBowItem(Properties properties) {
-        super(properties);
+public class OrionBow extends AbstractBowWeaponItem {
+
+    public OrionBow() {
+        super(new Properties()
+                .durability(500)
+                .fireResistant()
+                .rarity(net.minecraft.world.item.Rarity.EPIC)
+        );
     }
 
     @Override
-    public void releaseUsing(ItemStack stack, Level world, LivingEntity player, int timeLeft) {
-        super.releaseUsing(stack, world, player, timeLeft);
-    }
-
-    @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-        super.appendHoverText(stack, world, tooltip, flag);
+    public void appendHoverText(
+            ItemStack stack,
+            @Nullable Level level,
+            List<Component> tooltip,
+            TooltipFlag flag
+    ) {
+        super.appendHoverText(stack, level, tooltip, flag);
 
         String itemId = stack.getItem().getDescriptionId();
         String weaponId = itemId.replace("item.odysseyswords.", "");
 
-        // 1. Verifica tooltip específico do item
         String specificKey = itemId + ".tooltip";
         Component specificTooltip = Component.translatable(specificKey);
+
         if (!specificTooltip.getString().equals(specificKey)) {
             addStyledTooltip(tooltip, specificKey, weaponId);
-        }
-        // 2. Se não tiver, usa tooltip genérico do material
-        else {
+        } else {
             Optional<String> material = TooltipStyleHelper.getBaseMaterial(weaponId);
             material.ifPresent(mat -> {
                 String materialKey = TooltipStyleHelper.getMaterialTooltipKey(mat);
@@ -53,20 +53,5 @@ public class ModBowItem extends BowItem {
         ChatFormatting color = TooltipStyleHelper.getColorForWeapon(weaponId);
         MutableComponent text = Component.translatable(tooltipKey);
         tooltip.add(text.withStyle(color).withStyle(ChatFormatting.ITALIC));
-    }
-
-    @Override
-    public boolean isDamageable(ItemStack stack) {
-        return false;
-    }
-
-    @Override
-    public boolean isDamaged(ItemStack stack) {
-        return false;
-    }
-
-    @Override
-    public boolean canBeDepleted() {
-        return false;
     }
 }

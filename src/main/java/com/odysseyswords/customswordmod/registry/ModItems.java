@@ -4,7 +4,7 @@ import com.odysseyswords.customswordmod.OdysseySwords;
 import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
 import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
-import com.odysseyswords.customswordmod.content.items.weapons.bows.ModBowItem;
+import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
 import com.odysseyswords.customswordmod.util.helpers.ModTooltipItem;
 
 import net.minecraft.world.item.ArmorItem;
@@ -35,8 +35,8 @@ public class ModItems {
                 .rarity(net.minecraft.world.item.Rarity.EPIC);
     }
 
-    public static final RegistryObject<Item> ORION = ITEMS.register("orion",
-            () -> new ModBowItem(new Item.Properties().durability(500).rarity(net.minecraft.world.item.Rarity.EPIC)));
+    public static final RegistryObject<Item> ORION =
+        ITEMS.register("orion", OrionBow::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
