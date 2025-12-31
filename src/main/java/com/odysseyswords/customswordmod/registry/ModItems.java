@@ -4,6 +4,10 @@ import com.odysseyswords.customswordmod.OdysseySwords;
 import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
 import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
+import com.odysseyswords.customswordmod.content.items.weapons.axes.Arcanethyst;
+import com.odysseyswords.customswordmod.content.items.weapons.axes.DemonlordGreataxe;
+import com.odysseyswords.customswordmod.content.items.weapons.axes.DivineAxeRhitta;
+import com.odysseyswords.customswordmod.content.items.weapons.axes.Heartflame;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
 import com.odysseyswords.customswordmod.content.items.weapons.claws.FuryOfAThousandsFists;
@@ -16,8 +20,20 @@ import com.odysseyswords.customswordmod.content.items.weapons.hammers.PowerfuseH
 import com.odysseyswords.customswordmod.content.items.weapons.rapiers.FloralSabre;
 import com.odysseyswords.customswordmod.content.items.weapons.rapiers.RoyalRapier;
 import com.odysseyswords.customswordmod.content.items.weapons.rapiers.Sabre;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.AbominableScythe;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.DivineReaper;
 import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScytheAxe;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.MagicScythe;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.SculkScythe;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.SoulCollector;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.AquanticTrident;
 import com.odysseyswords.customswordmod.content.items.weapons.spears.DivineJustice;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.FallenGodSpear;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.ForestGuardianGlaive;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.JadeHalberd;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.Sunbreak;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.Wickpiercer;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.AbominableBlade;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.AbominableGreatsaber;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.AquanticSacredBlade;
@@ -48,6 +64,8 @@ import com.odysseyswords.customswordmod.content.items.weapons.swords.ThousandDem
 import com.odysseyswords.customswordmod.content.items.weapons.swords.UniqueLongswordHoly;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.WatcherClaymore;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.Whisperwind;
+import com.odysseyswords.customswordmod.content.items.weapons.warglaives.StarsEdge;
+import com.odysseyswords.customswordmod.content.items.weapons.warglaives.StormsEdge;
 import com.odysseyswords.customswordmod.content.items.weapons.warglaives.WatchingWarglaive;
 import com.odysseyswords.customswordmod.util.helpers.ModTooltipItem;
 
@@ -81,9 +99,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> ORION =
         ITEMS.register("orion", OrionBow::new);
-
-    public static final RegistryObject<Item> STEEL_SWORD =
-        ITEMS.register("steel_sword", SteelSword::new);
 
     public static final RegistryObject<Item> ABOMINABLE_BLADE =
         ITEMS.register("abominable_blade", AbominableBlade::new);
@@ -160,6 +175,9 @@ public class ModItems {
     public static final RegistryObject<Item> SCULK_SWORD =
         ITEMS.register("sculk_sword", SculkSword::new);
 
+    public static final RegistryObject<Item> STEEL_SWORD =
+        ITEMS.register("steel_sword", SteelSword::new);
+
     public static final RegistryObject<Item> THOUSAND_DEMON_DAGGERS =
         ITEMS.register("thousand_demon_daggers", ThousandDemonDaggers::new);
 
@@ -172,8 +190,38 @@ public class ModItems {
     public static final RegistryObject<Item> WHISPERWIND =
         ITEMS.register("whisperwind", Whisperwind::new);
 
+    public static final RegistryObject<Item> ABOMINABLE_SCYTHE =
+        ITEMS.register("abominable_scythe", AbominableScythe::new);
+
+    public static final RegistryObject<Item> DIVINE_REAPER =
+        ITEMS.register("divine_reaper", DivineReaper::new);
+
     public static final RegistryObject<Item> FROST_SCYTHE =
         ITEMS.register("frost_scythe", FrostScythe::new);
+
+    public static final RegistryObject<Item> FROST_SCYTHE_AXE =
+        ITEMS.register("frost_scythe_axe", FrostScytheAxe::new);
+
+    public static final RegistryObject<Item> MAGIC_SCYTHE =
+        ITEMS.register("magic_scythe", MagicScythe::new);
+
+    public static final RegistryObject<Item> SCULK_SCYTHE =
+        ITEMS.register("sculk_scythe", SculkScythe::new);
+
+    public static final RegistryObject<Item> SOUL_COLLECTOR =
+        ITEMS.register("soul_collector", SoulCollector::new);
+
+    public static final RegistryObject<Item> ARCANETHYST =
+    ITEMS.register("arcanethyst", Arcanethyst::new);
+
+    public static final RegistryObject<Item> DEMONLORD_GREATAXE =
+    ITEMS.register("demonlord_greataxe", DemonlordGreataxe::new);
+
+    public static final RegistryObject<Item> DIVINE_AXE_RHITTA =
+    ITEMS.register("divine_axe_rhitta", DivineAxeRhitta::new);
+
+    public static final RegistryObject<Item> HEARTFLAME =
+    ITEMS.register("heartflame", Heartflame::new);
 
     public static final RegistryObject<Item> ICEWHISPER =
     ITEMS.register("icewhisper", IceWhisper::new);
@@ -187,8 +235,26 @@ public class ModItems {
     public static final RegistryObject<Item> SABRE =
     ITEMS.register("sabre", Sabre::new);
 
+    public static final RegistryObject<Item> AQUANTIC_TRIDENT =
+    ITEMS.register("aquantic_trident", AquanticTrident::new);
+
     public static final RegistryObject<Item> DIVINE_JUSTICE =
     ITEMS.register("divine_justice", DivineJustice::new);
+
+    public static final RegistryObject<Item> FALLEN_GOD_SPEAR =
+    ITEMS.register("fallen_god_spear", FallenGodSpear::new);
+
+    public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE =
+    ITEMS.register("forest_guardian_glaive", ForestGuardianGlaive::new);
+
+    public static final RegistryObject<Item> JADE_HALBERD =
+    ITEMS.register("jade_halberd", JadeHalberd::new);
+
+    public static final RegistryObject<Item> SUNBREAK =
+    ITEMS.register("sunbreak", Sunbreak::new);
+
+    public static final RegistryObject<Item> WICKPIERCER =
+    ITEMS.register("wickpiercer", Wickpiercer::new);
 
     public static final RegistryObject<Item> POWERFUSE_HAMMER =
     ITEMS.register("powerfuse_hammer", PowerfuseHammer::new);
@@ -207,6 +273,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> WAXWEAVER =
     ITEMS.register("waxweaver", Waxweaver::new);
+
+    public static final RegistryObject<Item> STARS_EDGE =
+    ITEMS.register("stars_edge", StarsEdge::new);
+
+    public static final RegistryObject<Item> STORMS_EDGE =
+    ITEMS.register("storms_edge", StormsEdge::new);
 
     public static final RegistryObject<Item> WATCHING_WARGLAIVE =
     ITEMS.register("watching_warglaive", WatchingWarglaive::new);
@@ -242,26 +314,6 @@ public class ModItems {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.2F, legendaryProperties());
     }
 
-    // Spear (long reach, slower but more damage)
-    private static ModTooltipItem createLance() {
-        return new ModTooltipItem(Tiers.NETHERITE, 6, -2.6F, swordProperties());
-    }
-
-    // Axe (high damage, very slow)
-    private static ModTooltipItem createAxe() {
-        return new ModTooltipItem(Tiers.NETHERITE, 8, -2.6F, swordProperties());
-    }
-
-    // Scythe (moderate damage, moderate speed)
-    private static ModTooltipItem createScythe() {
-        return new ModTooltipItem(Tiers.NETHERITE, 5, -2.4F, swordProperties());
-    }
-
-    // Warglaive (moderate damage, fast)
-    private static ModTooltipItem createWarglaive() {
-        return new ModTooltipItem(Tiers.NETHERITE, 6, -2.5F, swordProperties());
-}
-
     // ===== Item Registrations ===== //
     public static final RegistryObject<Item> FYRALATH =
         ITEMS.register("fyralath", () -> createLegendaryAxe());
@@ -292,33 +344,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> FIST_OF_FURY =
         ITEMS.register("fist_of_fury", () -> createLegendaryClaw());
-
-    // Spear
-    public static final RegistryObject<Item> AQUANTIC_TRIDENT = ITEMS.register("aquantic_trident", () -> createLance());
-    public static final RegistryObject<Item> FALLEN_GOD_SPEAR = ITEMS.register("fallen_god_spear", () -> createLance());
-    public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE = ITEMS.register("forest_guardian_glaive", () -> createLance());
-    public static final RegistryObject<Item> JADE_HALBERD = ITEMS.register("jade_halberd", () -> createLance());
-    public static final RegistryObject<Item> SUNBREAK = ITEMS.register("sunbreak", () -> createLance());
-    public static final RegistryObject<Item> WICKPIERCER = ITEMS.register("wickpiercer", () -> createLance());
-
-    // Axe
-    public static final RegistryObject<Item> ARCANETHYST = ITEMS.register("arcanethyst", () -> createAxe());
-    public static final RegistryObject<Item> DEMONLORD_GREATAXE = ITEMS.register("demonlord_greataxe", () -> createAxe());
-    public static final RegistryObject<Item> DIVINE_AXE_RHITTA = ITEMS.register("divine_axe_rhitta", () -> createAxe());
-    public static final RegistryObject<Item> HEARTHFLAME = ITEMS.register("hearthflame", () -> createAxe());
-
-    // Scythe
-    public static final RegistryObject<Item> ABOMINABLE_SCYTHE = ITEMS.register("abominable_scythe", () -> createScythe());
-    public static final RegistryObject<Item> DIVINE_REAPER = ITEMS.register("divine_reaper", () -> createScythe());
-    public static final RegistryObject<Item> FROST_SCYTHE_AXE = ITEMS.register("frost_scythe_axe", () -> createScythe());
-    public static final RegistryObject<Item> MAGIC_SCYTHE = ITEMS.register("magic_scythe", () -> createScythe());
-    public static final RegistryObject<Item> SCULK_SCYTHE = ITEMS.register("sculk_scythe", () -> createScythe());
-    public static final RegistryObject<Item> SOUL_COLLECTOR = ITEMS.register("soul_collector", () -> createScythe());
-
-    // Warglaive
-    public static final RegistryObject<Item> STARS_EDGE = ITEMS.register("stars_edge", () -> createWarglaive());
-    public static final RegistryObject<Item> STORMS_EDGE = ITEMS.register("storms_edge", () -> createWarglaive());
-
 
     // Method to register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
