@@ -1,9 +1,7 @@
 package com.odysseyswords.customswordmod.client;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.client.renderer.entity.ChakramRenderer;
 import com.odysseyswords.customswordmod.gui.screens.MythicForgeScreen;
-import com.odysseyswords.customswordmod.registry.ModEntities;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -35,16 +33,5 @@ public final class ClientSetup {
                     MythicForgeScreen::new
             );
         });
-    }
-
-    /**
-     * Registro de renderers de entidades (OBRIGATÓRIO para entidades custom)
-     */
-    @SubscribeEvent
-    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(
-                ModEntities.CHAKRAM.get(),
-                ChakramRenderer::new
-        );
     }
 }

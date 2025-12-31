@@ -9,10 +9,10 @@ public enum WeaponClass {
     RAPIER,
     SPEAR,
     AXE,
-    CHAKRAM,
     HAMMER,
     GREATSWORD,
     SCYTHE,
-    WARGLAIVE
+    WARGLAIVE,
+    CLAW
 }
 

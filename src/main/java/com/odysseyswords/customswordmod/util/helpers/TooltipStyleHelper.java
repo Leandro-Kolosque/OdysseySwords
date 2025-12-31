@@ -44,7 +44,7 @@ public class TooltipStyleHelper {
         // Royal Ingot
         addWeaponsToMaterial("royal",
             "waxweaver", "divine_justice", "ancient_royal_greatsword",
-            "wickpiercer", "royal_chakram", "royal_rapier",
+            "wickpiercer", "royal_rapier",
             "divine_reaper", "divine_punisher", "divine_axe_rhitta",
             "unique_longsword_holy");
 
@@ -68,7 +68,7 @@ public class TooltipStyleHelper {
         addWeaponsToMaterial("void",
             "abominable_blade", "abominable_greatsaber", "demonlord_sword",
             "muramasa", "arcanethyst", "demonlord_greataxe",
-            "amethyst_shuriken", "abominable_scythe", "thousand_demon_daggers");
+            "abominable_scythe", "thousand_demon_daggers");
 
         // Silverine Ingot
         addWeaponsToMaterial("silverine",

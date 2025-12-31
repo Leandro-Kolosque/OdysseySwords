@@ -6,7 +6,6 @@ import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.Spartan
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
-import com.odysseyswords.customswordmod.content.items.weapons.chakrams.RoyalChakram;
 import com.odysseyswords.customswordmod.content.items.weapons.claws.FuryOfAThousandsFists;
 import com.odysseyswords.customswordmod.content.items.weapons.greatswords.AncientRoyalGreatsword;
 import com.odysseyswords.customswordmod.content.items.weapons.hammers.PowerfuseHammer;
@@ -72,9 +71,6 @@ public class ModItems {
     public static final RegistryObject<Item> WATCHING_WARGLAIVE =
     ITEMS.register("watching_warglaive", WatchingWarglaive::new);
 
-    public static final RegistryObject<Item> ROYAL_CHAKRAM =
-        ITEMS.register("royal_chakram", RoyalChakram::new);
-    
     public static final RegistryObject<Item> FURY_OF_A_THOUSAND_FISTS =
         ITEMS.register("fury_of_a_thousand_fists", FuryOfAThousandsFists::new);
 
@@ -124,11 +120,6 @@ public class ModItems {
     // Axe (high damage, very slow)
     private static ModTooltipItem createAxe() {
         return new ModTooltipItem(Tiers.NETHERITE, 8, -2.6F, swordProperties());
-    }
-
-    // Chakram (fast but low damage)
-    private static ModTooltipItem createChakram() {
-        return new ModTooltipItem(Tiers.NETHERITE, 4, -1.6F, swordProperties());
     }
 
     // Hammer (very high damage, extremely slow)
@@ -236,9 +227,6 @@ public class ModItems {
     public static final RegistryObject<Item> DEMONLORD_GREATAXE = ITEMS.register("demonlord_greataxe", () -> createAxe());
     public static final RegistryObject<Item> DIVINE_AXE_RHITTA = ITEMS.register("divine_axe_rhitta", () -> createAxe());
     public static final RegistryObject<Item> HEARTHFLAME = ITEMS.register("hearthflame", () -> createAxe());
-
-    // Chakram
-    public static final RegistryObject<Item> AMETHYST_SHURIKEN = ITEMS.register("amethyst_shuriken", () -> createChakram());
 
     // Hammer
 
