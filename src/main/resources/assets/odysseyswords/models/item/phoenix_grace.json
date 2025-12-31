@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "odysseyswords:item/pheonix_grace",
-		"particle": "odysseyswords:item/pheonix_grace"
+		"0": "odysseyswords:item/phoenix_grace",
+		"particle": "odysseyswords:item/phoenix_grace"
 	},
 	"elements": [
 		{
