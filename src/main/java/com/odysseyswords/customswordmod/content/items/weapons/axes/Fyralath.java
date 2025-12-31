@@ -4,9 +4,9 @@ import com.odysseyswords.customswordmod.content.items.weapons.base.AxeWeaponItem
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 
-public class Heartflame extends AxeWeaponItem {
+public class Fyralath extends AxeWeaponItem {
     
-    public Heartflame(){
+    public Fyralath(){
         super(
             Tiers.DIAMOND,
             7.0F,
