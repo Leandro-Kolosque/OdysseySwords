@@ -16,3 +16,5 @@ public abstract class AbstractWeaponItem extends TieredItem {
         return super.hurtEnemy(stack, target, attacker);
     }
 }
+
+

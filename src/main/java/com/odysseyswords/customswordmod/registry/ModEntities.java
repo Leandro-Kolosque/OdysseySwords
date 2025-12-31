@@ -1,7 +1,8 @@
 package com.odysseyswords.customswordmod.registry;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.content.entities.ChakramEntity;
+import com.odysseyswords.customswordmod.content.entities.projectile.ChakramEntity;
+
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
