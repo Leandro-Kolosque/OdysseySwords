@@ -7,6 +7,7 @@ import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
 import com.odysseyswords.customswordmod.content.items.weapons.chakrams.RoyalChakram;
+import com.odysseyswords.customswordmod.content.items.weapons.claws.FuryOfAThousandsFists;
 import com.odysseyswords.customswordmod.content.items.weapons.greatswords.AncientRoyalGreatsword;
 import com.odysseyswords.customswordmod.content.items.weapons.hammers.PowerfuseHammer;
 import com.odysseyswords.customswordmod.content.items.weapons.rapiers.RoyalRapier;
@@ -73,6 +74,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROYAL_CHAKRAM =
         ITEMS.register("royal_chakram", RoyalChakram::new);
+    
+    public static final RegistryObject<Item> FURY_OF_A_THOUSAND_FISTS =
+        ITEMS.register("fury_of_a_thousand_fists", FuryOfAThousandsFists::new);
 
     private static ModTooltipItem createLegendarySword() {
         return new ModTooltipItem(Tiers.NETHERITE, 6, -2.1F, legendaryProperties());
@@ -174,9 +178,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> APOCALYPSE =
         ITEMS.register("apocalypse", () -> createLegendarySword());
-
-    public static final RegistryObject<Item> FURY_OF_A_THOUSAND_FISTS =
-        ITEMS.register("fury_of_a_thousand_fists", () -> createLegendaryClaw());
 
     public static final RegistryObject<Item> FIST_OF_FURY =
         ITEMS.register("fist_of_fury", () -> createLegendaryClaw());
