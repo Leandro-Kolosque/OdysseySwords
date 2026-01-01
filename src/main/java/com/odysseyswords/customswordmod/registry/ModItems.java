@@ -1,88 +1,28 @@
 package com.odysseyswords.customswordmod.registry;
 
-import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
-import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
-import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
-import com.odysseyswords.customswordmod.content.items.weapons.axes.Arcanethyst;
-import com.odysseyswords.customswordmod.content.items.weapons.axes.DemonlordGreataxe;
-import com.odysseyswords.customswordmod.content.items.weapons.axes.DivineAxeRhitta;
-import com.odysseyswords.customswordmod.content.items.weapons.axes.Fyralath;
-import com.odysseyswords.customswordmod.content.items.weapons.axes.IceWhisper;
-import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
-import com.odysseyswords.customswordmod.content.items.weapons.claws.FistOfFury;
-import com.odysseyswords.customswordmod.content.items.weapons.claws.FuryOfAThousandsFists;
-import com.odysseyswords.customswordmod.content.items.weapons.greatswords.AncientRoyalGreatsword;
-import com.odysseyswords.customswordmod.content.items.weapons.greatswords.DivinePunisher;
-import com.odysseyswords.customswordmod.content.items.weapons.greatswords.DragonSlayingBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.greatswords.SoulDevourer;
-import com.odysseyswords.customswordmod.content.items.weapons.greatswords.Waxweaver;
-import com.odysseyswords.customswordmod.content.items.weapons.hammers.Apophis;
-import com.odysseyswords.customswordmod.content.items.weapons.hammers.Hearthflame;
-import com.odysseyswords.customswordmod.content.items.weapons.hammers.PowerfuseHammer;
-import com.odysseyswords.customswordmod.content.items.weapons.rapiers.FloralSabre;
-import com.odysseyswords.customswordmod.content.items.weapons.rapiers.RoyalRapier;
-import com.odysseyswords.customswordmod.content.items.weapons.rapiers.Sabre;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.AbominableScythe;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.Azhar;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.DivineReaper;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScythe;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.FrostScytheAxe;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.MagicScythe;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.SculkScythe;
-import com.odysseyswords.customswordmod.content.items.weapons.scythes.SoulCollector;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.AquanticTrident;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.DivineJustice;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.FallenGodSpear;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.ForestGuardianGlaive;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.JadeHalberd;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.Sunbreak;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.Thunderwrath;
-import com.odysseyswords.customswordmod.content.items.weapons.spears.Wickpiercer;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.AbominableBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.AbominableGreatsaber;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Apocalypse;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.AquanticSacredBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Ash;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.BladeOfAnubis;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.CorruptedMythicBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.CyberneticKatana;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.DarkBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.DarkCleaver;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.DeathKnightSword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.DemonicBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.DemonlordSword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Edar;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.EdgeOfTheAstralplane;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Excalibur;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.FallenGodSword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.FloralLongsword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.FrostBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Ghaj;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.MoltenBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.MoltenSword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Muramasa;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.MysticalSpellBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.MythicBlade;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.PhoenixGrace;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.RiversOfBlood;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.SculkCleaver;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.SculkSword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.SteelSword;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Supernova;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.ThousandDemonDaggers;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.UniqueLongswordHoly;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.WatcherClaymore;
-import com.odysseyswords.customswordmod.content.items.weapons.swords.Whisperwind;
-import com.odysseyswords.customswordmod.content.items.weapons.warglaives.StarsEdge;
-import com.odysseyswords.customswordmod.content.items.weapons.warglaives.StormsEdge;
-import com.odysseyswords.customswordmod.content.items.weapons.warglaives.WatchingWarglaive;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import com.odysseyswords.customswordmod.OdysseySwords;
+
+import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
+import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
+import com.odysseyswords.customswordmod.content.items.materials.MaterialItemProperties;
+import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
+import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
+import com.odysseyswords.customswordmod.content.items.weapons.claws.*;
+import com.odysseyswords.customswordmod.content.items.weapons.axes.*;
+import com.odysseyswords.customswordmod.content.items.weapons.greatswords.*;
+import com.odysseyswords.customswordmod.content.items.weapons.hammers.*;
+import com.odysseyswords.customswordmod.content.items.weapons.rapiers.*;
+import com.odysseyswords.customswordmod.content.items.weapons.scythes.*;
+import com.odysseyswords.customswordmod.content.items.weapons.spears.*;
+import com.odysseyswords.customswordmod.content.items.weapons.swords.*;
+import com.odysseyswords.customswordmod.content.items.weapons.warglaives.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
@@ -344,60 +284,55 @@ public class ModItems {
         ITEMS.register("fury_of_a_thousand_fists", FuryOfAThousandsFists::new);
     //===========================================
     
+    // ===========================================
+    // MATERIALS - MATERIAIS
+    // ===========================================
+    // Ingots - LINGOTES
     public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant()));
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant()));
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> DIVINE_INGOT = ITEMS.register("divine_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant()));
-
-    public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant()));
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+
+    public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant()));  
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant())); 
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
     public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
-    () -> new ModMaterialItem(new Item.Properties()
-        .fireResistant()));
+        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+    // ===========================================
 
-    // Method to register the DeferredRegister to the event bus
+    // ===========================================
+    // Registration Method
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+    // ===========================================
+
 }
