@@ -1,10 +1,12 @@
 {
+  "creative_tab.odysseyswords.odyssey": "Espadas da Odisseia",
+
   "item.odysseyswords.abominable_blade": "Lâmina Abominável",
-  "item.odysseyswords.abominable_greatsaber": "Sabre Abominável",
+  "item.odysseyswords.abominable_greatsaber": "Grande Sabre Abominável",
   "item.odysseyswords.abominable_scythe": "Foice Abominável",
-  "item.odysseyswords.ancient_royal_greatsword": "Espada Real Ancestral",
-  "item.odysseyswords.aquantic_sacred_blade": "Lâmina Sagrada Aquática",
-  "item.odysseyswords.aquantic_trident": "Tridente Aquático",
+  "item.odysseyswords.ancient_royal_greatsword": "Espadão Real Antigo",
+  "item.odysseyswords.aquantic_sacred_blade": "Lâmina Sagrada Aquântica",
+  "item.odysseyswords.aquantic_trident": "Tridente Aquântico",
   "item.odysseyswords.arcanethyst": "Machado Arcanethyst",
   "item.odysseyswords.blade_of_anubis": "Lâmina de Anúbis",
   "item.odysseyswords.corrupted_mythic_blade": "Lâmina Mítica Corrompida",
@@ -13,14 +15,14 @@
   "item.odysseyswords.dark_cleaver": "Cutelo Sombrio",
   "item.odysseyswords.death_knight_sword": "Espada do Cavaleiro da Morte",
   "item.odysseyswords.demonic_blade": "Lâmina Demoníaca",
-  "item.odysseyswords.demonlord_greataxe": "Machado Grande do Lorde Demônio",
-  "item.odysseyswords.demonlord_sword": "Espada do Lorde Demônio",
+  "item.odysseyswords.demonlord_greataxe": "Machado Grande do Senhor Demônio",
+  "item.odysseyswords.demonlord_sword": "Espada do Senhor Demônio",
   "item.odysseyswords.divine_axe_rhitta": "Machado Divino Rhitta",
   "item.odysseyswords.divine_justice": "Justiça Divina",
   "item.odysseyswords.divine_punisher": "Punidor Divino",
   "item.odysseyswords.divine_reaper": "Ceifador Divino",
   "item.odysseyswords.dragon_slaying_blade": "Lâmina Matadora de Dragões",
-  "item.odysseyswords.edge_of_the_astralplane": "Gume do Plano Astral",
+  "item.odysseyswords.edge_of_the_astralplane": "Limiar do Plano Astral",
   "item.odysseyswords.excalibur": "Excalibur",
   "item.odysseyswords.fallen_god_spear": "Lança do Deus Caído",
   "item.odysseyswords.fallen_god_sword": "Espada do Deus Caído",
@@ -37,121 +39,119 @@
   "item.odysseyswords.molten_blade": "Lâmina Derretida",
   "item.odysseyswords.molten_sword": "Espada Derretida",
   "item.odysseyswords.muramasa": "Muramasa",
-  "item.odysseyswords.mystical_spell_blade": "Lâmina de Feitiço Místico",
+  "item.odysseyswords.mystical_spell_blade": "Lâmina Feiticeira Mística",
   "item.odysseyswords.mythic_blade": "Lâmina Mítica",
-  "item.odysseyswords.pheonix_grace": "Graça da Fênix",
-  "item.odysseyswords.powerfuse_hammer": "Martelo de Fusão de Poder",
+  "item.odysseyswords.phoenix_grace": "Graça da Fênix",
+  "item.odysseyswords.powerfuse_hammer": "Martelo Fusão Poderosa",
   "item.odysseyswords.rivers_of_blood": "Rios de Sangue",
-  "item.odysseyswords.royal_rapier": "Rapieira Real",
+  "item.odysseyswords.royal_rapier": "Florete Real",
   "item.odysseyswords.sabre": "Sabre",
-  "item.odysseyswords.sculk_cleaver": "Cutelo do Sculk",
-  "item.odysseyswords.sculk_scythe": "Foice do Sculk",
-  "item.odysseyswords.sculk_sword": "Espada do Sculk",
+  "item.odysseyswords.sculk_cleaver": "Cutelo de Sculk",
+  "item.odysseyswords.sculk_scythe": "Foice de Sculk",
+  "item.odysseyswords.sculk_sword": "Espada de Sculk",
   "item.odysseyswords.soul_collector": "Coletor de Almas",
   "item.odysseyswords.soul_devourer": "Devorador de Almas",
-  "item.odysseyswords.stars_edge": "Gume das Estrelas",
+  "item.odysseyswords.stars_edge": "Limiar das Estrelas",
   "item.odysseyswords.steel_sword": "Espada de Aço",
-  "item.odysseyswords.storms_edge": "Gume da Tempestade",
-  "item.odysseyswords.sunbreak": "Alvorada",
+  "item.odysseyswords.storms_edge": "Limiar da Tempestade",
+  "item.odysseyswords.sunbreak": "Ruptura Solar",
   "item.odysseyswords.thousand_demon_daggers": "Mil Adagas Demoníacas",
   "item.odysseyswords.unique_longsword_holy": "Espada Longa Sagrada Única",
   "item.odysseyswords.watcher_claymore": "Claymore do Observador",
-  "item.odysseyswords.watching_warglaive": "Warglaive do Observador",
+  "item.odysseyswords.watching_warglaive": "Glaive de Guerra Vigilante",
   "item.odysseyswords.waxweaver": "Tecelão de Cera",
   "item.odysseyswords.whisperwind": "Sussurro do Vento",
   "item.odysseyswords.wickpiercer": "Perfurador de Pavio",
-  "itemGroup.odysseyTab": "Odyssey Swords",
 
   "item.odysseyswords.blood_ingot": "Lingote de Sangue",
-  "item.odysseyswords.blood_ingot.tooltip": "Um lingote pulsante com energia vital",
+  "item.odysseyswords.blood_ingot.tooltip": "Um lingote pulsante infundido com força vital",
 
-  "item.odysseyswords.crystal_ingot": "Lingote Cristalino",
-  "item.odysseyswords.crystal_ingot.tooltip": "Contém universos em miniatura",
+  "item.odysseyswords.crystal_ingot": "Lingote de Cristal",
+  "item.odysseyswords.crystal_ingot.tooltip": "Contém universos em miniatura em seu interior",
 
   "item.odysseyswords.cyber_ingot": "Lingote Cibernético",
-  "item.odysseyswords.cyber_ingot.tooltip": "Infundido com tecnologia interdimensional",
+  "item.odysseyswords.cyber_ingot.tooltip": "Transbordando de tecnologia interdimensional",
 
   "item.odysseyswords.divine_ingot": "Lingote Divino",
-  "item.odysseyswords.divine_ingot.tooltip": "Vibra com energia dos deuses antigos",
+  "item.odysseyswords.divine_ingot.tooltip": "Vibra com a energia de deuses antigos",
 
-  "item.odysseyswords.frost_ingot": "Lingote Gélido",
-  "item.odysseyswords.frost_ingot.tooltip": "Emite uma névoa congelante",
+  "item.odysseyswords.frost_ingot": "Lingote de Gelo",
+  "item.odysseyswords.frost_ingot.tooltip": "Emite uma névoa gelada",
 
   "item.odysseyswords.royal_ingot": "Lingote Real",
-  "item.odysseyswords.royal_ingot.tooltip": "Forjado com ouro dos deuses",
+  "item.odysseyswords.royal_ingot.tooltip": "Forjado a partir de ouro divino",
 
-  "item.odysseyswords.sculk_ingot": "Lingote Sussurrante",
-  "item.odysseyswords.sculk_ingot.tooltip": "Sussurra segredos ancestrais",
+  "item.odysseyswords.sculk_ingot": "Lingote de Sculk",
+  "item.odysseyswords.sculk_ingot.tooltip": "Sussurra segredos antigos",
 
-  "item.odysseyswords.silverine_ingot": "Lingote de Silverina",
+  "item.odysseyswords.silverine_ingot": "Lingote de Prata Estelar",
   "item.odysseyswords.silverine_ingot.tooltip": "Brilha com a luz de estrelas caídas",
 
-  "item.odysseyswords.soul_ingot": "Lingote da Alma",
-  "item.odysseyswords.soul_ingot.tooltip": "Conserva gritos aprisionados",
+  "item.odysseyswords.soul_ingot": "Lingote de Alma",
+  "item.odysseyswords.soul_ingot.tooltip": "Contém gritos aprisionados",
 
-  "item.odysseyswords.storm_ingot": "Lingote Tempestuoso",
+  "item.odysseyswords.storm_ingot": "Lingote da Tempestade",
   "item.odysseyswords.storm_ingot.tooltip": "Estala com relâmpagos contidos",
 
-  "item.odysseyswords.tartarus_ingot": "Lingote Abissal",
+  "item.odysseyswords.tartarus_ingot": "Lingote do Tártaro",
   "item.odysseyswords.tartarus_ingot.tooltip": "Fundido nas profundezas abissais",
 
   "item.odysseyswords.toxic_ingot": "Lingote Tóxico",
-  "item.odysseyswords.toxic_ingot.tooltip": "Emite vapores venenosos que corroem a carne",
+  "item.odysseyswords.toxic_ingot.tooltip": "Emite vapores venenosos que queimam a carne",
 
-  "item.odysseyswords.void_ingot": "Lingote do Vazio",
-  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao seu redor",
+  "item.odysseyswords.void_ingot": "Lingote do Vácuo",
+  "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao redor",
 
-  "item.odysseyswords.material_tooltip.blood": "Forjado com magia sanguínea cristalizada, esta arma tem sede de combate",
-  "item.odysseyswords.material_tooltip.crystal": "Criado com cristais dimensionais, esta arma brilha com energia instável",
-  "item.odysseyswords.material_tooltip.cyber": "Aprimorado com tecnologia cibernética, esta arma pulsa com poder sintético",
+  "item.odysseyswords.material_tooltip.blood": "Forjada com magia de sangue cristalizado, esta arma tem sede de combate",
+  "item.odysseyswords.material_tooltip.crystal": "Criada com cristais dimensionais, esta arma cintila com energia instável",
+  "item.odysseyswords.material_tooltip.cyber": "Aprimorada com tecnologia cibernética, esta arma pulsa com poder sintético",
   "item.odysseyswords.material_tooltip.divine": "Abençoada pelos deuses, esta arma irradia poder celestial",
-  "item.odysseyswords.material_tooltip.royal": "Forjada para a realeza, esta arma emana autoridade régia",
-  "item.odysseyswords.material_tooltip.frost": "Temperada no gelo eterno, esta arma congela o ar ao redor",
-  "item.odysseyswords.material_tooltip.sculk": "Infundida com energia sculk, esta arma sussurra segredos ancestrais",
-  "item.odysseyswords.material_tooltip.silverine": "Criada com metal de estrelas caídas, esta arma brilha com poder lunar",
-  "item.odysseyswords.material_tooltip.soul": "Ligada a almas aprisionadas, esta arma grita a cada golpe",
-  "item.odysseyswords.material_tooltip.tartarus": "Forjada nas profundezas do Tártaro, esta arma arde com fúria abissal",
-  "item.odysseyswords.material_tooltip.storm": "Eletrificada por tempestades, esta arma crepita com relâmpagos",
+  "item.odysseyswords.material_tooltip.royal": "Forjada para a realeza, esta arma exala autoridade régia",
+  "item.odysseyswords.material_tooltip.frost": "Temperada em gelo eterno, esta arma resfria o ar ao seu redor",
+  "item.odysseyswords.material_tooltip.sculk": "Infundida com energia sculk, esta arma sussurra segredos antigos",
+  "item.odysseyswords.material_tooltip.silverine": "Criada com metal de estrela caída, esta arma brilha com poder lunar",
+  "item.odysseyswords.material_tooltip.soul": "Vinculada com almas aprisionadas, esta arma grita a cada golpe",
+  "item.odysseyswords.material_tooltip.tartarus": "Forjada nas profundezas do Tártaro, esta arma queima com fúria abissal",
+  "item.odysseyswords.material_tooltip.storm": "Eletrificada por tempestades, esta arma estala com relâmpagos",
   "item.odysseyswords.material_tooltip.toxic": "Revestida com veneno mortal, esta arma corrói tudo o que toca",
-  "item.odysseyswords.material_tooltip.void": "Criada da essência do vácuo, esta arma devora a própria luz",
+  "item.odysseyswords.material_tooltip.void": "Criada com essência do vácuo, esta arma devora a própria luz",
 
   "item.odysseyswords.fyralath": "Fyr'alath, a Agonia Carbonizada",
   "item.odysseyswords.fyralath.tooltip": "Arde com as chamas eternas do submundo",
-  
+
   "item.odysseyswords.thunderwrath": "Thunderwrath, a Tempestade de Lava",
-  "item.odysseyswords.thunderwrath.tooltip": "Crepita com a fúria de uma erupção vulcânica",
-  
+  "item.odysseyswords.thunderwrath.tooltip": "Estala com a fúria de uma erupção vulcânica",
+
   "item.odysseyswords.supernova": "Supernova, Morte de uma Estrela",
-  "item.odysseyswords.supernova.tooltip": "Contém a energia colapsante de uma estrela moribunda",
-  
+  "item.odysseyswords.supernova.tooltip": "Contém a energia colapsante de uma estrela morrendo",
+
   "item.odysseyswords.edar": "Edar, a Penumbra",
   "item.odysseyswords.edar.tooltip": "Existe entre a luz e a escuridão, cortando ambas",
-  
+
   "item.odysseyswords.ash": "Ash, Remanescente do Sol",
   "item.odysseyswords.ash.tooltip": "Forjado das últimas brasas de um sol moribundo",
-  
-  "item.odysseyswords.ghaj": "Gh'aj, A Lâmina Viva",
+
+  "item.odysseyswords.ghaj": "Gh'aj, a Lâmina Viva",
   "item.odysseyswords.ghaj.tooltip": "Pulsa com uma vida grotesca própria",
-  
-  "item.odysseyswords.azhar": "A'zhar, Foice dos Malditos",
-  "item.odysseyswords.azhar.tooltip": "Ceifa almas para o exército do submundo",
+
+  "item.odysseyswords.azhar": "A'zhar, Foice dos Condenados",
+  "item.odysseyswords.azhar.tooltip": "Colhe almas para o exército do submundo",
 
   "item.odysseyswords.orion": "Orion, Caçador das Estrelas",
   "item.odysseyswords.orion.tooltip": "Corta a conexão celestial entre deuses e mortais",
-  
+
   "item.odysseyswords.apophis": "Apophis, a Mão Divina",
   "item.odysseyswords.apophis.tooltip": "Castiga com o julgamento de divindades caídas",
-  
+
   "item.odysseyswords.apocalypse": "Frostmourne, Lâmina do Rei Caído",
   "item.odysseyswords.apocalypse.tooltip": "Sussurra com os arrependimentos de mil governantes caídos",
-  
+
   "item.odysseyswords.fury_of_a_thousand_fists": "Fúria de Mil Punhos",
-  "item.odysseyswords.fury_of_a_thousand_fists.tooltip": "Canaliza a raiva combinada de guerreiros ancestrais",
-  
-  "item.odysseyswords.fist_of_fury": "Punho da Fúria",
+  "item.odysseyswords.fury_of_a_thousand_fists.tooltip": "Canaliza a raiva combinada de guerreiros antigos",
+
+  "item.odysseyswords.fist_of_fury": "Punho de Fúria",
   "item.odysseyswords.fist_of_fury.tooltip": "Golpeia mais rápido que um piscar de olhos",
 
   "container.odysseyswords.mythic_forge": "Forja Mítica",
   "block.odysseyswords.mythic_forge": "Forja Mítica"
-
 }
