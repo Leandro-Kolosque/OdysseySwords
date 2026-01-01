@@ -87,15 +87,22 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
             OdysseySwords.MODID);
-
+    
+    //===========================================        
+    // Armor - ARMADURAS
     public static final RegistryObject<Item> SPARTAN_ELITE_HELMET = ITEMS.register("spartan_elite_helmet",
             () -> new SpartanEliteArmorItem(ModArmorMaterials.SPARTAN_ELITE, ArmorItem.Type.HELMET,
                     new Item.Properties().stacksTo(1)));
-
-
+    //===========================================
+    
+    //===========================================
+    // Bows - ARCOS
     public static final RegistryObject<Item> ORION =
         ITEMS.register("orion", OrionBow::new);
+    //===========================================
 
+    //===========================================
+    // Weapons - Swords - ESPADAS
     public static final RegistryObject<Item> ABOMINABLE_BLADE =
         ITEMS.register("abominable_blade", AbominableBlade::new);
 
@@ -200,49 +207,28 @@ public class ModItems {
 
     public static final RegistryObject<Item> WHISPERWIND =
         ITEMS.register("whisperwind", Whisperwind::new);
+    //===========================================
 
-    public static final RegistryObject<Item> ABOMINABLE_SCYTHE =
-        ITEMS.register("abominable_scythe", AbominableScythe::new);
+    //===========================================
+    // Weapons - Greatswords - ESPADAS GRANDES
+    public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD =
+    ITEMS.register("ancient_royal_greatsword", AncientRoyalGreatsword::new);
 
-    public static final RegistryObject<Item> AZHAR =
-        ITEMS.register("azhar", Azhar::new);
+    public static final RegistryObject<Item> DIVINE_PUNISHER =
+    ITEMS.register("divine_punisher", DivinePunisher::new);
 
-    public static final RegistryObject<Item> DIVINE_REAPER =
-        ITEMS.register("divine_reaper", DivineReaper::new);
+    public static final RegistryObject<Item> DRAGON_SLAYING_BLADE =
+    ITEMS.register("dragon_slaying_blade", DragonSlayingBlade::new);
 
-    public static final RegistryObject<Item> FROST_SCYTHE =
-        ITEMS.register("frost_scythe", FrostScythe::new);
+    public static final RegistryObject<Item> SOUL_DEVOURER =
+    ITEMS.register("soul_devourer", SoulDevourer::new);
 
-    public static final RegistryObject<Item> FROST_SCYTHE_AXE =
-        ITEMS.register("frost_scythe_axe", FrostScytheAxe::new);
+    public static final RegistryObject<Item> WAXWEAVER =
+    ITEMS.register("waxweaver", Waxweaver::new);
+    //===========================================
 
-    public static final RegistryObject<Item> MAGIC_SCYTHE =
-        ITEMS.register("magic_scythe", MagicScythe::new);
-
-    public static final RegistryObject<Item> SCULK_SCYTHE =
-        ITEMS.register("sculk_scythe", SculkScythe::new);
-
-    public static final RegistryObject<Item> SOUL_COLLECTOR =
-        ITEMS.register("soul_collector", SoulCollector::new);
-
-    public static final RegistryObject<Item> ARCANETHYST =
-    ITEMS.register("arcanethyst", Arcanethyst::new);
-
-    public static final RegistryObject<Item> DEMONLORD_GREATAXE =
-    ITEMS.register("demonlord_greataxe", DemonlordGreataxe::new);
-
-    public static final RegistryObject<Item> DIVINE_AXE_RHITTA =
-    ITEMS.register("divine_axe_rhitta", DivineAxeRhitta::new);
-
-    public static final RegistryObject<Item> FYRALATH =
-    ITEMS.register("fyralath", Fyralath::new);
-
-    public static final RegistryObject<Item> HEARTHFLAME =
-    ITEMS.register("hearthflame", Hearthflame::new);
-
-    public static final RegistryObject<Item> ICEWHISPER =
-    ITEMS.register("icewhisper", IceWhisper::new);
-
+    //===========================================
+    // Weapons - Rapiers - FLORETES
      public static final RegistryObject<Item> FLORAL_SABRE =
     ITEMS.register("floral_sabre", FloralSabre::new);
 
@@ -251,7 +237,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SABRE =
     ITEMS.register("sabre", Sabre::new);
+    //===========================================
 
+    //===========================================
+    // Weapons - Spears - LANÇAS
     public static final RegistryObject<Item> AQUANTIC_TRIDENT =
     ITEMS.register("aquantic_trident", AquanticTrident::new);
 
@@ -275,28 +264,67 @@ public class ModItems {
 
     public static final RegistryObject<Item> WICKPIERCER =
     ITEMS.register("wickpiercer", Wickpiercer::new);
+    //===========================================
 
+    //===========================================
+    // Weapons - Scythes - FOICES
+    public static final RegistryObject<Item> ABOMINABLE_SCYTHE =
+        ITEMS.register("abominable_scythe", AbominableScythe::new);
+
+    public static final RegistryObject<Item> AZHAR =
+        ITEMS.register("azhar", Azhar::new);
+
+    public static final RegistryObject<Item> DIVINE_REAPER =
+        ITEMS.register("divine_reaper", DivineReaper::new);
+
+    public static final RegistryObject<Item> FROST_SCYTHE =
+        ITEMS.register("frost_scythe", FrostScythe::new);
+
+    public static final RegistryObject<Item> FROST_SCYTHE_AXE =
+        ITEMS.register("frost_scythe_axe", FrostScytheAxe::new);
+
+    public static final RegistryObject<Item> MAGIC_SCYTHE =
+        ITEMS.register("magic_scythe", MagicScythe::new);
+
+    public static final RegistryObject<Item> SCULK_SCYTHE =
+        ITEMS.register("sculk_scythe", SculkScythe::new);
+
+    public static final RegistryObject<Item> SOUL_COLLECTOR =
+        ITEMS.register("soul_collector", SoulCollector::new);
+    //===========================================
+
+    //===========================================
+    // Weapons - Axes - MACHADOS
+    public static final RegistryObject<Item> ARCANETHYST =
+    ITEMS.register("arcanethyst", Arcanethyst::new);
+
+    public static final RegistryObject<Item> DEMONLORD_GREATAXE =
+    ITEMS.register("demonlord_greataxe", DemonlordGreataxe::new);
+
+    public static final RegistryObject<Item> DIVINE_AXE_RHITTA =
+    ITEMS.register("divine_axe_rhitta", DivineAxeRhitta::new);
+
+    public static final RegistryObject<Item> FYRALATH =
+    ITEMS.register("fyralath", Fyralath::new);
+
+    public static final RegistryObject<Item> ICEWHISPER =
+    ITEMS.register("icewhisper", IceWhisper::new);
+    //===========================================
+
+    //===========================================
+    // Weapons - Hammers - MARRETAS
     public static final RegistryObject<Item> APOPHIS =
     ITEMS.register("apophis", Apophis::new);
 
+    public static final RegistryObject<Item> HEARTHFLAME =
+    ITEMS.register("hearthflame", Hearthflame::new);
+
     public static final RegistryObject<Item> POWERFUSE_HAMMER =
     ITEMS.register("powerfuse_hammer", PowerfuseHammer::new);
-
-    public static final RegistryObject<Item> ANCIENT_ROYAL_GREATSWORD =
-    ITEMS.register("ancient_royal_greatsword", AncientRoyalGreatsword::new);
-
-    public static final RegistryObject<Item> DIVINE_PUNISHER =
-    ITEMS.register("divine_punisher", DivinePunisher::new);
-
-    public static final RegistryObject<Item> DRAGON_SLAYING_BLADE =
-    ITEMS.register("dragon_slaying_blade", DragonSlayingBlade::new);
-
-    public static final RegistryObject<Item> SOUL_DEVOURER =
-    ITEMS.register("soul_devourer", SoulDevourer::new);
-
-    public static final RegistryObject<Item> WAXWEAVER =
-    ITEMS.register("waxweaver", Waxweaver::new);
-
+    //===========================================
+    
+    //===========================================
+    // Weapons - Warglaives - GLAIVES DE GUERRA
     public static final RegistryObject<Item> STARS_EDGE =
     ITEMS.register("stars_edge", StarsEdge::new);
 
@@ -305,17 +333,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> WATCHING_WARGLAIVE =
     ITEMS.register("watching_warglaive", WatchingWarglaive::new);
+    //===========================================
 
+    //===========================================
+    // Weapons - Claws - GARRAS
     public static final RegistryObject<Item> FIST_OF_FURY =
         ITEMS.register("fist_of_fury", FistOfFury::new);
 
     public static final RegistryObject<Item> FURY_OF_A_THOUSAND_FISTS =
         ITEMS.register("fury_of_a_thousand_fists", FuryOfAThousandsFists::new);
-
-    // Method to register the DeferredRegister to the event bus
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+    //===========================================
     
     public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
     () -> new ModMaterialItem(new Item.Properties()
@@ -368,4 +395,9 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
     () -> new ModMaterialItem(new Item.Properties()
         .fireResistant()));
+
+    // Method to register the DeferredRegister to the event bus
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 }
