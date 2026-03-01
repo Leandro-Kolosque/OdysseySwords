@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:cyber_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:diamond_sword"
+  },
+  "additionalInput": {
+    "item": "minecraft:redstone_block"
+  },
+  "output": {
+    "item": "odysseyswords:cybernetic_katana",
+    "count": 1
+  }
+}
