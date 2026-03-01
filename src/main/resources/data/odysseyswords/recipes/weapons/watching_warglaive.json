@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:obsidian"
+  },
+  "additionalInput": {
+    "item": "minecraft:ender_eye"
+  },
+  "output": {
+    "item": "odysseyswords:watching_warglaive",
+    "count": 1
+  }
+}

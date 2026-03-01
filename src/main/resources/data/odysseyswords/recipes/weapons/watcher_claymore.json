@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:crying_obsidian"
+  },
+  "additionalInput": {
+    "item": "minecraft:ender_eye"
+  },
+  "output": {
+    "item": "odysseyswords:watcher_claymore",
+    "count": 1
+  }
+}
