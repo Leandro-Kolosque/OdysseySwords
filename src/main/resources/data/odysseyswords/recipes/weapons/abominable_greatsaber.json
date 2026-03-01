@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:diamond_sword"
+  },
+  "additionalInput": {
+    "item": "minecraft:ender_eye"
+  },
+  "output": {
+    "item": "odysseyswords:abominable_greatsaber",
+    "count": 1
+  }
+}

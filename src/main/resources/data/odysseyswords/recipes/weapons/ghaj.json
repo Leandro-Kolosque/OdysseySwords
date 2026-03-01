@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:diamond_sword"
+  },
+  "additionalInput": {
+    "item": "minecraft:crying_obsidian"
+  },
+  "output": {
+    "item": "odysseyswords:ghaj",
+    "count": 1
+  }
+}

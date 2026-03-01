@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:bow"
+  },
+  "additionalInput": {
+    "item": "minecraft:nether_star"
+  },
+  "output": {
+    "item": "odysseyswords:orion",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:diamond_sword"
+  },
+  "additionalInput": {
+    "item": "minecraft:ender_pearl"
+  },
+  "output": {
+    "item": "odysseyswords:abominable_blade",
+    "count": 1
+  }
+}
