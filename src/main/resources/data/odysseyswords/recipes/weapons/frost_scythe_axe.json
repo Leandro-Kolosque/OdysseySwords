@@ -1,16 +1,16 @@
 {
   "type": "odysseyswords:mythic_forging",
   "ingotInput": {
-    "item": "odysseyswords:tartarus_ingot"
+    "item": "odysseyswords:frost_ingot"
   },
   "resourceInput": {
-    "item": "minecraft:feather"
+    "item": "minecraft:diamond_hoe"
   },
   "additionalInput": {
-    "item": "minecraft:coal"
+    "item": "minecraft:blue_ice"
   },
   "output": {
-    "item": "odysseyswords:phoenix_grace",
+    "item": "odysseyswords:frost_scythe_axe",
     "count": 1
   }
 }

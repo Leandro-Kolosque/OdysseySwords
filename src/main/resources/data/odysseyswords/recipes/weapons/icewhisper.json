@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:frost_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:diamond_axe"
+  },
+  "additionalInput": {
+    "item": "minecraft:blue_ice"
+  },
+  "output": {
+    "item": "odysseyswords:icewhisper",
+    "count": 1
+  }
+}
