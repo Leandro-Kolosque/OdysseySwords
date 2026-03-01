@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:tartarus_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:diamond_sword"
+  },
+  "additionalInput": {
+    "item": "minecraft:nether_brick"
+  },
+  "output": {
+    "item": "odysseyswords:dragon_slaying_blade",
+    "count": 1
+  }
+}

@@ -29,8 +29,7 @@ public final class MaterialDefinitions {
             "edge_of_the_astralplane");
 
         register("tartarus", "dragon_slaying_blade",
-            "brimstone_claymore", "phoenix_grace",
-            "hearthflame", "molten_sword",
+            "phoenix_grace", "hearthflame", "molten_sword",
             "molten_blade", "sunbreak");
 
         register("void", "abominable_blade", "abominable_greatsaber",
