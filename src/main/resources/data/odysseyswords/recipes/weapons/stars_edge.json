@@ -1,0 +1,16 @@
+{
+  "type": "odysseyswords:mythic_forging",
+  "ingotInput": {
+    "item": "odysseyswords:void_ingot"
+  },
+  "resourceInput": {
+    "item": "minecraft:emerald_block"
+  },
+  "additionalInput": {
+    "item": "minecraft:nether_star"
+  },
+  "output": {
+    "item": "odysseyswords:stars_edge",
+    "count": 1
+  }
+}
