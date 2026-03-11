@@ -311,6 +311,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
             () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+            
+    public static final RegistryObject<Item> PHOENIX_FEATHER = ITEMS.register("phoenix_feather",
+            () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+
+    public static final RegistryObject<Item> BLOOD = ITEMS.register("blood",
+            () -> new ModMaterialItem(MaterialItemProperties.ingot()));
     // ===========================================
 
     // ===========================================
