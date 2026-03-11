@@ -8,7 +8,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-
+import com.odysseyswords.customswordmod.client.model.armor.easter_eggs.dumb_hat.DumbHatModel;
+import com.odysseyswords.customswordmod.content.items.armor.easter_eggs.dumb_hat.DumbHatItem;
 import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
 import com.odysseyswords.customswordmod.content.items.armor.sets.pegasus.PegasusArmorItem;
 import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
@@ -58,6 +59,12 @@ public class ModItems {
                     ModArmorMaterials.PEGASUS,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
+
+     public static final RegistryObject<Item> DUMB_HAT = ITEMS.register("dumb_hat",
+           () -> new DumbHatItem(
+                ModArmorMaterials.PEGASUS,
+                ArmorItem.Type.HELMET,
+                new Item.Properties()));
     // ===========================================
 
     // ===========================================
@@ -148,6 +155,8 @@ public class ModItems {
             WatcherClaymore::new);
 
     public static final RegistryObject<Item> WHISPERWIND = ITEMS.register("whisperwind", Whisperwind::new);
+    
+    public static final RegistryObject<Item> POPSICLE = ITEMS.register("popsicle", Popsicle::new);
     // ===========================================
 
     // ===========================================
@@ -235,6 +244,8 @@ public class ModItems {
     public static final RegistryObject<Item> APOPHIS = ITEMS.register("apophis", Apophis::new);
 
     public static final RegistryObject<Item> HEARTHFLAME = ITEMS.register("hearthflame", Hearthflame::new);
+
+    public static final RegistryObject<Item> HEPHAESTUS_HAMMER = ITEMS.register("hephaestus_hammer", HephaestusHammer::new);
 
     public static final RegistryObject<Item> POWERFUSE_HAMMER = ITEMS.register("powerfuse_hammer",
             PowerfuseHammer::new);
