@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/aquantic_trident",
@@ -1412,8 +1413,7 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -42],
-			"translation": [-0.5, -1.5, 0],
-			"scale": [1.75, 1.75, 1.75]
+			"scale": [1.35, 1.35, 1.35]
 		},
 		"head": {
 			"rotation": [0, 0, -132],
@@ -1431,7 +1431,6 @@
 			"name": "aquantic_trident",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				0,
 				1,

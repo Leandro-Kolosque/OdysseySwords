@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench by Art_Bor, commissioned by ElocinDev",
 	"texture_size": [64, 64],
 	"textures": {
@@ -380,7 +381,7 @@
 			"scale": [0.45, 0.45, 0.45]
 		},
 		"fixed": {
-			"rotation": [0, 90, 180],
+			"rotation": [0, 90, -180],
 			"translation": [0, 0, -40]
 		}
 	},

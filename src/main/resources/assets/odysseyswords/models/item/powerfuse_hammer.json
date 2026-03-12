@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/powerfuse_hammer",
@@ -300,8 +301,8 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -42],
-			"translation": [1.5, 3.75, 0],
-			"scale": [2.5, 2.5, 2]
+			"translation": [0.25, 2.25, 0],
+			"scale": [2.05, 2.05, 2.05]
 		},
 		"head": {
 			"rotation": [0, 0, 134],

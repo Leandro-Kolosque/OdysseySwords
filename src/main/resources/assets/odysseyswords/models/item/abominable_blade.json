@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/abominable_blade",
@@ -1062,7 +1063,7 @@
 		"gui": {
 			"rotation": [0, 0, -42],
 			"translation": [-1.25, -2, 0],
-			"scale": [2, 2, 1]
+			"scale": [2, 2, 2]
 		},
 		"head": {
 			"rotation": [0, -94, -117],
@@ -1071,8 +1072,8 @@
 		},
 		"fixed": {
 			"rotation": [-180, 0, 138],
-			"translation": [-1.25, 1.75, 2],
-			"scale": [4, 4, 3]
+			"translation": [1.75, -1.75, 2],
+			"scale": [2.4, 2.35, 2.4]
 		}
 	},
 	"groups": [

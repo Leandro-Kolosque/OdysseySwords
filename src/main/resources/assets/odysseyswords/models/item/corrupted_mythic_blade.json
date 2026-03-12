@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/corrupted_mythic_blade",
@@ -1464,8 +1465,8 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -42],
-			"translation": [0.75, 0.75, 0],
-			"scale": [2, 2, 1]
+			"translation": [0.25, 0, 0],
+			"scale": [1.55, 1.55, 1.55]
 		},
 		"head": {
 			"rotation": [0, 0, 142],

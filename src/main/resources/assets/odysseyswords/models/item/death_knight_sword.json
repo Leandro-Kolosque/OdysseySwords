@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/death_knight_sword",
@@ -1925,9 +1926,9 @@
 			"scale": [2, 2, 2]
 		},
 		"gui": {
-			"rotation": [0, 0, -42],
-			"translation": [-0.25, -0.25, 0],
-			"scale": [1.75, 1.75, 1.75]
+			"rotation": [0, 0, -43],
+			"translation": [-0.25, 0, 0],
+			"scale": [1.35, 1.35, 1.35]
 		},
 		"head": {
 			"rotation": [0, 0, -132],
@@ -1945,7 +1946,6 @@
 			"name": "death_name_sword",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				0,
 				1,
