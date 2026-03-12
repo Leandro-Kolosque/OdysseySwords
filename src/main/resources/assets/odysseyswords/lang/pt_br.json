@@ -102,6 +102,13 @@
   "item.odysseyswords.void_ingot": "Lingote do Vácuo",
   "item.odysseyswords.void_ingot.tooltip": "Absorve a luz ao redor",
 
+  "item.odysseyswords.phoenix_feather": "Pena da Fênix",
+  "item.odysseyswords.phoenix_feather.tooltip": "Uma única pena da fênix imortal, perpetuamente aquecida pela promessa do renascimento.",
+
+  "item.odysseyswords.blood": "Sangue do Drácula",
+  "item.odysseyswords.blood.tooltip": "A essência cristalizada do lendário senhor dos vampiros, pulsando com uma maldição eterna e o poder de dominar a noite.",
+
+
   "item.odysseyswords.material_tooltip.blood": "Forjada com magia de sangue cristalizado, esta arma tem sede de combate",
   "item.odysseyswords.material_tooltip.crystal": "Criada com cristais dimensionais, esta arma cintila com energia instável",
   "item.odysseyswords.material_tooltip.cyber": "Aprimorada com tecnologia cibernética, esta arma pulsa com poder sintético",

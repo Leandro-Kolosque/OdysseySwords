@@ -102,6 +102,12 @@
   "item.odysseyswords.void_ingot": "Void Ingot",
   "item.odysseyswords.void_ingot.tooltip": "Absorbs surrounding light",
 
+  "item.odysseyswords.phoenix_feather": "Phoenix Feather",
+  "item.odysseyswords.phoenix_feather.tooltip": "A single feather from the immortal phoenix, forever warm with the promise of rebirth.",
+
+  "item.odysseyswords.blood": "Dracula's Blood",
+  "item.odysseyswords.blood.tooltip": "The crystallized essence of the legendary vampire lord, throbbing with an eternal curse and the power to dominate the night.",
+
   "item.odysseyswords.material_tooltip.blood": "Forged from crystallized blood magic, this weapon thirsts for combat",
   "item.odysseyswords.material_tooltip.crystal": "Crafted from dimensional crystals, this weapon shimmers with unstable energy",
   "item.odysseyswords.material_tooltip.cyber": "Enhanced with cybernetic technology, this weapon pulses with synthetic power",

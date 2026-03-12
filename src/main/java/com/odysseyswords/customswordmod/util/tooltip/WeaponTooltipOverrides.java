@@ -26,6 +26,8 @@ public final class WeaponTooltipOverrides {
         OVERRIDES.put("apocalypse", ChatFormatting.BLUE);
         OVERRIDES.put("fist_of_fury", ChatFormatting.DARK_AQUA);
         OVERRIDES.put("fury_of_a_thousand_fists", ChatFormatting.DARK_AQUA);
+        OVERRIDES.put("phoenix_feather", ChatFormatting.RED);
+        OVERRIDES.put("blood", ChatFormatting.RED);
     }
 
     private WeaponTooltipOverrides() {}
