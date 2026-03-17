@@ -3,26 +3,57 @@ package com.odysseyswords.customswordmod.content.items.materials;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
-public final class MaterialItemProperties {
+public class MaterialItemProperties {
 
-    private MaterialItemProperties() {
+    private final Item.Properties properties;
+    private final MaterialType type;
+
+    private MaterialItemProperties(Item.Properties properties, MaterialType type) {
+        this.properties = properties;
+        this.type = type;
     }
 
-    public static Item.Properties ingot() {
-        return new Item.Properties()
-                .fireResistant()
-                .stacksTo(64)
-                .rarity(Rarity.UNCOMMON);
+    public Item.Properties getProperties() {
+        return properties;
     }
 
-    public static Item.Properties gem() {
-        return new Item.Properties()
-                .fireResistant();
+    public MaterialType getType() {
+        return type;
     }
 
-    public static Item.Properties specialMaterial() {
-        return new Item.Properties()
-                .fireResistant()
-                .rarity(Rarity.RARE);
+    // ===== FACTORIES =====
+
+    public static MaterialItemProperties ingot() {
+        return new MaterialItemProperties(
+                new Item.Properties()
+                        .fireResistant()
+                        .stacksTo(64)
+                        .rarity(Rarity.UNCOMMON),
+                MaterialType.INGOT
+        );
+    }
+
+    public static MaterialItemProperties gem() {
+        return new MaterialItemProperties(
+                new Item.Properties()
+                        .fireResistant(),
+                MaterialType.GEM
+        );
+    }
+
+    public static MaterialItemProperties essence() {
+        return new MaterialItemProperties(
+                new Item.Properties()
+                        .fireResistant()
+                        .rarity(Rarity.RARE),
+                MaterialType.ESSENCE
+        );
+    }
+
+    public static MaterialItemProperties drop() {
+        return new MaterialItemProperties(
+                new Item.Properties(),
+                MaterialType.DROP
+        );
     }
 }

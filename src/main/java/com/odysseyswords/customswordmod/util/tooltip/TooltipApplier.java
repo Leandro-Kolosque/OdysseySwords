@@ -15,6 +15,11 @@ import java.util.Optional;
 
 public final class TooltipApplier {
 
+    private static String getItemId(ItemStack stack) {
+        ResourceLocation id = ForgeRegistries.ITEMS.getKey(stack.getItem());
+        return id != null ? id.getPath() : "";
+    }
+
     @SubscribeEvent
     public static void onTooltip(ItemTooltipEvent event) {
         ItemStack stack = event.getItemStack();
@@ -22,29 +27,34 @@ public final class TooltipApplier {
 
         String itemId = getItemId(stack);
 
-        // Overrides absolutos (fyralath, etc)
+        // 1. Overrides (armas únicas)
         if (WeaponTooltipOverrides.hasOverride(stack)) {
             WeaponTooltipOverrides.applyOverride(stack, tooltip);
             return;
         }
 
-        // Material padrão
+        // 2. Verifica se é arma com material
         Optional<String> materialOpt = MaterialDefinitions.getMaterial(itemId);
 
-        if (materialOpt.isEmpty())
+        if (materialOpt.isPresent()) {
+            String material = materialOpt.get();
+            ChatFormatting color = TooltipColorPalette.getColor(material);
+
+            MutableComponent materialText = Component.translatable(
+                    "item.odysseyswords.material_tooltip." + material);
+
+            tooltip.add(materialText.withStyle(color, ChatFormatting.ITALIC));
             return;
+        }
 
-        String material = materialOpt.get();
-        ChatFormatting color = TooltipColorPalette.getColor(material);
+        // 3. Caso contrário = ITEM NORMAL (blood, phoenix_feather, etc)
+        String itemTooltipKey = stack.getItem().getDescriptionId() + ".tooltip";
+        
+        if (net.minecraft.client.resources.language.I18n.exists(itemTooltipKey)) {
+            ChatFormatting color = ItemTooltipColorPalette.getColor(itemId);
 
-        MutableComponent text = Component.translatable(
-                "item.odysseyswords.material_tooltip." + material);
-
-        tooltip.add(text.withStyle(color).withStyle(ChatFormatting.ITALIC));
-    }
-
-    private static String getItemId(ItemStack stack) {
-        ResourceLocation id = ForgeRegistries.ITEMS.getKey(stack.getItem());
-        return id != null ? id.getPath() : "";
+            tooltip.add(Component.translatable(itemTooltipKey)
+                    .withStyle(color, ChatFormatting.ITALIC));
+        }
     }
 }

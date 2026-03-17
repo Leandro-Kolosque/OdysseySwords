@@ -27,7 +27,6 @@ import com.odysseyswords.customswordmod.content.items.weapons.spears.*;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.*;
 import com.odysseyswords.customswordmod.content.items.weapons.warglaives.*;
 
-
 public class ModItems {
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
                         OdysseySwords.MODID);
@@ -321,11 +320,14 @@ public class ModItems {
         public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
                         () -> new ModMaterialItem(MaterialItemProperties.ingot()));
 
+        // Materials - MATERIAIS
         public static final RegistryObject<Item> PHOENIX_FEATHER = ITEMS.register("phoenix_feather",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop()));
 
         public static final RegistryObject<Item> BLOOD = ITEMS.register("blood",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.essence()));
         // ===========================================
 
         // ===========================================
