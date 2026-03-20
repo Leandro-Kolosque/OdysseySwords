@@ -2,6 +2,8 @@ package com.odysseyswords.customswordmod.content.items.weapons.base;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.odysseyswords.customswordmod.api.weapon.IOdysseyWeapon;
+
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -11,7 +13,7 @@ import net.minecraftforge.common.ForgeMod;
 
 import java.util.UUID;
 
-public abstract class SpearWeaponItem extends SwordItem {
+public abstract class SpearWeaponItem extends SwordItem implements IOdysseyWeapon{
 
     protected static final int BASE_DAMAGE = 6;
     protected static final float BASE_ATTACK_SPEED = -2.6F;

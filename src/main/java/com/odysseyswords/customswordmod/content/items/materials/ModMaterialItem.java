@@ -12,7 +12,7 @@ public class ModMaterialItem extends Item {
         this.materialProperties = materialProperties;
     }
 
-    public MaterialType getMaterialType() {
+    public MaterialItemType getMaterialType() {
         return materialProperties.getType();
     }
 }

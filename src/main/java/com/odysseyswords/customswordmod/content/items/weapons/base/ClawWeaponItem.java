@@ -2,6 +2,8 @@ package com.odysseyswords.customswordmod.content.items.weapons.base;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.odysseyswords.customswordmod.api.weapon.IOdysseyWeapon;
+
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -11,7 +13,7 @@ import net.minecraftforge.common.ForgeMod;
 
 import java.util.UUID;
 
-public abstract class ClawWeaponItem extends AbstractWeaponItem {
+public abstract class ClawWeaponItem extends AbstractWeaponItem implements IOdysseyWeapon{
 
     // UUIDs próprios (OBRIGATÓRIO em 1.20+)
     private static final UUID DAMAGE_UUID =
@@ -25,8 +27,7 @@ public abstract class ClawWeaponItem extends AbstractWeaponItem {
 
     // Identidade das Claws
     protected static final float BASE_ATTACK_DAMAGE = 3.0F;
-    protected static final float BASE_ATTACK_SPEED = 2.8F;
-    protected static final float REACH_REDUCTION = -0.75F;
+    protected static final float BASE_ATTACK_SPEED = -1.8F;
 
     private final Multimap<Attribute, AttributeModifier> defaultModifiers;
 
@@ -54,17 +55,6 @@ public abstract class ClawWeaponItem extends AbstractWeaponItem {
                         SPEED_UUID,
                         "Claw speed",
                         BASE_ATTACK_SPEED,
-                        AttributeModifier.Operation.ADDITION
-                )
-        );
-
-        // Alcance reduzido
-        builder.put(
-                ForgeMod.ENTITY_REACH.get(),
-                new AttributeModifier(
-                        REACH_UUID,
-                        "Claw reach reduction",
-                        REACH_REDUCTION,
                         AttributeModifier.Operation.ADDITION
                 )
         );

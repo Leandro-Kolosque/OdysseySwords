@@ -6,9 +6,9 @@ import net.minecraft.world.item.Rarity;
 public class MaterialItemProperties {
 
     private final Item.Properties properties;
-    private final MaterialType type;
+    private final MaterialItemType type;
 
-    private MaterialItemProperties(Item.Properties properties, MaterialType type) {
+    private MaterialItemProperties(Item.Properties properties, MaterialItemType type) {
         this.properties = properties;
         this.type = type;
     }
@@ -17,7 +17,7 @@ public class MaterialItemProperties {
         return properties;
     }
 
-    public MaterialType getType() {
+    public MaterialItemType getType() {
         return type;
     }
 
@@ -29,7 +29,7 @@ public class MaterialItemProperties {
                         .fireResistant()
                         .stacksTo(64)
                         .rarity(Rarity.UNCOMMON),
-                MaterialType.INGOT
+                MaterialItemType.INGOT
         );
     }
 
@@ -37,7 +37,7 @@ public class MaterialItemProperties {
         return new MaterialItemProperties(
                 new Item.Properties()
                         .fireResistant(),
-                MaterialType.GEM
+                MaterialItemType.GEM
         );
     }
 
@@ -46,14 +46,14 @@ public class MaterialItemProperties {
                 new Item.Properties()
                         .fireResistant()
                         .rarity(Rarity.RARE),
-                MaterialType.ESSENCE
+                MaterialItemType.ESSENCE
         );
     }
 
     public static MaterialItemProperties drop() {
         return new MaterialItemProperties(
                 new Item.Properties(),
-                MaterialType.DROP
+                MaterialItemType.DROP
         );
     }
 }

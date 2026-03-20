@@ -23,6 +23,11 @@ public final class TooltipApplier {
     @SubscribeEvent
     public static void onTooltip(ItemTooltipEvent event) {
         ItemStack stack = event.getItemStack();
+
+        if (stack.getItem() instanceof com.odysseyswords.customswordmod.api.tooltip.IOdysseyTooltip) {
+            return;
+        }
+        
         List<Component> tooltip = event.getToolTip();
 
         String itemId = getItemId(stack);
@@ -49,7 +54,7 @@ public final class TooltipApplier {
 
         // 3. Caso contrário = ITEM NORMAL (blood, phoenix_feather, etc)
         String itemTooltipKey = stack.getItem().getDescriptionId() + ".tooltip";
-        
+
         if (net.minecraft.client.resources.language.I18n.exists(itemTooltipKey)) {
             ChatFormatting color = ItemTooltipColorPalette.getColor(itemId);
 

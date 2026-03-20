@@ -1,9 +1,11 @@
 package com.odysseyswords.customswordmod.content.items.weapons.base;
 
+import com.odysseyswords.customswordmod.api.weapon.IOdysseyWeapon;
+
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 
-public abstract class GreatswordWeaponItem extends SwordItem {
+public abstract class GreatswordWeaponItem extends SwordItem implements IOdysseyWeapon{
 
     protected static final int BASE_DAMAGE = 7;
     protected static final float BASE_ATTACK_SPEED = -2.8F;
