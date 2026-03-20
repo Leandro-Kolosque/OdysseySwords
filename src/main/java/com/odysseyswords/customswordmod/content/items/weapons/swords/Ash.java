@@ -15,25 +15,23 @@ public class Ash extends SwordWeaponItem {
                 new Item.Properties()
                         .stacksTo(1)
                         .fireResistant()
-                        .rarity(net.minecraft.world.item.Rarity.RARE)
-        );
+                        .rarity(net.minecraft.world.item.Rarity.RARE));
     }
 
     @Override
     public MaterialType getMaterialType() {
-        return MaterialType.TARTARUS; // obrigatório pela interface
+        return MaterialType.TARTARUS;
     }
 
     @Override
-    public boolean hasCustomTooltip() {
-        return true;
+    public boolean useMaterialTooltip() {
+        return false;
     }
 
     @Override
     public void appendCustomTooltip(com.odysseyswords.customswordmod.util.tooltip.TooltipContext context) {
         context.add(
                 Component.translatable("item.odysseyswords.ash.tooltip")
-                        .withStyle(ChatFormatting.YELLOW, ChatFormatting.ITALIC)
-        );
+                        .withStyle(ChatFormatting.YELLOW, ChatFormatting.ITALIC));
     }
 }

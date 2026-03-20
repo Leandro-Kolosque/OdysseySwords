@@ -10,14 +10,14 @@ public interface IOdysseyMaterialItem extends IOdysseyTooltip {
 
     MaterialType getMaterialType();
 
-    String getTooltipKey();
-
     @Override
     default void appendTooltip(TooltipContext context) {
         MaterialType material = getMaterialType();
 
+        String tooltipKey = context.getStack().getDescriptionId() + ".tooltip";
+
         context.add(
-            Component.translatable(getTooltipKey())
+            Component.translatable(tooltipKey)
                 .withStyle(material.getColor(), ChatFormatting.ITALIC)
         );
     }

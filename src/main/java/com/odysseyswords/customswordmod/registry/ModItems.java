@@ -15,6 +15,7 @@ import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.Spartan
 import com.odysseyswords.customswordmod.content.items.food.base.AbstractFoodItem;
 import com.odysseyswords.customswordmod.content.items.food.foods.PopsicleFood;
 import com.odysseyswords.customswordmod.content.items.materials.MaterialItemProperties;
+import com.odysseyswords.customswordmod.content.items.materials.MaterialType;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
 import com.odysseyswords.customswordmod.content.items.weapons.claws.*;
@@ -282,52 +283,84 @@ public class ModItems {
         // ===========================================
         // Ingots - LINGOTES
         public static final RegistryObject<Item> BLOOD_INGOT = ITEMS.register("blood_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.BLOOD));
 
         public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.CRYSTAL));
 
         public static final RegistryObject<Item> CYBER_INGOT = ITEMS.register("cyber_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.CYBER));
 
         public static final RegistryObject<Item> DIVINE_INGOT = ITEMS.register("divine_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.DIVINE));
 
         public static final RegistryObject<Item> FROST_INGOT = ITEMS.register("frost_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.FROST));
 
         public static final RegistryObject<Item> ROYAL_INGOT = ITEMS.register("royal_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.ROYAL));
 
         public static final RegistryObject<Item> SCULK_INGOT = ITEMS.register("sculk_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.SCULK));
+        
 
         public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.SILVERINE));
+                                        
 
         public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.SOUL));
+
 
         public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.STORM));
 
         public static final RegistryObject<Item> TARTARUS_INGOT = ITEMS.register("tartarus_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.TARTARUS));
 
         public static final RegistryObject<Item> TOXIC_INGOT = ITEMS.register("toxic_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.TOXIC));
 
         public static final RegistryObject<Item> VOID_INGOT = ITEMS.register("void_ingot",
-                        () -> new ModMaterialItem(MaterialItemProperties.ingot()));
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.ingot(),
+                                        MaterialType.VOID));
 
         // Materials - MATERIAIS
         public static final RegistryObject<Item> PHOENIX_FEATHER = ITEMS.register("phoenix_feather",
                         () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop()));
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.TARTARUS));
 
         public static final RegistryObject<Item> BLOOD = ITEMS.register("blood",
                         () -> new ModMaterialItem(
-                                        MaterialItemProperties.essence()));
+                                        MaterialItemProperties.essence(),
+                                        MaterialType.BLOOD));
+
         // ===========================================
 
         // ===========================================

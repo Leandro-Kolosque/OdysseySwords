@@ -8,7 +8,16 @@ public enum MaterialType {
     BLOOD("blood", ChatFormatting.DARK_RED),
     FROST("frost", ChatFormatting.AQUA),
     VOID("void", ChatFormatting.DARK_PURPLE),
-    TARTARUS("tartarus", ChatFormatting.GOLD);
+    TARTARUS("tartarus", ChatFormatting.GOLD),
+    CRYSTAL("crystal", ChatFormatting.GOLD),
+    CYBER("cyber", ChatFormatting.GOLD),
+    ROYAL("royal", ChatFormatting.GOLD),
+    SCULK("sculk", ChatFormatting.GOLD),
+    SILVERINE("silverine", ChatFormatting.GOLD),
+    SOUL("soul", ChatFormatting.GOLD),
+    STORM("storm", ChatFormatting.GOLD),
+    TOXIC("toxic", ChatFormatting.GOLD),
+    DIVINE("divine", ChatFormatting.GOLD);
 
     private final String id;
     private final ChatFormatting color;

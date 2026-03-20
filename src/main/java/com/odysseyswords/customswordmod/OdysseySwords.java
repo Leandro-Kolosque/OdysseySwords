@@ -8,7 +8,6 @@ import com.odysseyswords.customswordmod.registry.ModCreativeModeTab;
 import com.odysseyswords.customswordmod.registry.ModItems;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
-import com.odysseyswords.customswordmod.util.tooltip.TooltipApplier;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -39,7 +38,6 @@ public class OdysseySwords {
 
         // Registra o próprio mod para eventos do servidor e outros eventos do jogo
         MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(TooltipApplier.class);
 
         // Registra os SoundEvents
         ModSoundEvents.register(modEventBus);

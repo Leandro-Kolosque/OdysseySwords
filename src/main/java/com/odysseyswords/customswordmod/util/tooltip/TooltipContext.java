@@ -22,6 +22,10 @@ public class TooltipContext {
         tooltip.add(component);
     }
 
+    public void addTranslated(String key) {
+        add(Component.translatable(key));
+    }
+
     public ItemStack getStack() {
         return stack;
     }

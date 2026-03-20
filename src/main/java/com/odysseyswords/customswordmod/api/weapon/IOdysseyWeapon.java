@@ -8,18 +8,18 @@ public interface IOdysseyWeapon extends IOdysseyTooltip {
 
     MaterialType getMaterialType();
 
-    default boolean hasCustomTooltip() {
-        return false;
+    default boolean useMaterialTooltip() {
+        return true;
     }
 
     default void appendCustomTooltip(TooltipContext context) {}
 
     @Override
     default void appendTooltip(TooltipContext context) {
-        if (hasCustomTooltip()) {
-            appendCustomTooltip(context);
-        } else {
+        if (useMaterialTooltip()) {
             context.add(getMaterialType().getMaterialTooltip());
         }
+
+        appendCustomTooltip(context);
     }
 }
