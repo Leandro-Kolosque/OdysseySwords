@@ -17,6 +17,7 @@ import com.odysseyswords.customswordmod.content.items.food.foods.PopsicleFood;
 import com.odysseyswords.customswordmod.content.items.materials.MaterialItemProperties;
 import com.odysseyswords.customswordmod.content.items.materials.MaterialType;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
+import com.odysseyswords.customswordmod.content.items.misc.WeaponSmithingTemplateItem;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.*;
 import com.odysseyswords.customswordmod.content.items.weapons.greatswords.*;
@@ -350,45 +351,29 @@ public class ModItems {
                                         MaterialType.BLOOD));
         // ===========================================
         // Templates - TEMPLATES
-        public static final RegistryObject<Item> SWORD_SMITHING_TEMPLATE = ITEMS.register("sword_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
-
         public static final RegistryObject<Item> AXE_SMITHING_TEMPLATE = ITEMS.register("axe_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
-
-        public static final RegistryObject<Item> SPEAR_SMITHING_TEMPLATE = ITEMS.register("spear_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
-
-        public static final RegistryObject<Item> SCYTHE_SMITHING_TEMPLATE = ITEMS.register("scythe_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
-
-        public static final RegistryObject<Item> RAPIER_SMITHING_TEMPLATE = ITEMS.register("rapier_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
-
-        public static final RegistryObject<Item> WARGLAIVE_SMITHING_TEMPLATE = ITEMS.register("warglaive_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
 
         public static final RegistryObject<Item> GREATSWORD_SMITHING_TEMPLATE = ITEMS.register("greatsword_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
-
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
+                        
         public static final RegistryObject<Item> HAMMER_SMITHING_TEMPLATE = ITEMS.register("hammer_smithing_template",
-                        () -> new ModMaterialItem(
-                                        MaterialItemProperties.drop(),
-                                        MaterialType.BLOOD));
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
+
+        public static final RegistryObject<Item> RAPIER_SMITHING_TEMPLATE = ITEMS.register("rapier_smithing_template",
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
+
+        public static final RegistryObject<Item> SCYTHE_SMITHING_TEMPLATE = ITEMS.register("scythe_smithing_template",
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
+
+        public static final RegistryObject<Item> SPEAR_SMITHING_TEMPLATE = ITEMS.register("spear_smithing_template",
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
+
+        public static final RegistryObject<Item> SWORD_SMITHING_TEMPLATE = ITEMS.register("sword_smithing_template",
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
+
+        public static final RegistryObject<Item> WARGLAIVE_SMITHING_TEMPLATE = ITEMS.register("warglaive_smithing_template",
+                        () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
 
         // ===========================================
         // FOODS - COMIDAS

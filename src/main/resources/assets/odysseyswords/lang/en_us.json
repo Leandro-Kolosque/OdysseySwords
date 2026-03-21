@@ -159,5 +159,29 @@
   "item.odysseyswords.fist_of_fury.tooltip": "Strikes faster than the blink of an eye",
 
   "container.odysseyswords.mythic_forge": "Mythic Forge",
-  "block.odysseyswords.mythic_forge": "Mythic Forge"
+  "block.odysseyswords.mythic_forge": "Mythic Forge",
+
+  "item.odysseyswords.axe_smithing_template": "Axe Template",
+  "item.odysseyswords.axe_smithing_template.tooltip": "Used to forge brutal axes capable of cleaving through armor and bone.",
+
+  "item.odysseyswords.greatsword_smithing_template": "Greatsword Template",
+  "item.odysseyswords.greatsword_smithing_template.tooltip": "Used to forge massive greatswords that devastate entire battlefields.",
+
+  "item.odysseyswords.hammer_smithing_template": "Hammer Template",
+  "item.odysseyswords.hammer_smithing_template.tooltip": "Used to forge heavy hammers that crush enemies with immense force.",
+
+  "item.odysseyswords.rapier_smithing_template": "Rapier Template",
+  "item.odysseyswords.rapier_smithing_template.tooltip": "Used to craft refined rapiers designed for speed and precision strikes.",
+
+  "item.odysseyswords.scythe_smithing_template": "Scythe Template",
+  "item.odysseyswords.scythe_smithing_template.tooltip": "Used to craft deadly scythes that harvest both flesh and soul.",
+
+  "item.odysseyswords.spear_smithing_template": "Spear Template",
+  "item.odysseyswords.spear_smithing_template.tooltip": "Used to create precise spears that strike with deadly reach.",
+
+  "item.odysseyswords.sword_smithing_template": "Sword Template",
+  "item.odysseyswords.sword_smithing_template.tooltip": "Used to forge powerful swords balanced for both offense and defense.",
+
+  "item.odysseyswords.warglaive_smithing_template": "Warglaive Template",
+  "item.odysseyswords.warglaive_smithing_template.tooltip": "Used to craft swift warglaives that blend agility with relentless offense."
 }
