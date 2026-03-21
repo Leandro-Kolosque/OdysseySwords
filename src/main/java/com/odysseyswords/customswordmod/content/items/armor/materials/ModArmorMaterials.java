@@ -14,6 +14,15 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.of(Items.IRON_INGOT)),
 
     PEGASUS("pegasus", 22, new int[]{2, 5, 6, 2}, 25,
+            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
+
+    STARSHARD("star_shard", 22, new int[]{2, 5, 6, 2}, 25,
+            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
+
+    VOIDSPARTAN("void_spartan", 22, new int[]{2, 5, 6, 2}, 25,
+            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
+
+    CYBER("cyber", 22, new int[]{2, 5, 6, 2}, 25,
             SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE));
     
 

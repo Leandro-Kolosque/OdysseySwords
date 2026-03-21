@@ -1,8 +1,8 @@
-package com.odysseyswords.customswordmod.content.items.armor.sets.pegasus;
+package com.odysseyswords.customswordmod.content.items.armor.sets.star_shard;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
 import com.odysseyswords.customswordmod.content.items.armor.base.AbstractOdysseyArmorItem;
-import com.odysseyswords.customswordmod.client.model.armor.pegasus.PegasusArmorModel;
+import com.odysseyswords.customswordmod.client.model.armor.star_shard.StarShardArmorModel;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,17 +20,17 @@ import net.minecraft.world.entity.Entity;
 
 import java.util.function.Consumer;
 
-public class PegasusArmorItem extends AbstractOdysseyArmorItem implements GeoItem {
+public class StarShardArmorItem extends AbstractOdysseyArmorItem implements GeoItem {
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
-    public PegasusArmorItem(ArmorMaterial material, Type type, Properties properties) {
+    public StarShardArmorItem(ArmorMaterial material, Type type, Properties properties) {
         super(material, type, properties);
     }
 
     @Override
     public String getArmorSetId() {
-        return "pegasus";
+        return "star_shard";
     }
 
     @Override
@@ -45,7 +45,7 @@ public class PegasusArmorItem extends AbstractOdysseyArmorItem implements GeoIte
                     EquipmentSlot slot,
                     HumanoidModel<?> original) {
                 if (renderer == null) {
-                    renderer = new GeoArmorRenderer<>(new PegasusArmorModel());
+                    renderer = new GeoArmorRenderer<>(new StarShardArmorModel());
                 }
                 renderer.prepForRender(entity, stack, slot, original);
                 return renderer;
@@ -62,16 +62,10 @@ public class PegasusArmorItem extends AbstractOdysseyArmorItem implements GeoIte
         return cache;
     }
 
-    // @Override
-    // public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot
-    // slot, String type) {
-    // return OdysseySwords.MODID + ":textures/item/pegasus_" + slot.getName() +
-    // ".png";
-    // }
     @Override
     public String getArmorTexture(ItemStack stack, net.minecraft.world.entity.Entity entity, EquipmentSlot slot,
             String type) {
         // Retorna uma textura 2D para o inventário
-        return OdysseySwords.MODID + "textures/item/pegasus_" + slot.getName() + ".png";
+        return OdysseySwords.MODID + "textures/item/star_shard_" + slot.getName() + ".png";
     }
 }
