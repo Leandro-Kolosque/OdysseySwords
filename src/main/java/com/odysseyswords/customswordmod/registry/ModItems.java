@@ -18,7 +18,6 @@ import com.odysseyswords.customswordmod.content.items.materials.MaterialItemProp
 import com.odysseyswords.customswordmod.content.items.materials.MaterialType;
 import com.odysseyswords.customswordmod.content.items.materials.ModMaterialItem;
 import com.odysseyswords.customswordmod.content.items.weapons.bows.OrionBow;
-import com.odysseyswords.customswordmod.content.items.weapons.claws.*;
 import com.odysseyswords.customswordmod.content.items.weapons.axes.*;
 import com.odysseyswords.customswordmod.content.items.weapons.greatswords.*;
 import com.odysseyswords.customswordmod.content.items.weapons.hammers.*;
@@ -268,14 +267,6 @@ public class ModItems {
 
         public static final RegistryObject<Item> WATCHING_WARGLAIVE = ITEMS.register("watching_warglaive",
                         WatchingWarglaive::new);
-        // ===========================================
-
-        // ===========================================
-        // Weapons - Claws - GARRAS
-        public static final RegistryObject<Item> FIST_OF_FURY = ITEMS.register("fist_of_fury", FistOfFury::new);
-
-        public static final RegistryObject<Item> FURY_OF_A_THOUSAND_FISTS = ITEMS.register("fury_of_a_thousand_fists",
-                        FuryOfAThousandsFists::new);
         // ===========================================
 
         // ===========================================
