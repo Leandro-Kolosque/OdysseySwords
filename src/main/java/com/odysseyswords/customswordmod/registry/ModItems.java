@@ -316,19 +316,16 @@ public class ModItems {
                         () -> new ModMaterialItem(
                                         MaterialItemProperties.ingot(),
                                         MaterialType.SCULK));
-        
 
         public static final RegistryObject<Item> SILVERINE_INGOT = ITEMS.register("silverine_ingot",
                         () -> new ModMaterialItem(
                                         MaterialItemProperties.ingot(),
                                         MaterialType.SILVERINE));
-                                        
 
         public static final RegistryObject<Item> SOUL_INGOT = ITEMS.register("soul_ingot",
                         () -> new ModMaterialItem(
                                         MaterialItemProperties.ingot(),
                                         MaterialType.SOUL));
-
 
         public static final RegistryObject<Item> STORM_INGOT = ITEMS.register("storm_ingot",
                         () -> new ModMaterialItem(
@@ -360,8 +357,47 @@ public class ModItems {
                         () -> new ModMaterialItem(
                                         MaterialItemProperties.essence(),
                                         MaterialType.BLOOD));
-
         // ===========================================
+        // Templates - TEMPLATES
+        public static final RegistryObject<Item> SWORD_SMITHING_TEMPLATE = ITEMS.register("sword_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> AXE_SMITHING_TEMPLATE = ITEMS.register("axe_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> SPEAR_SMITHING_TEMPLATE = ITEMS.register("spear_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> SCYTHE_SMITHING_TEMPLATE = ITEMS.register("scythe_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> RAPIER_SMITHING_TEMPLATE = ITEMS.register("rapier_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> WARGLAIVE_SMITHING_TEMPLATE = ITEMS.register("warglaive_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> GREATSWORD_SMITHING_TEMPLATE = ITEMS.register("greatsword_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
+
+        public static final RegistryObject<Item> HAMMER_SMITHING_TEMPLATE = ITEMS.register("hammer_smithing_template",
+                        () -> new ModMaterialItem(
+                                        MaterialItemProperties.drop(),
+                                        MaterialType.BLOOD));
 
         // ===========================================
         // FOODS - COMIDAS
