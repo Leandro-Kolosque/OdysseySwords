@@ -1,7 +1,7 @@
 package com.odysseyswords.customswordmod.client;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.gui.screens.MythicForgeScreen;
+import com.odysseyswords.customswordmod.gui.screens.mythic_forge.MythicForgeScreen;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 
 import net.minecraft.client.gui.screens.MenuScreens;

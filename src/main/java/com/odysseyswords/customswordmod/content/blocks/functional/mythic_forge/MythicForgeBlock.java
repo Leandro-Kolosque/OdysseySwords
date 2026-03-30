@@ -1,4 +1,4 @@
-package com.odysseyswords.customswordmod.content.blocks.mythic_forge;
+package com.odysseyswords.customswordmod.content.blocks.functional.mythic_forge;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -7,6 +7,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
@@ -28,8 +29,7 @@ public class MythicForgeBlock extends BaseEntityBlock {
     public MythicForgeBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(
-                this.stateDefinition.any().setValue(FACING, Direction.NORTH)
-        );
+                this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 
     // =====================
@@ -51,16 +51,14 @@ public class MythicForgeBlock extends BaseEntityBlock {
             BlockPos pos,
             Player player,
             InteractionHand hand,
-            BlockHitResult hit
-    ) {
+            BlockHitResult hit) {
         if (!level.isClientSide) {
             BlockEntity be = level.getBlockEntity(pos);
             if (be instanceof MenuProvider menuProvider && player instanceof ServerPlayer serverPlayer) {
                 NetworkHooks.openScreen(
                         serverPlayer,
                         menuProvider,
-                        buf -> buf.writeBlockPos(pos)
-                );
+                        buf -> buf.writeBlockPos(pos));
             }
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
@@ -99,5 +97,20 @@ public class MythicForgeBlock extends BaseEntityBlock {
     @Override
     public RenderShape getRenderShape(BlockState state) {
         return RenderShape.MODEL;
+    }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (state.getBlock() != newState.getBlock()) {
+
+            BlockEntity be = level.getBlockEntity(pos);
+
+            if (be instanceof MythicForgeBlockEntity forge) {
+                forge.drops();
+            }
+            popResource(level, pos, new ItemStack(this));
+        }
+
+        super.onRemove(state, level, pos, newState, isMoving);
     }
 }

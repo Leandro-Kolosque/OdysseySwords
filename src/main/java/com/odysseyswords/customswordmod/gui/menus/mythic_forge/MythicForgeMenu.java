@@ -1,6 +1,7 @@
-package com.odysseyswords.customswordmod.gui.menus;
+package com.odysseyswords.customswordmod.gui.menus.mythic_forge;
 
-import com.odysseyswords.customswordmod.content.blocks.mythic_forge.MythicForgeBlockEntity;
+import com.odysseyswords.customswordmod.content.blocks.functional.mythic_forge.MythicForgeBlockEntity;
+import com.odysseyswords.customswordmod.content.blocks.functional.mythic_forge.MythicForgeLogic;
 import com.odysseyswords.customswordmod.registry.ModBlocks;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 
@@ -13,15 +14,15 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+
 import net.minecraftforge.items.SlotItemHandler;
 import org.jetbrains.annotations.NotNull;
 
 public class MythicForgeMenu extends AbstractContainerMenu {
 
-    public final MythicForgeBlockEntity blockEntity;
+    private final MythicForgeBlockEntity blockEntity;
     private final Level level;
 
-    // Constructor chamado pelo NetworkHooks
     public MythicForgeMenu(int id, Inventory inv, FriendlyByteBuf buf) {
         this(id, inv, inv.player.level().getBlockEntity(buf.readBlockPos()));
     }
@@ -32,12 +33,10 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         this.blockEntity = (MythicForgeBlockEntity) entity;
         this.level = inv.player.level();
 
-        // Slots do bloco
         this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 0, 21, 60));
         this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 1, 51, 60));
         this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 2, 80, 60));
 
-        // Output
         this.addSlot(new SlotItemHandler(blockEntity.getItemHandler(), 3, 135, 60) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
@@ -46,8 +45,8 @@ public class MythicForgeMenu extends AbstractContainerMenu {
 
             @Override
             public void onTake(Player player, ItemStack stack) {
-                blockEntity.consumeIngredients();
                 super.onTake(player, stack);
+                MythicForgeLogic.consumeIngredients(level, blockEntity.getItemHandler());
             }
         });
 
@@ -60,11 +59,9 @@ public class MythicForgeMenu extends AbstractContainerMenu {
         return stillValid(
                 ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
                 player,
-                ModBlocks.MYTHIC_FORGE.get()
-        );
+                ModBlocks.MYTHIC_FORGE.get());
     }
 
-    // Shift-click
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         ItemStack copy = ItemStack.EMPTY;
@@ -75,15 +72,20 @@ public class MythicForgeMenu extends AbstractContainerMenu {
             copy = stack.copy();
 
             if (index == 3) {
-                if (!moveItemStackTo(stack, 4, 40, true)) return ItemStack.EMPTY;
+                if (!moveItemStackTo(stack, 4, 40, true))
+                    return ItemStack.EMPTY;
             } else if (index < 3) {
-                if (!moveItemStackTo(stack, 4, 40, true)) return ItemStack.EMPTY;
+                if (!moveItemStackTo(stack, 4, 40, true))
+                    return ItemStack.EMPTY;
             } else {
-                if (!moveItemStackTo(stack, 0, 3, false)) return ItemStack.EMPTY;
+                if (!moveItemStackTo(stack, 0, 3, false))
+                    return ItemStack.EMPTY;
             }
 
-            if (stack.isEmpty()) slot.set(ItemStack.EMPTY);
-            else slot.setChanged();
+            if (stack.isEmpty())
+                slot.set(ItemStack.EMPTY);
+            else
+                slot.setChanged();
         }
 
         return copy;

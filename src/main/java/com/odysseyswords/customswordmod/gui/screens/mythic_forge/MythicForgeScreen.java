@@ -1,8 +1,8 @@
-package com.odysseyswords.customswordmod.gui.screens;
+package com.odysseyswords.customswordmod.gui.screens.mythic_forge;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.gui.menus.MythicForgeMenu;
+import com.odysseyswords.customswordmod.gui.menus.mythic_forge.MythicForgeMenu;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -17,7 +17,7 @@ public class MythicForgeScreen extends AbstractContainerScreen<MythicForgeMenu> 
     public MythicForgeScreen(MythicForgeMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
         this.imageWidth = 176;
-        this.imageHeight = 182; // Voltando para a altura original da smithing table
+        this.imageHeight = 182;
     }
 
     @Override

@@ -1,7 +1,7 @@
 package com.odysseyswords.customswordmod.registry;
 
 import com.odysseyswords.customswordmod.core.OdysseyConstants;
-import com.odysseyswords.customswordmod.content.blocks.mythic_forge.MythicForgeBlockEntity;
+import com.odysseyswords.customswordmod.content.blocks.functional.mythic_forge.MythicForgeBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

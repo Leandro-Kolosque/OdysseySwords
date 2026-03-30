@@ -1,7 +1,8 @@
 package com.odysseyswords.customswordmod.registry;
 
 import com.odysseyswords.customswordmod.core.OdysseyConstants;
-import com.odysseyswords.customswordmod.gui.menus.MythicForgeMenu;
+import com.odysseyswords.customswordmod.gui.menus.mythic_forge.MythicForgeMenu;
+
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;

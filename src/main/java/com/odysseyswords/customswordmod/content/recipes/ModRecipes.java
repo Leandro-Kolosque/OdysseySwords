@@ -1,7 +1,7 @@
 package com.odysseyswords.customswordmod.content.recipes;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.content.recipes.mythic_forge.MythicForgeRecipe;
+import com.odysseyswords.customswordmod.content.blocks.functional.mythic_forge.recipe.MythicForgeRecipe;
 
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;

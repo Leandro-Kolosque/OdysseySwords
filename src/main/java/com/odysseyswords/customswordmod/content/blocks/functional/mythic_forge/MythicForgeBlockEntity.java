@@ -1,8 +1,7 @@
-package com.odysseyswords.customswordmod.content.blocks.mythic_forge;
+package com.odysseyswords.customswordmod.content.blocks.functional.mythic_forge;
 
-import com.odysseyswords.customswordmod.content.recipes.mythic_forge.MythicForgeRecipe;
-import com.odysseyswords.customswordmod.gui.menus.MythicForgeMenu;
 import com.odysseyswords.customswordmod.registry.ModBlockEntities;
+import com.odysseyswords.customswordmod.gui.menus.mythic_forge.MythicForgeMenu;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -18,15 +17,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Optional;
 
 public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider {
 
@@ -35,7 +34,7 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         protected void onContentsChanged(int slot) {
             setChanged();
             if (slot < 3 && level != null && !level.isClientSide()) {
-                updateResult();
+                MythicForgeLogic.updateResult(level, itemHandler);
             }
         }
 
@@ -99,42 +98,10 @@ public class MythicForgeBlockEntity extends BlockEntity implements MenuProvider 
         Containers.dropContents(level, worldPosition, inventory);
     }
 
-    private void updateResult() {
-        if (level == null || level.isClientSide()) return;
-
-        Optional<MythicForgeRecipe> match = findMatchingRecipe();
-
-        if (match.isPresent()) {
-            ItemStack result = match.get().getResultItem(level.registryAccess()).copy();
-            itemHandler.setStackInSlot(3, result);
-        } else {
-            itemHandler.setStackInSlot(3, ItemStack.EMPTY);
-        }
-        setChanged();
-    }
-
-    private Optional<MythicForgeRecipe> findMatchingRecipe() {
-        if (level == null) return Optional.empty();
-
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for (int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
-        }
-
-        return level.getRecipeManager()
-                .getRecipeFor(MythicForgeRecipe.Type.INSTANCE, inventory, level);
-    }
-
     public void consumeIngredients() {
         if (level == null || level.isClientSide()) return;
-
-        if (findMatchingRecipe().isPresent()) {
-            itemHandler.extractItem(0, 1, false);
-            itemHandler.extractItem(1, 1, false);
-            itemHandler.extractItem(2, 1, false);
-            updateResult();
-            setChanged();
-        }
+        MythicForgeLogic.consumeIngredients(level, itemHandler);
+        setChanged();
     }
 
     @Override
