@@ -167,6 +167,9 @@ public class ModItems {
         public static final RegistryObject<Item> BLADE_OF_ANUBIS = ITEMS.register("blade_of_anubis",
                         BladeOfAnubis::new);
 
+        public static final RegistryObject<Item> BRIMSTONECLAYMORE = ITEMS.register("brimstone_claymore",
+                        BrimstoneClaymore::new);
+
         public static final RegistryObject<Item> CORRUPTED_MYTHIC_BLADE = ITEMS.register("corrupted_mythic_blade",
                         CorruptedMythicBlade::new);
 
@@ -269,6 +272,9 @@ public class ModItems {
         public static final RegistryObject<Item> AQUANTIC_TRIDENT = ITEMS.register("aquantic_trident",
                         AquanticTrident::new);
 
+        public static final RegistryObject<Item> DEATH_SPEAR = ITEMS.register("death_spear",
+                        DeathSpear::new);
+
         public static final RegistryObject<Item> DIVINE_JUSTICE = ITEMS.register("divine_justice", DivineJustice::new);
 
         public static final RegistryObject<Item> FALLEN_GOD_SPEAR = ITEMS.register("fallen_god_spear",
@@ -276,6 +282,9 @@ public class ModItems {
 
         public static final RegistryObject<Item> FOREST_GUARDIAN_GLAIVE = ITEMS.register("forest_guardian_glaive",
                         ForestGuardianGlaive::new);
+
+        public static final RegistryObject<Item> GONDOR_SPEAR = ITEMS.register("gondor_spear",
+                        GondorSpear::new);
 
         public static final RegistryObject<Item> JADE_HALBERD = ITEMS.register("jade_halberd", JadeHalberd::new);
 
