@@ -27,7 +27,7 @@ public class ModBlocks {
                         () -> new MythicForgeBlock(
                                         BlockBehaviour.Properties.of()
                                                         .mapColor(MapColor.METAL)
-                                                        .strength(4.0F)
+                                                        .strength(3.0F)
                                                         .requiresCorrectToolForDrops()
                                                         .sound(SoundType.METAL)
                                                         .noOcclusion()
@@ -38,7 +38,7 @@ public class ModBlocks {
                         () -> new DiceBlock(
                                         BlockBehaviour.Properties.of()
                                                         .mapColor(MapColor.COLOR_PURPLE)
-                                                        .strength(2.0F)
+                                                        .strength(1.5F)
                                                         .sound(SoundType.STONE)));
 
         private static <T extends Block> RegistryObject<T> register(
