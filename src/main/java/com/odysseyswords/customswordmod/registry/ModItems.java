@@ -2,6 +2,7 @@ package com.odysseyswords.customswordmod.registry;
 
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -11,7 +12,6 @@ import com.odysseyswords.customswordmod.OdysseySwords;
 import com.odysseyswords.customswordmod.content.items.armor.easter_eggs.dumb_hat.DumbHatItem;
 import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
 import com.odysseyswords.customswordmod.content.items.armor.sets.pegasus.PegasusArmorItem;
-import com.odysseyswords.customswordmod.content.items.armor.sets.spartan.SpartanEliteArmorItem;
 import com.odysseyswords.customswordmod.content.items.armor.sets.star_shard.StarShardArmorItem;
 import com.odysseyswords.customswordmod.content.items.armor.sets.void_spartan.VoidSpartanArmorItem;
 import com.odysseyswords.customswordmod.content.items.armor.sets.cyber.CyberArmorItem;
@@ -37,10 +37,6 @@ public class ModItems {
 
         // ===========================================
         // Armor - ARMADURAS
-        public static final RegistryObject<Item> SPARTAN_ELITE_HELMET = ITEMS.register("spartan_elite_helmet",
-                        () -> new SpartanEliteArmorItem(ModArmorMaterials.SPARTAN_ELITE, ArmorItem.Type.HELMET,
-                                        new Item.Properties().stacksTo(1)));
-
         public static final RegistryObject<Item> PEGASUS_HELMET = ITEMS.register("pegasus_helmet",
                         () -> new PegasusArmorItem(
                                         ModArmorMaterials.PEGASUS,
@@ -438,7 +434,8 @@ public class ModItems {
         public static final RegistryObject<Item> AXE_SMITHING_TEMPLATE = ITEMS.register("axe_smithing_template",
                         () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
 
-        public static final RegistryObject<Item> GREATSWORD_SMITHING_TEMPLATE = ITEMS.register("greatsword_smithing_template",
+        public static final RegistryObject<Item> GREATSWORD_SMITHING_TEMPLATE = ITEMS.register(
+                        "greatsword_smithing_template",
                         () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
                         
         public static final RegistryObject<Item> HAMMER_SMITHING_TEMPLATE = ITEMS.register("hammer_smithing_template",
@@ -456,7 +453,8 @@ public class ModItems {
         public static final RegistryObject<Item> SWORD_SMITHING_TEMPLATE = ITEMS.register("sword_smithing_template",
                         () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
 
-        public static final RegistryObject<Item> WARGLAIVE_SMITHING_TEMPLATE = ITEMS.register("warglaive_smithing_template",
+        public static final RegistryObject<Item> WARGLAIVE_SMITHING_TEMPLATE = ITEMS.register(
+                        "warglaive_smithing_template",
                         () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
 
         // ===========================================
