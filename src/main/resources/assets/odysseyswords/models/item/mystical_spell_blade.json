@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/mystical_spell_blade",
@@ -1734,9 +1735,9 @@
 			"scale": [2, 2, 2]
 		},
 		"gui": {
-			"rotation": [0, 0, -42],
-			"translation": [1.75, 2.25, 0],
-			"scale": [2, 2, 2]
+			"rotation": [0, 0, -45],
+			"translation": [1.25, 1.5, 0],
+			"scale": [2, 1.75, 2]
 		},
 		"head": {
 			"rotation": [0, 0, -132],
@@ -1754,7 +1755,6 @@
 			"name": "bekkie",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				0,
 				1,
@@ -1764,14 +1764,12 @@
 					"name": "petal3",
 					"origin": [7.6, 5.1, 0.1],
 					"color": 0,
-					"nbt": "{}",
 					"children": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
 				},
 				{
 					"name": "petal1",
 					"origin": [4.4, 6.1, 0],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						23,
 						24,
@@ -1785,7 +1783,6 @@
 							"name": "petal1",
 							"origin": [4.4, 6.1, 0],
 							"color": 0,
-							"nbt": "{}",
 							"children": [
 								31,
 								32,
@@ -1799,7 +1796,6 @@
 									"name": "petal1",
 									"origin": [4.4, 6.1, 0],
 									"color": 0,
-									"nbt": "{}",
 									"children": [
 										39,
 										40,
@@ -1813,7 +1809,6 @@
 											"name": "petal1",
 											"origin": [4.4, 6.1, 0],
 											"color": 0,
-											"nbt": "{}",
 											"children": [47, 48, 49, 50, 51, 52, 53, 54]
 										}
 									]
@@ -1826,7 +1821,6 @@
 					"name": "blade",
 					"origin": [0, 0, 0],
 					"color": 0,
-					"nbt": "{}",
 					"children": [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93]
 				},
 				94,
@@ -1834,7 +1828,6 @@
 					"name": "handle",
 					"origin": [0, 0, 0],
 					"color": 0,
-					"nbt": "{}",
 					"children": [95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105]
 				}
 			]
@@ -1843,7 +1836,6 @@
 			"name": "petal2",
 			"origin": [4.4, 6.1, 0],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				106,
 				107,
@@ -1857,7 +1849,6 @@
 					"name": "petal1",
 					"origin": [4.4, 6.1, 0],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						114,
 						115,
@@ -1871,7 +1862,6 @@
 							"name": "petal1",
 							"origin": [4.4, 6.1, 0],
 							"color": 0,
-							"nbt": "{}",
 							"children": [
 								122,
 								123,
@@ -1885,7 +1875,6 @@
 									"name": "petal1",
 									"origin": [4.4, 6.1, 0],
 									"color": 0,
-									"nbt": "{}",
 									"children": [130, 131, 132, 133, 134, 135, 136, 137]
 								}
 							]

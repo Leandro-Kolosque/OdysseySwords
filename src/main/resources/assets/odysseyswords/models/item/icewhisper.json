@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/icewhisper",
@@ -1126,9 +1127,9 @@
 			"scale": [2, 2, 2]
 		},
 		"gui": {
-			"rotation": [0, 0, -43],
-			"translation": [0.75, 0.25, 0],
-			"scale": [1.8, 1.8, 1.8]
+			"rotation": [0, 0, -45],
+			"translation": [0.25, -0.5, 0],
+			"scale": [2.3, 1.3, 1.8]
 		},
 		"head": {
 			"rotation": [0, 0, 34],
@@ -1136,7 +1137,7 @@
 			"scale": [4, 4, 4]
 		},
 		"fixed": {
-			"rotation": [0, 180, -42],
+			"rotation": [0, -180, -42],
 			"translation": [-3.5, 3.25, -0.5],
 			"scale": [3.8, 3.8, 3.4]
 		}

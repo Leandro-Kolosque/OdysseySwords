@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/thousand_demon_daggers",
@@ -297,9 +298,9 @@
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"gui": {
-			"rotation": [0, 0, -45],
-			"translation": [-4.75, -4, 0],
-			"scale": [-1.2, 1.2, 1.2]
+			"rotation": [0, 0, -42],
+			"translation": [-3, -4, 0],
+			"scale": [-1, 0.95, 0.95]
 		},
 		"head": {
 			"rotation": [0, 0, 45],

@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench by Eftann, commissioned by ElocinDev",
 	"textures": {
 		"2": "odysseyswords:item/effect-sheet_apophis",
@@ -2356,7 +2357,7 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -46],
-			"translation": [2.75, 2.75, 0],
+			"translation": [2.75, 2.25, 0],
 			"scale": [1.85, 1.85, 1.85]
 		},
 		"head": {

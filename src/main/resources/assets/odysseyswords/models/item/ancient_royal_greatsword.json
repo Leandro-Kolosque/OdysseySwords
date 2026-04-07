@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/ancient_royal_greatsword",
@@ -1269,8 +1270,8 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -42],
-			"translation": [1.5, 1.5, 0],
-			"scale": [2, 2, 1]
+			"translation": [1.25, 0.75, 0],
+			"scale": [1.65, 1.65, 1.65]
 		},
 		"fixed": {
 			"rotation": [-180, 0, 138],
