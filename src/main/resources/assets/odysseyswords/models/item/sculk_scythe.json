@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/sculk_scythe",
@@ -1788,9 +1789,9 @@
 			"scale": [2, 2, 2]
 		},
 		"gui": {
-			"rotation": [0, 0, -42],
-			"translation": [0.25, -0.75, 0],
-			"scale": [2, 2, 2]
+			"rotation": [0, 0, -44],
+			"translation": [0.25, -1.5, 0],
+			"scale": [1.6, 1.6, 1.6]
 		},
 		"head": {
 			"rotation": [0, 0, -132],
@@ -1808,7 +1809,6 @@
 			"name": "sculk_scythe",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				0,
 				1,

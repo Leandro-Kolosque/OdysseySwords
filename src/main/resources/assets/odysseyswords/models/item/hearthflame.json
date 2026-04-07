@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/hearthflame",
@@ -513,8 +514,8 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -43],
-			"translation": [2, 1.5, 0],
-			"scale": [2.2, 2.2, 2]
+			"translation": [0.5, 0.75, 0],
+			"scale": [1.6, 1.6, 2]
 		},
 		"head": {
 			"rotation": [0, 0, 144],
@@ -522,7 +523,7 @@
 			"scale": [4, 4, 4]
 		},
 		"fixed": {
-			"rotation": [0, 180, -42],
+			"rotation": [0, -180, -42],
 			"translation": [-3.5, 3.25, -0.75],
 			"scale": [3.8, 3.8, 3.4]
 		}

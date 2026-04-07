@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/forest_guardian_glaive",
@@ -875,9 +876,9 @@
 			"scale": [2, 2, 2]
 		},
 		"gui": {
-			"rotation": [0, 0, -46],
-			"translation": [2, 1.25, 0],
-			"scale": [2.2, 2.2, 2.2]
+			"rotation": [0, 0, -44],
+			"translation": [0.75, 1.25, 0],
+			"scale": [1.9, 1.55, 1.8]
 		},
 		"head": {
 			"rotation": [0, 0, -42],
@@ -895,7 +896,6 @@
 			"name": "forest_guardian_glaive",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				0,
 				1,

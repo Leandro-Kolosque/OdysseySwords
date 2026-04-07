@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "odysseyswords:item/sculk_cleaver",
@@ -1256,8 +1257,8 @@
 		},
 		"gui": {
 			"rotation": [0, 0, -42],
-			"translation": [3, 2.25, 0],
-			"scale": [2.5, 2.5, 2]
+			"translation": [2, 1, 0],
+			"scale": [2, 2, 2]
 		},
 		"head": {
 			"rotation": [0, 0, -132],
@@ -1275,7 +1276,6 @@
 			"name": "sculk_cleaver",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				0,
 				1,
