@@ -9,12 +9,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import com.odysseyswords.customswordmod.OdysseySwords;
-import com.odysseyswords.customswordmod.content.items.armor.easter_eggs.dumb_hat.DumbHatItem;
-import com.odysseyswords.customswordmod.content.items.armor.materials.ModArmorMaterials;
-import com.odysseyswords.customswordmod.content.items.armor.sets.pegasus.PegasusArmorItem;
-import com.odysseyswords.customswordmod.content.items.armor.sets.star_shard.StarShardArmorItem;
-import com.odysseyswords.customswordmod.content.items.armor.sets.void_spartan.VoidSpartanArmorItem;
-import com.odysseyswords.customswordmod.content.items.armor.sets.cyber.CyberArmorItem;
+import com.odysseyswords.customswordmod.content.items.armor.material.ModArmorMaterials;
+import com.odysseyswords.customswordmod.content.items.armor.traits.types.CyberTrait;
 import com.odysseyswords.customswordmod.content.items.food.base.AbstractFoodItem;
 import com.odysseyswords.customswordmod.content.items.food.foods.PopsicleFood;
 import com.odysseyswords.customswordmod.content.items.materials.MaterialItemProperties;
@@ -30,6 +26,9 @@ import com.odysseyswords.customswordmod.content.items.weapons.scythes.*;
 import com.odysseyswords.customswordmod.content.items.weapons.spears.*;
 import com.odysseyswords.customswordmod.content.items.weapons.swords.*;
 import com.odysseyswords.customswordmod.content.items.weapons.warglaives.*;
+import com.odysseyswords.customswordmod.content.items.armor.definition.ArmorSetDefinition;
+import com.odysseyswords.customswordmod.registry.helpers.ArmorRegistryHelper;
+import java.util.List;
 
 public class ModItems {
         public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
@@ -37,109 +36,17 @@ public class ModItems {
 
         // ===========================================
         // Armor - ARMADURAS
-        public static final RegistryObject<Item> PEGASUS_HELMET = ITEMS.register("pegasus_helmet",
-                        () -> new PegasusArmorItem(
-                                        ModArmorMaterials.PEGASUS,
-                                        ArmorItem.Type.HELMET,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> PEGASUS_CHESTPLATE = ITEMS.register("pegasus_chestplate",
-                        () -> new PegasusArmorItem(
-                                        ModArmorMaterials.PEGASUS,
-                                        ArmorItem.Type.CHESTPLATE,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> PEGASUS_LEGGINGS = ITEMS.register("pegasus_leggings",
-                        () -> new PegasusArmorItem(
-                                        ModArmorMaterials.PEGASUS,
-                                        ArmorItem.Type.LEGGINGS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> PEGASUS_BOOTS = ITEMS.register("pegasus_boots",
-                        () -> new PegasusArmorItem(
-                                        ModArmorMaterials.PEGASUS,
-                                        ArmorItem.Type.BOOTS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> STAR_SHARD_HELMET = ITEMS.register("star_shard_helmet",
-                        () -> new StarShardArmorItem(
-                                        ModArmorMaterials.STARSHARD,
-                                        ArmorItem.Type.HELMET,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> STAR_SHARD_CHESTPLATE = ITEMS.register("star_shard_chestplate",
-                        () -> new StarShardArmorItem(
-                                        ModArmorMaterials.STARSHARD,
-                                        ArmorItem.Type.CHESTPLATE,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> STAR_SHARD_LEGGINGS = ITEMS.register("star_shard_leggings",
-                        () -> new StarShardArmorItem(
-                                        ModArmorMaterials.STARSHARD,
-                                        ArmorItem.Type.LEGGINGS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> STAR_SHARD_BOOTS = ITEMS.register("star_shard_boots",
-                        () -> new StarShardArmorItem(
-                                        ModArmorMaterials.STARSHARD,
-                                        ArmorItem.Type.BOOTS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> VOID_SPARTAN_HELMET = ITEMS.register("void_spartan_helmet",
-                        () -> new VoidSpartanArmorItem(
-                                        ModArmorMaterials.VOIDSPARTAN,
-                                        ArmorItem.Type.HELMET,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> VOID_SPARTAN_CHESTPLATE = ITEMS.register("void_spartan_chestplate",
-                        () -> new VoidSpartanArmorItem(
-                                        ModArmorMaterials.VOIDSPARTAN,
-                                        ArmorItem.Type.CHESTPLATE,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> VOID_SPARTAN_LEGGINGS = ITEMS.register("void_spartan_leggings",
-                        () -> new VoidSpartanArmorItem(
-                                        ModArmorMaterials.VOIDSPARTAN,
-                                        ArmorItem.Type.LEGGINGS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> VOID_SPARTAN_BOOTS = ITEMS.register("void_spartan_boots",
-                        () -> new VoidSpartanArmorItem(
-                                        ModArmorMaterials.VOIDSPARTAN,
-                                        ArmorItem.Type.BOOTS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> CYBER_HELMET = ITEMS.register("cyber_helmet",
-                        () -> new CyberArmorItem(
-                                        ModArmorMaterials.CYBER,
-                                        ArmorItem.Type.HELMET,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> CYBER_CHESTPLATE = ITEMS.register("cyber_chestplate",
-                        () -> new CyberArmorItem(
-                                        ModArmorMaterials.CYBER,
-                                        ArmorItem.Type.CHESTPLATE,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> CYBER_LEGGINGS = ITEMS.register("cyber_leggings",
-                        () -> new CyberArmorItem(
-                                        ModArmorMaterials.CYBER,
-                                        ArmorItem.Type.LEGGINGS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> CYBER_BOOTS = ITEMS.register("cyber_boots",
-                        () -> new CyberArmorItem(
-                                        ModArmorMaterials.CYBER,
-                                        ArmorItem.Type.BOOTS,
-                                        new Item.Properties()));
-
-        public static final RegistryObject<Item> DUMB_HAT = ITEMS.register("dumb_hat",
-                        () -> new DumbHatItem(
-                                        ModArmorMaterials.PEGASUS,
-                                        ArmorItem.Type.HELMET,
-                                        new Item.Properties()));
         // ===========================================
+        // 1. Definições de Set (Fonte Única de Verdade)
+        public static final ArmorSetDefinition CYBER_DEF = new ArmorSetDefinition(
+                        "cyber",
+                        ModArmorMaterials.CYBER,
+                        List.of(new CyberTrait()));
 
+        // 2. Registro em lote (Uma linha para os 4 itens: Helmet, Chestplate, Leggings,
+        // Boots)
+        public static final List<RegistryObject<Item>> CYBER_SET = ArmorRegistryHelper.registerArmorSet(ITEMS,
+                        CYBER_DEF);
         // ===========================================
         // Bows - ARCOS
         public static final RegistryObject<Item> ORION = ITEMS.register("orion", OrionBow::new);
@@ -437,7 +344,7 @@ public class ModItems {
         public static final RegistryObject<Item> GREATSWORD_SMITHING_TEMPLATE = ITEMS.register(
                         "greatsword_smithing_template",
                         () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
-                        
+
         public static final RegistryObject<Item> HAMMER_SMITHING_TEMPLATE = ITEMS.register("hammer_smithing_template",
                         () -> new WeaponSmithingTemplateItem(new Item.Properties().stacksTo(1)));
 

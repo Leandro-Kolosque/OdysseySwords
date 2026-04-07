@@ -1,4 +1,4 @@
-package com.odysseyswords.customswordmod.content.items.armor.materials;
+package com.odysseyswords.customswordmod.content.items.armor.material;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -10,15 +10,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    SPARTAN_ELITE("spartan_elite", 25, new int[]{3, 6, 8, 3}, 15,
-            SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.of(Items.IRON_INGOT)),
-
-    PEGASUS("pegasus", 22, new int[]{2, 5, 6, 2}, 25,
-            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
-
-    STARSHARD("star_shard", 22, new int[]{2, 5, 6, 2}, 25,
-            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
-
     VOIDSPARTAN("void_spartan", 22, new int[]{2, 5, 6, 2}, 25,
             SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
 
