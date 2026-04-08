@@ -10,12 +10,11 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    VOIDSPARTAN("void_spartan", 22, new int[]{2, 5, 6, 2}, 25,
+    VOIDSPARTAN("void_spartan", 22, new int[] { 2, 5, 6, 2 }, 25,
             SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
 
-    CYBER("cyber", 22, new int[]{2, 5, 6, 2}, 25,
+    CYBER("cyber", 22, new int[] { 2, 5, 6, 2 }, 25,
             SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE));
-    
 
     private final String name;
     private final int durabilityMultiplier;
@@ -26,10 +25,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-    private static final int[] BASE_DURABILITY = {11, 16, 15, 13};
+    private static final int[] BASE_DURABILITY = { 11, 16, 15, 13 };
 
     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue,
-                      SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+            SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
@@ -67,7 +66,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return this.name;
+        return com.odysseyswords.customswordmod.OdysseySwords.MODID + ":" + this.name;
     }
 
     @Override
