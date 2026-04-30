@@ -43,10 +43,20 @@ public class ModItems {
                         ModArmorMaterials.CYBER,
                         List.of(new CyberTrait()));
 
+        public static final ArmorSetDefinition TESTE_DEF = new ArmorSetDefinition(
+                        "teste",
+                        ModArmorMaterials.TESTE,
+                        List.of(new CyberTrait()));
+
         // 2. Registro em lote (Uma linha para os 4 itens: Helmet, Chestplate, Leggings,
         // Boots)
         public static final List<RegistryObject<Item>> CYBER_SET = ArmorRegistryHelper.registerArmorSet(ITEMS,
                         CYBER_DEF);
+
+        public static final List<RegistryObject<Item>> TESTE_SET = ArmorRegistryHelper.registerArmorSet(ITEMS,
+                        TESTE_DEF);
+
+        
         // ===========================================
         // Bows - ARCOS
         public static final RegistryObject<Item> ORION = ITEMS.register("orion", OrionBow::new);
