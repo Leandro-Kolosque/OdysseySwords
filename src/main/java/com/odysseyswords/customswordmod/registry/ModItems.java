@@ -48,6 +48,11 @@ public class ModItems {
                         ModArmorMaterials.TESTE,
                         List.of(new CyberTrait()));
 
+        public static final ArmorSetDefinition EDU_DEF = new ArmorSetDefinition(
+                        "edu",
+                        ModArmorMaterials.EDU,
+                        List.of(new CyberTrait()));
+
         // 2. Registro em lote (Uma linha para os 4 itens: Helmet, Chestplate, Leggings,
         // Boots)
         public static final List<RegistryObject<Item>> CYBER_SET = ArmorRegistryHelper.registerArmorSet(ITEMS,
@@ -55,6 +60,9 @@ public class ModItems {
 
         public static final List<RegistryObject<Item>> TESTE_SET = ArmorRegistryHelper.registerArmorSet(ITEMS,
                         TESTE_DEF);
+
+        public static final List<RegistryObject<Item>> EDU_SET = ArmorRegistryHelper.registerArmorSet(ITEMS,
+                        EDU_DEF);
 
         
         // ===========================================

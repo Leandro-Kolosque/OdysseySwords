@@ -17,6 +17,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
 
     TESTE("teste", 22, new int[] { 2, 5, 6, 2 }, 25,
+            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE)),
+
+    EDU("edu", 22, new int[] { 2, 5, 6, 2 }, 25,
             SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.of(Items.PHANTOM_MEMBRANE));
 
     private final String name;
