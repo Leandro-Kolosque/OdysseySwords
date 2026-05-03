@@ -1,10 +1,12 @@
 package com.odysseyswords.customswordmod;
 
 import com.mojang.logging.LogUtils;
+import com.odysseyswords.customswordmod.content.entities.attributes.ModEntityAttributes;
 import com.odysseyswords.customswordmod.content.recipes.ModRecipes;
 import com.odysseyswords.customswordmod.registry.ModBlockEntities;
 import com.odysseyswords.customswordmod.registry.ModBlocks;
 import com.odysseyswords.customswordmod.registry.ModCreativeModeTab;
+import com.odysseyswords.customswordmod.registry.ModEntities;
 import com.odysseyswords.customswordmod.registry.ModItems;
 import com.odysseyswords.customswordmod.registry.ModMenuTypes;
 import com.odysseyswords.customswordmod.registry.ModSoundEvents;
@@ -28,7 +30,7 @@ public class OdysseySwords {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         GeckoLib.initialize();
-        
+
         // Registra os itens
         ModItems.register(modEventBus);
         ModCreativeModeTab.register(modEventBus);
@@ -49,6 +51,10 @@ public class OdysseySwords {
 
         // Registra as Receitas do MOD
         ModRecipes.register(modEventBus);
+
+        // Registra as Entidades
+        ModEntities.register(modEventBus);
+        ModEntityAttributes.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
