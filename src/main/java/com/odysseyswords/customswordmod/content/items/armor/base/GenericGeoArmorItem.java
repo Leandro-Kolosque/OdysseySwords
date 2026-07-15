@@ -15,17 +15,17 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.function.Consumer;
 
-public class GenericGeoArmorItem extends ArmorItem implements GeoItem {
+/**
+ * Toda armadura registrada no mod é uma instância desta classe.
+ * Estende AbstractOdysseyArmorItem (e não ArmorItem diretamente) para que
+ * ArmorTraitRegistry consiga reconhecer a peça via instanceof e resolver
+ * seus traits ativos a partir da ArmorSetDefinition compartilhada.
+ */
+public class GenericGeoArmorItem extends AbstractOdysseyArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    private final ArmorSetDefinition definition;
 
-    public GenericGeoArmorItem(ArmorSetDefinition definition, Type type, Properties properties) {
-        super(definition.material(), type, properties);
-        this.definition = definition;
-    }
-
-    public ArmorSetDefinition getDefinition() {
-        return definition;
+    public GenericGeoArmorItem(ArmorSetDefinition definition, ArmorItem.Type type, Properties properties) {
+        super(definition, type, properties);
     }
 
     @Override

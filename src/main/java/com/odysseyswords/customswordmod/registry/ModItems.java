@@ -34,23 +34,11 @@ public class ModItems {
     // =========================================================================
     // ARMOR - ARMADURAS
     // =========================================================================
-    public static final ArmorSetDefinition CYBER_DEF = new ArmorSetDefinition(
-            "cyber", ModArmorMaterials.CYBER, List.of(new CyberTrait()));
-
     public static final ArmorSetDefinition TESTE_DEF = new ArmorSetDefinition(
             "teste", ModArmorMaterials.TESTE, List.of(new CyberTrait()));
 
-    public static final ArmorSetDefinition EDU_DEF = new ArmorSetDefinition(
-            "edu", ModArmorMaterials.EDU, List.of(new CyberTrait()));
-
-    public static final List<RegistryObject<Item>> CYBER_SET =
-            ArmorRegistryHelper.registerArmorSet(ITEMS, CYBER_DEF);
-
     public static final List<RegistryObject<Item>> TESTE_SET =
             ArmorRegistryHelper.registerArmorSet(ITEMS, TESTE_DEF);
-
-    public static final List<RegistryObject<Item>> EDU_SET =
-            ArmorRegistryHelper.registerArmorSet(ITEMS, EDU_DEF);
 
     // =========================================================================
     // BOWS - ARCOS
